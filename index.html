@@ -80,8 +80,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);ba
 @media(max-width:980px){.nav-links{display:none}.nav-cta{margin-left:auto}}
 @media(max-width:520px){.n8n-btn span{display:none}}
 
-.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-section{padding:120px 0 60px;scroll-margin-top:90px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:24px;padding-right:24px}
+section{padding:84px 0 44px;scroll-margin-top:90px}
 
 .hero{padding:160px 0 60px}
 .hello{color:var(--accent2);font-weight:600;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}
@@ -91,6 +91,7 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 #typed{color:var(--text);border-right:2px solid var(--accent2);padding-right:3px}
 .hero p.lead{color:var(--muted);margin:18px 0 8px;max-width:none}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
+.euflag{width:17px;height:11.5px;border-radius:2px;display:inline-block;vertical-align:-1px;object-fit:cover}
 .badge{font-size:.8rem;border:1px solid var(--border);background:var(--chipbg);color:var(--muted);padding:6px 12px;border-radius:999px;transition:border-color .2s,transform .2s}
 .badge:hover{border-color:var(--accent);transform:translateY(-1px)}
 .badge b{color:var(--text);font-weight:600}
@@ -121,7 +122,7 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 .btn.gh:hover{background:#181717;box-shadow:0 10px 30px #00000066}
 [data-theme="light"] .btn.gh:hover{background:#24292f}
 .btn.gm:hover{background:#fff;color:#1b1b25;box-shadow:0 10px 30px #00000033}
-#contact .btn.brand{background:var(--bg);border-color:var(--border)}
+#contact .btn.brand:not(:hover){background:var(--bg);border-color:var(--border)}
 #contact .btn.brand:hover{border-color:transparent}
 #contact .btn.gm:hover{border-color:var(--border)}
 
@@ -132,7 +133,7 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 .stat .lbl{font-size:.78rem;color:var(--muted);margin-top:4px}
 
 .sec-tag{color:var(--accent2);font-weight:700;letter-spacing:.14em;font-size:.82rem;text-transform:uppercase}
-h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
+h2.sec-title{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spacing:-.025em;font-size:clamp(1.75rem,3.6vw,2.5rem);line-height:1.1;margin:10px 0 14px}
 .sec-sub{color:var(--muted);max-width:none;margin-bottom:34px}
 .hero p.lead b,.about p b,.sec-sub b{color:inherit;font-weight:700}
 
@@ -288,7 +289,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   <p class="lead"><b>AI &amp; Business Automation Analyst at Cabify</b> and <b>Industrial Engineer</b>. I turn manual operations into <b>production-grade AI systems</b> — low-code-first, measured in <b>€ verified</b>, <b>hours recovered</b> and <b>conversion gained</b>.</p>
   <div class="badges">
     <span class="badge">📍 <b>Berlin</b> — relocating Oct 2026</span>
-    <span class="badge">🇪🇺 <b>EU citizen</b> · no work permit needed</span>
+    <span class="badge"><img class="euflag" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MTAgNTQwIj48cmVjdCB3aWR0aD0iODEwIiBoZWlnaHQ9IjU0MCIgZmlsbD0iIzAzOSIvPjxnIGZpbGw9IiNGQzAiPjxwYXRoIGQ9Ik00MDUuMDAsNjAuMDBMNDExLjc0LDgwLjczTDQzMy41Myw4MC43M0w0MTUuOTAsOTMuNTRMNDIyLjYzLDExNC4yN0w0MDUuMDAsMTAxLjQ2TDM4Ny4zNywxMTQuMjdMMzk0LjEwLDkzLjU0TDM3Ni40Nyw4MC43M0wzOTguMjYsODAuNzNaIi8+PHBhdGggZD0iTTQ5NS4wMCw4NC4xMkw1MDEuNzQsMTA0Ljg0TDUyMy41MywxMDQuODRMNTA1LjkwLDExNy42Nkw1MTIuNjMsMTM4LjM5TDQ5NS4wMCwxMjUuNTdMNDc3LjM3LDEzOC4zOUw0ODQuMTAsMTE3LjY2TDQ2Ni40NywxMDQuODRMNDg4LjI2LDEwNC44NFoiLz48cGF0aCBkPSJNNTYwLjg4LDE1MC4wMEw1NjcuNjIsMTcwLjczTDU4OS40MiwxNzAuNzNMNTcxLjc4LDE4My41NEw1NzguNTIsMjA0LjI3TDU2MC44OCwxOTEuNDZMNTQzLjI1LDIwNC4yN0w1NDkuOTksMTgzLjU0TDUzMi4zNSwxNzAuNzNMNTU0LjE1LDE3MC43M1oiLz48cGF0aCBkPSJNNTg1LjAwLDI0MC4wMEw1OTEuNzQsMjYwLjczTDYxMy41MywyNjAuNzNMNTk1LjkwLDI3My41NEw2MDIuNjMsMjk0LjI3TDU4NS4wMCwyODEuNDZMNTY3LjM3LDI5NC4yN0w1NzQuMTAsMjczLjU0TDU1Ni40NywyNjAuNzNMNTc4LjI2LDI2MC43M1oiLz48cGF0aCBkPSJNNTYwLjg4LDMzMC4wMEw1NjcuNjIsMzUwLjczTDU4OS40MiwzNTAuNzNMNTcxLjc4LDM2My41NEw1NzguNTIsMzg0LjI3TDU2MC44OCwzNzEuNDZMNTQzLjI1LDM4NC4yN0w1NDkuOTksMzYzLjU0TDUzMi4zNSwzNTAuNzNMNTU0LjE1LDM1MC43M1oiLz48cGF0aCBkPSJNNDk1LjAwLDM5NS44OEw1MDEuNzQsNDE2LjYxTDUyMy41Myw0MTYuNjFMNTA1LjkwLDQyOS40M0w1MTIuNjMsNDUwLjE2TDQ5NS4wMCw0MzcuMzRMNDc3LjM3LDQ1MC4xNkw0ODQuMTAsNDI5LjQzTDQ2Ni40Nyw0MTYuNjFMNDg4LjI2LDQxNi42MVoiLz48cGF0aCBkPSJNNDA1LjAwLDQyMC4wMEw0MTEuNzQsNDQwLjczTDQzMy41Myw0NDAuNzNMNDE1LjkwLDQ1My41NEw0MjIuNjMsNDc0LjI3TDQwNS4wMCw0NjEuNDZMMzg3LjM3LDQ3NC4yN0wzOTQuMTAsNDUzLjU0TDM3Ni40Nyw0NDAuNzNMMzk4LjI2LDQ0MC43M1oiLz48cGF0aCBkPSJNMzE1LjAwLDM5NS44OEwzMjEuNzQsNDE2LjYxTDM0My41Myw0MTYuNjFMMzI1LjkwLDQyOS40M0wzMzIuNjMsNDUwLjE2TDMxNS4wMCw0MzcuMzRMMjk3LjM3LDQ1MC4xNkwzMDQuMTAsNDI5LjQzTDI4Ni40Nyw0MTYuNjFMMzA4LjI2LDQxNi42MVoiLz48cGF0aCBkPSJNMjQ5LjEyLDMzMC4wMEwyNTUuODUsMzUwLjczTDI3Ny42NSwzNTAuNzNMMjYwLjAxLDM2My41NEwyNjYuNzUsMzg0LjI3TDI0OS4xMiwzNzEuNDZMMjMxLjQ4LDM4NC4yN0wyMzguMjIsMzYzLjU0TDIyMC41OCwzNTAuNzNMMjQyLjM4LDM1MC43M1oiLz48cGF0aCBkPSJNMjI1LjAwLDI0MC4wMEwyMzEuNzQsMjYwLjczTDI1My41MywyNjAuNzNMMjM1LjkwLDI3My41NEwyNDIuNjMsMjk0LjI3TDIyNS4wMCwyODEuNDZMMjA3LjM3LDI5NC4yN0wyMTQuMTAsMjczLjU0TDE5Ni40NywyNjAuNzNMMjE4LjI2LDI2MC43M1oiLz48cGF0aCBkPSJNMjQ5LjEyLDE1MC4wMEwyNTUuODUsMTcwLjczTDI3Ny42NSwxNzAuNzNMMjYwLjAxLDE4My41NEwyNjYuNzUsMjA0LjI3TDI0OS4xMiwxOTEuNDZMMjMxLjQ4LDIwNC4yN0wyMzguMjIsMTgzLjU0TDIyMC41OCwxNzAuNzNMMjQyLjM4LDE3MC43M1oiLz48cGF0aCBkPSJNMzE1LjAwLDg0LjEyTDMyMS43NCwxMDQuODRMMzQzLjUzLDEwNC44NEwzMjUuOTAsMTE3LjY2TDMzMi42MywxMzguMzlMMzE1LjAwLDEyNS41N0wyOTcuMzcsMTM4LjM5TDMwNC4xMCwxMTcuNjZMMjg2LjQ3LDEwNC44NEwzMDguMjYsMTA0Ljg0WiIvPjwvZz48L3N2Zz4=" alt="EU"> <b>EU citizen</b> · no work permit needed</span>
     <span class="badge">🗣 FR · ES · EN <b>(+DE learning)</b></span>
   </div>
   <div class="cta-row">
@@ -347,7 +348,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 
 <section id="voices" class="wrap">
   <div class="sec-tag">Testimonials</div>
-  <h2 class="sec-title">What stakeholders said</h2>
+  <h2 class="sec-title">In their words</h2>
   <div class="quotes">
     <div class="quote reveal"><p>Tremendous work, team! I have no doubt that what's being built here will become the master process that enables us to deliver a superior service and differentiate on quality control within the sector. Congrats — let's go!! 🚀</p>
       <div class="qwho"><div class="qav">AG</div><div class="who">Country Manager · Cabify ESP<br>on the AI fleet audit</div></div></div>
@@ -541,7 +542,7 @@ const PROJECTS=[
  {slug:"aqm",title:"AQM — Asset Quality Management",impact:"€500K/mo verified",star:true,
   tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
   tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
-  desc:"Continuous AI quality auditing of a 21,000+ vehicle fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Built, shipped, and now handed to Product as a native initiative.",
+  desc:"Continuous AI quality auditing of a 4,000+ vehicle fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Built, shipped, and now handed to Product as a native initiative.",
   detail:"Capture first: four live forms from one codebase that reconfigures itself per domain — driver version (plate + 4 photos, minimum friction) and vendor versions (date, action, region, comments). Plate autocomplete runs against the real master list, so nobody can invent a plate; a guided silhouette overlays the camera so framing is comparable between vehicles, which is exactly what the model needs later to tell \"not visible\" from \"actual defect\"; and an OCR check warns when the photo disagrees with the typed plate but never blocks the submission, because a false negative cannot leave a driver unpaid. Three versioned microservices behind it, CI/CD publishing all four sites in 5–12 minutes per push.<br><br>Then the engine. The v2 analyser makes one AI call per image instead of five, returning six fields at once across 17 vinyl categories, over five parallel branches per vehicle. Where an official reference exists it measures both images, builds a real-vs-reference collage at exact size and asks a strict-assessor prompt for complete / incomplete / not visible, with explicit anti-false-positive rules. Seven results merge into one verdict, and tokens and cost are logged per run, so the AI bill is auditable row by row. 96% accuracy, and human supervision down to about 1.5 hours a week.",
   shots:[["assets/shots/aqm-canvas.jpg","The v2 analysis engine — 81 nodes, five parallel branches per vehicle"],["assets/shots/ocr-canvas.jpg","The plate-OCR microservice behind the capture form"]]},
 
