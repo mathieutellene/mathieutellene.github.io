@@ -3,29 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mathieu Tellene — AI & Business Automation</title>
-<meta name="description" content="Mathieu Tellene — AI & Business Automation Analyst. Production-grade AI automation: conversational agents, computer-vision pipelines, forecasting and low-code systems. Berlin, Sep 2026.">
-<meta property="og:title" content="Mathieu Tellene — AI & Business Automation">
-<meta property="og:description" content="Production AI automation: WhatsApp booking agents, hybrid CV/LLM audit pipelines, ML forecasting. n8n · Claude API · Python/JS. Relocating to Berlin, Sep 2026.">
+<title>Mathieu Tellene — AI &amp; Business Automation</title>
+<meta name="description" content="Mathieu Tellene — AI &amp; Business Automation Analyst at Cabify. Production AI systems: computer-vision fleet audits, WhatsApp booking agents, B2B document pipelines, ML forecasting. Relocating to Berlin, October 2026.">
+<meta property="og:title" content="Mathieu Tellene — AI &amp; Business Automation">
+<meta property="og:description" content="Production AI automation: WhatsApp booking agents, hybrid CV/LLM audit pipelines, ML forecasting, agentic document pipelines. n8n · Claude · Python/JS. Berlin, Oct 2026.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/profile.jpg">
+<meta name="theme-color" content="#0a0e16">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Mathieu Tellene","jobTitle":"AI & Business Automation Analyst","email":"mailto:tellenemathieu@gmail.com","url":"https://linkedin.com/in/mathieu-tellene","knowsLanguage":["fr","es","en"],"nationality":"French","sameAs":["https://linkedin.com/in/mathieu-tellene","https://github.com/mathieutellene"]}
+{"@context":"https://schema.org","@type":"Person","name":"Mathieu Tellene","jobTitle":"AI & Business Automation Analyst","email":"mailto:tellenemathieu@gmail.com","url":"https://mathieutellene.github.io","knowsLanguage":["fr","es","en","de"],"nationality":"French","worksFor":{"@type":"Organization","name":"Cabify"},"sameAs":["https://linkedin.com/in/mathieu-tellene","https://github.com/mathieutellene"]}
 </script>
 <style>
 :root{
   --bg:#0a0e16; --card:#121a2a; --border:#233049; --text:#e8edf7; --muted:#93a1bb; --dim:#5d6b85;
   --accent:#7c6bff; --accent2:#2dd4ee; --grad:linear-gradient(100deg,#7c6bff,#2dd4ee);
   --chipbg:#1a2438; --shadow:0 20px 60px rgba(3,7,18,.55); --nav:rgba(10,14,22,.82);
+  --glow:rgba(124,107,255,.16); --n8n:#ea4b71;
 }
 [data-theme="light"]{
   --bg:#f7f8fc; --card:#ffffff; --border:#dfe4f0; --text:#131a2a; --muted:#4b5a76; --dim:#8a96ad;
   --chipbg:#edf0fa; --shadow:0 16px 44px rgba(19,26,42,.10); --nav:rgba(247,248,252,.85);
-  --accent2:#0b7c99;
+  --accent2:#0b7c99; --glow:rgba(124,107,255,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -35,6 +37,7 @@ a{color:inherit;text-decoration:none}
 ::selection{background:#7c6bff55}
 img.favicon{width:18px;height:18px;border-radius:4px;vertical-align:-3px}
 .chip img.favicon{width:14px;height:14px;margin-right:6px;vertical-align:-2px}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:3px;border-radius:6px}
 
 .bg-fx{position:fixed;inset:0;z-index:-1;pointer-events:none}
 .bg-fx::before{content:"";position:absolute;inset:0;
@@ -42,72 +45,156 @@ img.favicon{width:18px;height:18px;border-radius:4px;vertical-align:-3px}
   background-size:44px 44px;opacity:.16;mask-image:radial-gradient(60% 50% at 50% 0%,#000,transparent);
   -webkit-mask-image:radial-gradient(60% 50% at 50% 0%,#000,transparent)}
 .bg-fx::after{content:"";position:absolute;top:-240px;left:50%;transform:translateX(-50%);width:900px;height:560px;
-  background:radial-gradient(closest-side,#7c6bff2e,transparent 70%),radial-gradient(closest-side,#2dd4ee1f,transparent 70%);filter:blur(10px)}
+  background:radial-gradient(closest-side,#7c6bff2e,transparent 70%),radial-gradient(closest-side,#2dd4ee1f,transparent 70%);
+  filter:blur(10px);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-52%) scale(1)}to{transform:translateX(-48%) scale(1.08)}}
+
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--grad);z-index:60;transition:width .1s linear}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:var(--nav);border-bottom:1px solid var(--border)}
-.nav-in{max-width:1140px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:22px}
+.nav-in{max-width:1140px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:20px}
 .logo{font-weight:700;font-size:1.15rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav-links{display:flex;gap:18px;margin-left:auto;font-size:.9rem;color:var(--muted)}
-.nav-links a:hover{color:var(--text)}
-#themeBtn{margin-left:6px;background:var(--chipbg);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:6px 11px;cursor:pointer;font-size:.9rem}
-@media(max-width:820px){.nav-links{display:none}}
+.nav-links a{position:relative;padding:2px 0;transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--grad);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover,.nav-links a.on{color:var(--text)}
+.nav-links a:hover::after,.nav-links a.on::after{transform:scaleX(1)}
+.nav-cta{display:flex;align-items:center;gap:8px;margin-left:auto}
+.nav-links+.nav-cta{margin-left:0}
+.n8n-btn{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:600;padding:7px 13px;border-radius:10px;
+  border:1px solid var(--n8n);color:var(--text);background:color-mix(in srgb,var(--n8n) 9%,transparent);
+  transition:box-shadow .2s,transform .2s,background .2s;white-space:nowrap}
+.n8n-btn img{height:15px;width:auto;display:block}
+.n8n-btn:hover{transform:translateY(-1px);background:color-mix(in srgb,var(--n8n) 18%,transparent);box-shadow:0 6px 20px color-mix(in srgb,var(--n8n) 34%,transparent)}
+#themeBtn{background:var(--chipbg);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:6px 11px;cursor:pointer;font-size:.9rem;transition:transform .2s,border-color .2s}
+#themeBtn:hover{transform:translateY(-1px);border-color:var(--accent)}
+@media(max-width:980px){.nav-links{display:none}.nav-cta{margin-left:auto}}
+@media(max-width:520px){.n8n-btn span{display:none}}
 
 .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-section{padding:130px 0 70px;scroll-margin-top:90px}
+section{padding:120px 0 60px;scroll-margin-top:90px}
 
-.hero{padding:168px 0 66px}
+.hero{padding:160px 0 60px}
 .hello{color:var(--accent2);font-weight:600;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}
 .hero h1{font-size:clamp(2.5rem,6vw,4.3rem);line-height:1.05;margin:14px 0 10px}
 .hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .type-row{font-size:clamp(1.1rem,2.6vw,1.5rem);color:var(--muted);min-height:2.2em;font-weight:500}
 #typed{color:var(--text);border-right:2px solid var(--accent2);padding-right:3px}
-.hero p.lead{max-width:640px;color:var(--muted);margin:18px 0 8px}
+.hero p.lead{max-width:660px;color:var(--muted);margin:18px 0 8px}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
-.badge{font-size:.8rem;border:1px solid var(--border);background:var(--chipbg);color:var(--muted);padding:6px 12px;border-radius:999px}
+.badge{font-size:.8rem;border:1px solid var(--border);background:var(--chipbg);color:var(--muted);padding:6px 12px;border-radius:999px;transition:border-color .2s,transform .2s}
+.badge:hover{border-color:var(--accent);transform:translateY(-1px)}
 .badge b{color:var(--text);font-weight:600}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:.92rem;border:1px solid var(--border);transition:transform .15s,box-shadow .15s;cursor:pointer;font-family:inherit}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:.92rem;border:1px solid var(--border);transition:transform .15s,box-shadow .15s,border-color .15s;cursor:pointer;font-family:inherit}
+.btn::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transition:left .55s}
+.btn:hover::after{left:130%}
 .btn:hover{transform:translateY(-2px)}
 .btn.primary{background:var(--grad);color:#fff;border:none;box-shadow:0 8px 26px #7c6bff45}
+.btn.primary:hover{box-shadow:0 12px 32px #7c6bff66}
 .btn.ghost{background:var(--card);color:var(--text)}
+.btn.ghost:hover{border-color:var(--accent)}
+/* brand buttons: flat until hover, then they fill with the brand colour */
+.btn.brand{background:var(--card);border:1px solid transparent;color:var(--text);
+  transition:transform .15s,background .25s,color .25s,box-shadow .25s}
+.btn.brand .blogo{height:16px;width:16px;object-fit:contain;display:block;transition:filter .25s}
+.n8nmark{position:relative;display:block;width:27px;height:15px;flex:0 0 27px}
+.n8nmark img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:opacity .22s}
+.n8nmark img.w{opacity:0}
+.btn.n8n:hover .n8nmark img{opacity:0}
+.btn.n8n:hover .n8nmark img.w{opacity:1}
+.btn.brand:hover{color:#fff}
+.btn.cv:hover{background:var(--accent);box-shadow:0 10px 30px #7c6bff55}
+.btn.n8n:hover{background:var(--n8n);box-shadow:0 10px 30px color-mix(in srgb,var(--n8n) 50%,transparent)}
+.limark{color:#0a66c2;transition:color .25s}
+.btn.li:hover .limark{color:#fff}
+.btn.li:hover{background:#0a66c2;box-shadow:0 10px 30px #0a66c255}
+.btn.gh:hover{background:#181717;box-shadow:0 10px 30px #00000066}
+[data-theme="light"] .btn.gh:hover{background:#24292f}
+.btn.gm:hover{background:#fff;color:#1b1b25;box-shadow:0 10px 30px #00000033}
 
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:60px}
-.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 18px;text-align:center}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:56px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 18px;text-align:center;transition:transform .2s,border-color .2s,box-shadow .2s}
+.stat:hover{transform:translateY(-4px);border-color:#7c6bff66;box-shadow:0 14px 34px rgba(124,107,255,.14)}
 .stat .num{font-family:'Space Grotesk';font-size:1.7rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat .lbl{font-size:.78rem;color:var(--muted);margin-top:4px}
 
 .sec-tag{color:var(--accent2);font-weight:700;letter-spacing:.14em;font-size:.82rem;text-transform:uppercase}
 h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
-.sec-sub{color:var(--muted);max-width:660px;margin-bottom:36px}
+.sec-sub{color:var(--muted);max-width:680px;margin-bottom:34px}
 
 .about-grid{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
 @media(max-width:800px){.about-grid{grid-template-columns:1fr}}
-.avatar{width:230px;height:230px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative}
+.avatar{width:230px;height:230px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative;transition:box-shadow .3s}
+.avatar:hover{box-shadow:0 18px 44px rgba(124,107,255,.22)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;z-index:2}
 .avatar .mono{font-family:'Space Grotesk';font-size:3.4rem;font-weight:700;color:#fff}
 .about p{color:var(--muted);margin-bottom:14px}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:18px}
-.fact{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;font-size:.86rem;color:var(--muted)}
+.fact{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;font-size:.86rem;color:var(--muted);transition:transform .2s,border-color .2s}
+.fact:hover{transform:translateY(-3px);border-color:#7c6bff55}
 .fact b{color:var(--text);display:block;font-size:.92rem;margin-bottom:2px}
 
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.spotlight{margin-top:30px;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px 24px;position:relative;overflow:hidden}
+.spotlight::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 160px at 12% 0%,var(--glow),transparent 70%);pointer-events:none}
+.spotlight h3{font-size:1.02rem;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.spotlight h3 .cmark{width:26px;height:26px;border-radius:7px;flex:0 0 26px;display:block}
+.spotlight p{color:var(--muted);font-size:.9rem;margin:0}
+.spotlight .kb{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.spotlight .kb span{font-size:.76rem;background:var(--chipbg);border:1px solid var(--border);color:var(--muted);padding:5px 11px;border-radius:999px}
+.spotlight .kb span b{color:var(--accent2);font-weight:600}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
 .fbtn{background:var(--chipbg);border:1px solid var(--border);color:var(--muted);padding:8px 16px;border-radius:999px;font-size:.84rem;cursor:pointer;font-weight:500;transition:all .2s;font-family:inherit}
+.fbtn:hover{color:var(--text);border-color:var(--accent)}
 .fbtn.active{background:var(--grad);color:#fff;border-color:transparent}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
-.pcard{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .2s,border-color .2s,box-shadow .2s}
-.pcard:hover{transform:translateY(-4px);border-color:#7c6bff77;box-shadow:var(--shadow)}
+.pcard{position:relative;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;overflow:hidden}
+.pcard::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .3s;pointer-events:none;
+  background:radial-gradient(340px circle at var(--mx,50%) var(--my,0%),var(--glow),transparent 65%)}
+.pcard:hover::before{opacity:1}
+.pcard:hover{transform:translateY(-5px);border-color:#7c6bff77;box-shadow:var(--shadow)}
+.pcard.star{border-color:#7c6bff55}
+.pcard.star::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad)}
 .pcard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .pcard h3{font-size:1.06rem;line-height:1.3}
 .pcard .impact{font-size:.74rem;font-weight:700;color:var(--accent2);white-space:nowrap;background:#2dd4ee18;border:1px solid #2dd4ee3a;padding:4px 10px;border-radius:999px}
-.pcard p.desc{color:var(--muted);font-size:.89rem;flex-grow:1}
+.pcard p.desc{color:var(--muted);font-size:.89rem}
+.pcard .body{flex-grow:1}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{font-size:.72rem;background:var(--chipbg);border:1px solid var(--border);color:var(--muted);padding:3px 9px;border-radius:6px}
-.toolrow{display:flex;gap:8px;align-items:center;min-height:22px}
+.chip{font-size:.72rem;background:var(--chipbg);border:1px solid var(--border);color:var(--muted);padding:3px 9px;border-radius:6px;transition:transform .18s,border-color .18s,color .18s}
+.chip:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--text)}
+.toolrow{display:flex;gap:9px;align-items:center;min-height:24px;flex-wrap:wrap}
+.toolrow img.favicon{width:21px;height:21px;transition:transform .2s,filter .2s;filter:grayscale(.28)}
+.toolrow img.favicon:hover{transform:translateY(-2px) scale(1.14);filter:none}
+.pmore{background:none;border:none;color:var(--accent2);font-family:inherit;font-size:.8rem;font-weight:600;cursor:pointer;padding:0;text-align:left;display:inline-flex;align-items:center;gap:5px;width:fit-content}
+.pmore svg{transition:transform .25s}
+.pcard.open .pmore svg{transform:rotate(180deg)}
+.pdetail{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.pcard.open .pdetail{grid-template-rows:1fr}
+.pdetail>div{overflow:hidden}
+.pdetail p{color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}
+.pdetail .plink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:600;color:var(--accent)}
+.pdetail .plink:hover{text-decoration:underline}
+.media{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.shot{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--chipbg);cursor:zoom-in;flex:1 1 150px;max-width:100%}
+.shot img{width:100%;height:auto;display:block;transition:transform .3s}
+.shot:hover{border-color:#7c6bff88}
+.shot:hover img{transform:scale(1.05)}
+.shot.tall{flex:0 0 96px}
+.schema{margin-top:12px;border:1px solid var(--border);border-radius:10px;background:var(--chipbg);padding:10px}
+.schema svg{width:100%;height:auto;display:block}
+.schema .sb{fill:var(--card);stroke:#7c6bff66}
+.schema .sl{fill:var(--muted);font:600 8px Inter,sans-serif}
+.schema .st{fill:var(--text);font:700 9px 'Space Grotesk',sans-serif}
+.schema .sa{stroke:#7c6bff88;fill:none;stroke-width:1.4}
 
 .tl{position:relative;margin-left:10px;padding-left:34px;border-left:2px solid var(--border)}
 .tl-item{position:relative;padding-bottom:38px}
 .tl-item:last-child{padding-bottom:0}
-.tl-item::before{content:"";position:absolute;left:-43px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 5px var(--bg)}
+.tl-item::before{content:"";position:absolute;left:-43px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 5px var(--bg);transition:transform .25s,box-shadow .25s}
+.tl-item:hover::before{transform:scale(1.25);box-shadow:0 0 0 5px var(--bg),0 0 18px var(--accent)}
 .tl-item .when{font-size:.78rem;color:var(--accent2);font-weight:600;letter-spacing:.05em}
 .tl-item h3{font-size:1.12rem;margin:4px 0 2px;display:flex;align-items:center;gap:9px}
 .tl-item h3 img.favicon{width:22px;height:22px}
@@ -117,7 +204,8 @@ h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
 .promo{display:inline-block;font-size:.76rem;background:#7c6bff20;border:1px solid #7c6bff4d;color:var(--accent);padding:3px 10px;border-radius:999px;margin-top:6px;font-weight:600}
 
 .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.quote{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;position:relative}
+.quote{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;position:relative;transition:transform .25s,border-color .25s,box-shadow .25s}
+.quote:hover{transform:translateY(-4px);border-color:#7c6bff66;box-shadow:0 16px 40px rgba(124,107,255,.13)}
 .quote::before{content:"“";font-family:'Space Grotesk';font-size:3rem;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;position:absolute;top:10px;left:18px}
 .quote p{margin-top:22px;font-size:.95rem}
 .qwho{display:flex;align-items:center;gap:10px;margin-top:16px}
@@ -127,12 +215,14 @@ h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
 .quote-note{font-size:.76rem;color:var(--dim);margin-top:14px}
 
 .skill-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.sgroup{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
+.sgroup{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;transition:transform .25s,border-color .25s}
+.sgroup:hover{transform:translateY(-4px);border-color:#7c6bff55}
 .sgroup h3{font-size:.95rem;margin-bottom:14px;color:var(--accent2)}
 .sgroup .chips .chip{font-size:.8rem;padding:5px 11px}
 .chip.hot{border-color:#7c6bff77;color:var(--text)}
 .cert-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
-.cert{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;font-size:.9rem;display:flex;gap:14px;align-items:flex-start}
+.cert{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;font-size:.9rem;display:flex;gap:14px;align-items:flex-start;transition:transform .25s,border-color .25s}
+.cert:hover{transform:translateY(-3px);border-color:#7c6bff55}
 .cert img.favicon{width:26px;height:26px;margin-top:2px}
 .cert b{display:block;margin-bottom:3px}
 .cert span{color:var(--muted);font-size:.84rem;display:block}
@@ -145,6 +235,8 @@ h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
 .contact h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:12px}
 .contact p{color:var(--muted);max-width:520px;margin:0 auto 26px}
 footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;border-top:1px solid var(--border);margin-top:80px}
+footer .built{display:inline-flex;align-items:center;gap:6px;margin-top:8px}
+footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 
 #lightbox{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;background:rgba(2,4,10,.9);cursor:zoom-out;padding:20px}
 #lightbox.open{display:flex}
@@ -152,11 +244,16 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
 
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.vis{opacity:1;transform:none}
-@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}#typed{border-right:none}}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}#typed{border-right:none}
+  *{animation:none!important}
+  .btn:hover,.pcard:hover,.quote:hover,.stat:hover,.sgroup:hover,.cert:hover,.fact:hover{transform:none}
+}
 </style>
 </head>
 <body>
 <div class="bg-fx"></div>
+<div id="progress"></div>
 
 <nav>
   <div class="nav-in">
@@ -164,7 +261,9 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
     <div class="nav-links">
       <a href="#about">About</a><a href="#projects">Projects</a><a href="#voices">Testimonials</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
     </div>
-    <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+    <div class="nav-cta">
+      <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div>
   </div>
 </nav>
 
@@ -172,26 +271,27 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
   <div class="hello">Hi, I'm</div>
   <h1>Mathieu <span>Tellene</span></h1>
   <div class="type-row">I build <span id="typed"></span></div>
-  <p class="lead">AI &amp; Business Automation Analyst at Cabify and Industrial Engineer. I turn manual operations into production-grade AI systems — low-code-first, measured in € saved, hours recovered and conversion gained.</p>
+  <p class="lead">AI &amp; Business Automation Analyst at Cabify and Industrial Engineer. I turn manual operations into production-grade AI systems — low-code-first, measured in € verified, hours recovered and conversion gained.</p>
   <div class="badges">
-    <span class="badge">📍 <b>Berlin</b> — relocating Sep 2026</span>
+    <span class="badge">📍 <b>Berlin</b> — relocating Oct 2026</span>
     <span class="badge">🇪🇺 <b>EU citizen</b> · no work permit needed</span>
     <span class="badge">🗣 FR · ES · EN <b>(+DE learning)</b></span>
   </div>
   <div class="cta-row">
     <a class="btn primary" href="#projects">View projects ↓</a>
-    <a class="btn ghost" href="Mathieu_Tellene_CV_Berlin_EN.pdf" download><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a>
-    <a class="btn ghost" href="https://linkedin.com/in/mathieu-tellene" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a>
-    <a class="btn ghost" href="https://github.com/mathieutellene" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
-    <a class="btn ghost" href="mailto:tellenemathieu@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Email me</a>
+    <a class="btn brand cv" href="Mathieu_Tellene_CV_Berlin_EN.pdf" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View CV</a>
+    <a class="btn brand n8n" href="Mathieu_Tellene_n8n_Workflow_Portfolio.pdf" target="_blank" rel="noopener" title="26 live workflows, captured from the canvas"><span class="n8nmark"><img src="assets/n8n-logo.png" alt=""><img class="w" src="assets/n8n-logo-white.png" alt=""></span>n8n workflows</a>
+    <a class="btn brand li" href="https://linkedin.com/in/mathieu-tellene" target="_blank" rel="noopener"><svg class="limark" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a>
+    <a class="btn brand gh" href="https://github.com/mathieutellene" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+    <a class="btn brand gm" href="mailto:tellenemathieu@gmail.com"><img class="blogo" src="https://www.google.com/s2/favicons?domain=gmail.com&sz=128" alt="" onerror="this.remove()">Email me</a>
   </div>
   <div class="stats">
-    <div class="stat"><div class="num" data-count="20000" data-suffix="+">0</div><div class="lbl">vehicle images analysed by AI</div></div>
-    <div class="stat"><div class="num" data-count="470" data-prefix="€" data-suffix="K/mo">0</div><div class="lbl">incentives under automated verification</div></div>
+    <div class="stat"><div class="num" data-count="22000" data-suffix="+">0</div><div class="lbl">vehicle images analysed by AI</div></div>
+    <div class="stat"><div class="num" data-count="500" data-prefix="€" data-suffix="K/mo">0</div><div class="lbl">incentives under automated verification</div></div>
+    <div class="stat"><div class="num" data-count="15000" data-suffix="+">0</div><div class="lbl">chatbot interactions</div></div>
     <div class="stat"><div class="num" data-count="71" data-suffix="%">0</div><div class="lbl">QR-scan → ride-request conversion</div></div>
-    <div class="stat"><div class="num" data-count="5200" data-suffix="+">0</div><div class="lbl">chatbot interactions, month one</div></div>
     <div class="stat"><div class="num" data-count="58" data-prefix="+" data-suffix="%">0</div><div class="lbl">forecast accuracy vs. baseline</div></div>
-    <div class="stat"><div class="num" data-count="25" data-suffix="+">0</div><div class="lbl">automation workflows shipped</div></div>
+    <div class="stat"><div class="num" data-count="26" data-suffix="">0</div><div class="lbl">n8n workflows live in production</div></div>
   </div>
 </header>
 
@@ -201,14 +301,23 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
   <div class="about-grid reveal">
     <div class="avatar"><span class="mono">MT</span><img src="assets/profile.jpg" alt="Mathieu Tellene" onerror="this.remove()"></div>
     <div class="about">
-      <p>I'm an Industrial Engineer who found my sweet spot where operations meet AI. At Cabify (ride-hailing, 40+ cities) I went from Customer Operations trainee to OEx Automation Analyst in just eight months by doing one thing consistently: finding painful manual processes and shipping automations that make them disappear.</p>
-      <p>My toolkit is deliberately pragmatic — n8n for orchestration, Claude for reasoning, locally-trained ML models where LLMs are overkill, and just enough JavaScript/Python to glue it all together. Everything listed here runs in production with real users, real money and real deadlines — not tutorials.</p>
+      <p>I'm an Industrial Engineer who found my sweet spot where operations meet AI. At Cabify (ride-hailing, 40+ cities) I went from Customer Operations trainee to OEx Automation Analyst in ten months by doing one thing consistently: finding painful manual processes and shipping automations that make them disappear.</p>
+      <p>My toolkit is deliberately pragmatic — n8n for orchestration, Claude for reasoning, Claude Code for the things that need real software, locally-trained ML where LLMs are overkill, and enough Python/JavaScript to glue it together. Everything listed here runs in production with real users, real money and real deadlines — not tutorials.</p>
       <p>I also teach: selected by Talent Development, I run Cabify Academy's internal n8n workshops.</p>
       <div class="facts">
         <div class="fact"><b>Current role</b>OEx Automation Analyst @ Cabify</div>
         <div class="fact"><b>Education</b>BSc Industrial Organization Engineering (URJC, Oct 2026)</div>
         <div class="fact"><b>Beyond work</b>National-level triathlete · DJ · Entrepreneurship · Active Investor</div>
-        <div class="fact"><b>Next stop</b>Berlin, September 2026</div>
+        <div class="fact"><b>Next stop</b>Berlin, October 2026</div>
+      </div>
+      <div class="spotlight">
+        <h3><img class="cmark" src="assets/cabify-mark.png" alt="Cabify">Featured at Cabify's Global All Hands — September 2026</h3>
+        <p>My work was presented to the whole company in the ESP + HQ block: <b>AQM / DQM</b> and <b>booking a Cabify straight from WhatsApp</b>. AQM is built and shipped — it now runs the operation and Product has taken it on as a native initiative. <b>DQM is the one that sits inside the company's headline priorities for the second half of 2026</b>.</p>
+        <div class="kb">
+          <span><b>AQM</b> · asset quality — shipped</span>
+          <span><b>DQM</b> · driver quality — H2 priority</span>
+          <span><b>WhatsApp</b> · booking without the app</span>
+        </div>
       </div>
     </div>
   </div>
@@ -217,7 +326,7 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
 <section id="projects" class="wrap">
   <div class="sec-tag">Projects</div>
   <h2 class="sec-title">Built, shipped, measured</h2>
-  <p class="sec-sub">Production systems built at Cabify and beyond — measured in €, hours recovered and conversion gained. Detailed case studies available in interviews.</p>
+  <p class="sec-sub">Production systems built at Cabify and beyond — measured in €, hours recovered and conversion gained. Client names and internal links are kept out on purpose; full case studies in interviews.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="projectGrid"></div>
 </section>
@@ -227,23 +336,31 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
   <h2 class="sec-title">What stakeholders said</h2>
   <div class="quotes">
     <div class="quote reveal"><p>Tremendous work, team! I have no doubt that what's being built here will become the master process that enables us to deliver a superior service and differentiate on quality control within the sector. Congrats — let's go!! 🚀</p>
-      <div class="qwho"><div class="qav">AG<img src="https://avatars.slack-edge.com/2024-07-25/7489134160753_a3c5888f6e3d7875018f_192.png" alt="" onerror="this.remove()"></div><div class="who">Country Manager · Cabify Spain<br>on the AI fleet audit</div></div></div>
+      <div class="qwho"><div class="qav">AG</div><div class="who">Country Manager · Cabify ESP<br>on the AI fleet audit</div></div></div>
     <div class="quote reveal"><p>I'm blown away that you built all of this. CONGRATULATIONS!! 👏👏👏</p>
-      <div class="qwho"><div class="qav">EP<img src="https://avatars.slack-edge.com/2023-08-28/5809209077474_c70907bb40aae8c22b67_192.jpg" alt="" onerror="this.remove()"></div><div class="who">VP of Product · Cabify<br>on the AI fleet audit</div></div></div>
+      <div class="qwho"><div class="qav">EP</div><div class="who">VP of Product · Cabify<br>on the AI fleet audit</div></div></div>
     <div class="quote reveal"><p>Great progress on this battle: rides can now be cancelled, usage is rate-limited, all the data is being stored… Thanks Mat, great work 💪</p>
-      <div class="qwho"><div class="qav">KC<img src="https://avatars.slack-edge.com/2024-08-23/7622425343523_736132d0f4b6bf113393_192.png" alt="" onerror="this.remove()"></div><div class="who">Head of Operations &amp; Customer Experience · Cabify Spain<br>on the WhatsApp agent</div></div></div>
+      <div class="qwho"><div class="qav">KC</div><div class="who">Head of Operations &amp; Customer Experience · Cabify ESP<br>on the WhatsApp agent</div></div></div>
     <div class="quote reveal"><p>Team — we've completed the first ride order requested via WhatsApp, handled 100% automatically through n8n. Congratulations, Mat 👏</p>
-      <div class="qwho"><div class="qav">SP<img src="https://avatars.slack-edge.com/2023-08-11/5723931779301_ddf7faefde9898fa0842_192.png" alt="" onerror="this.remove()"></div><div class="who">Operational Excellence Manager · Cabify Spain</div></div></div>
+      <div class="qwho"><div class="qav">SP</div><div class="who">Operational Excellence Manager · Cabify ESP</div></div></div>
+    <div class="quote reveal"><p>Congratulations to Mat on the great work — it's an important step that will let us reduce errors and keep tightening control over the quality of our vehicles. Onward 🚀</p>
+      <div class="qwho"><div class="qav">DG</div><div class="who">Operational Excellence Specialist · Cabify ESP<br>on the AQM capture forms</div></div></div>
+    <div class="quote reveal"><p>First of all, a huge thank-you to everyone involved — but above all to Mat. 💜</p>
+      <div class="qwho"><div class="qav">JC</div><div class="who">Global Ads Ops &amp; Client Success Senior Specialist · Cabify<br>on AQM going autonomous for Ads</div></div></div>
+    <div class="quote reveal"><p>Top 🔝 — all the work it took to get here. Thank you! 👏</p>
+      <div class="qwho"><div class="qav">DB</div><div class="who">Ads Operations · Cabify<br>on the AQM campaign-assignment release</div></div></div>
     <div class="quote reveal"><p>Wow — tremendous! This pilot looks amazing. Keep us posted!</p>
-      <div class="qwho"><div class="qav">AV<img src="https://avatars.slack-edge.com/2017-06-29/205681666883_48958644a5931fa01fa1_192.jpg" alt="" onerror="this.remove()"></div><div class="who">Product Manager, B2B Mobility · Cabify<br>on the same-day API workaround</div></div></div>
+      <div class="qwho"><div class="qav">AV</div><div class="who">Product Manager, B2B Mobility · Cabify<br>on the same-day API workaround</div></div></div>
+    <div class="quote reveal"><p>Congratulations on the great work, Mat!!</p>
+      <div class="qwho"><div class="qav">AP</div><div class="who">Operations Communications · partner fleet operator<br>external partner, on the AQM rollout</div></div></div>
     <div class="quote reveal"><p>A thousand thanks for the detail — and congratulations on such a creative and powerful solution!</p>
       <div class="qwho"><div class="qav">RP</div><div class="who">Head of Driver Experience &amp; Business Transformation · partner fleet</div></div></div>
     <div class="quote reveal"><p>From the local team, we never get tired of showcasing Mat's outstanding work on the vinyl-audit analysis 🚀</p>
-      <div class="qwho"><div class="qav">DG<img src="https://avatars.slack-edge.com/2025-06-06/9012286104866_3fd3fc80ad7acba2ab5d_192.jpg" alt="" onerror="this.remove()"></div><div class="who">Operational Excellence Specialist · Cabify Spain</div></div></div>
+      <div class="qwho"><div class="qav">DG</div><div class="who">Operational Excellence Specialist · Cabify ESP</div></div></div>
     <div class="quote reveal"><p>This work is top quality — it's going to help so many different teams. Congratulations!</p>
-      <div class="qwho"><div class="qav">FM<img src="https://avatars.slack-edge.com/2021-06-01/2123241513875_6e7627c8357aa285dec1_192.jpg" alt="" onerror="this.remove()"></div><div class="who">Rider Growth Specialist · Cabify Spain</div></div></div>
+      <div class="qwho"><div class="qav">FM</div><div class="who">Rider Growth Specialist · Cabify ESP</div></div></div>
   </div>
-  <div class="quote-note">Quotes translated from Spanish — internal Slack, 2026.</div>
+  <div class="quote-note">Quotes translated from Spanish — internal Slack, 2026. Names and photos withheld; titles are accurate.</div>
 </section>
 
 <section id="experience" class="wrap">
@@ -256,9 +373,10 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
       <div class="org">Cabify · Madrid (hybrid)</div>
       <span class="promo">Promoted twice in 8 months: Customer Ops Trainee → OEx Analyst → Automation Analyst</span>
       <ul>
-        <li>Own AI automation for Spanish operations: computer-vision fleet audits, conversational booking agents, forecasting, corporate-client integrations.</li>
-        <li>Selected to present the fleet audit system at Cabify's company-wide All Hands.</li>
-        <li>Internal n8n instructor at Cabify Academy (company-wide upskilling program).</li>
+        <li>Own AI automation for ESP operations: computer-vision fleet audits, conversational booking agents, forecasting, corporate-client integrations and internal tooling.</li>
+        <li>Two of my systems presented at Cabify's Global All Hands (ESP + HQ block), September 2026 — fleet quality and WhatsApp booking.</li>
+        <li>Built the fleet-quality programme to the point where Product took it over as a native initiative; I still run and maintain the live system.</li>
+        <li>Internal n8n instructor at Cabify Academy (company-wide upskilling programme).</li>
       </ul>
     </div>
     <div class="tl-item reveal">
@@ -286,41 +404,49 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
     <div class="sgroup reveal"><h3>⚡ Automation &amp; AI Agents</h3><div class="chips">
       <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=n8n.io&sz=64" alt="" onerror="this.remove()">n8n (advanced)</span>
       <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=claude.ai&sz=64" alt="" onerror="this.remove()">Claude API</span>
+      <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=claude.com&sz=64" alt="" onerror="this.remove()">Claude Code</span>
       <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=modelcontextprotocol.io&sz=64" alt="" onerror="this.remove()">MCP</span>
-      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=64" alt="" onerror="this.remove()">Claude Code</span>
-      <span class="chip">AI agents</span><span class="chip">Prompt engineering</span><span class="chip">RAG</span>
+      <span class="chip hot">Multi-agent pipelines</span>
+      <span class="chip">Prompt engineering</span><span class="chip">RAG</span><span class="chip">Agent evals &amp; guardrails</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=langchain.com&sz=64" alt="" onerror="this.remove()">LangChain</span>
+      <span class="chip">LiteLLM gateway</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=ollama.com&sz=64" alt="" onerror="this.remove()">Ollama</span>
-      <span class="chip">OpenClaw</span>
-      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=developers.facebook.com&sz=64" alt="" onerror="this.remove()">Meta for Developers</span>
-      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=slack.com&sz=64" alt="" onerror="this.remove()">Slack API</span>
+      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=developers.facebook.com&sz=64" alt="" onerror="this.remove()">WhatsApp Cloud API</span>
+      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=slack.com&sz=64" alt="" onerror="this.remove()">Slack API · Events API</span>
       <span class="chip">REST · webhooks · OAuth</span><span class="chip">Web scraping</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=zendesk.com&sz=64" alt="" onerror="this.remove()">Zendesk</span>
     </div></div>
     <div class="sgroup reveal"><h3>🧠 Machine Learning</h3><div class="chips">
       <span class="chip hot">CNNs · OCR</span>
+      <span class="chip hot">Random Forest</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=64" alt="" onerror="this.remove()">PyTorch</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=tensorflow.org&sz=64" alt="" onerror="this.remove()">TensorFlow</span>
-      <span class="chip hot">Prophet</span><span class="chip">LightGBM</span><span class="chip">SARIMAX</span><span class="chip">Ensemble models</span><span class="chip">Erlang C (queueing)</span>
+      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=scikit-learn.org&sz=64" alt="" onerror="this.remove()">scikit-learn</span>
+      <span class="chip hot">Prophet</span><span class="chip">LightGBM</span><span class="chip">SARIMAX</span><span class="chip">Ensemble models</span>
+      <span class="chip">Feature engineering</span><span class="chip">KPI target modelling</span><span class="chip">Erlang C (queueing)</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=colab.google&sz=64" alt="" onerror="this.remove()">Google Colab</span>
     </div></div>
     <div class="sgroup reveal"><h3>🛠 Development &amp; Data</h3><div class="chips">
       <span class="chip hot">JavaScript</span>
-      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=python.org&sz=64" alt="" onerror="this.remove()">Python</span>
+      <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=python.org&sz=64" alt="" onerror="this.remove()">Python</span>
       <span class="chip">SQL</span>
-      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=script.google.com&sz=64" alt="" onerror="this.remove()">Google Apps Script</span>
+      <span class="chip hot"><img class="favicon" src="https://www.google.com/s2/favicons?domain=script.google.com&sz=64" alt="" onerror="this.remove()">Apps Script web apps</span>
+      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=about.gitlab.com&sz=64" alt="" onerror="this.remove()">GitLab (self-hosted)</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=tableau.com&sz=64" alt="" onerror="this.remove()">Tableau</span>
+      <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=cloud.google.com&sz=64" alt="" onerror="this.remove()">BigQuery</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=lookerstudio.google.com&sz=64" alt="" onerror="this.remove()">Looker Studio</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=lovable.dev&sz=64" alt="" onerror="this.remove()">Lovable</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=redis.io&sz=64" alt="" onerror="this.remove()">Redis</span>
+      <span class="chip">RPA</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=git-scm.com&sz=64" alt="" onerror="this.remove()">Git</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="" onerror="this.remove()">GitHub</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64" alt="" onerror="this.remove()">VS Code</span>
+      <span class="chip">Self-hosting · macOS services</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=64" alt="" onerror="this.remove()">Excel (advanced)</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=google.com&sz=64" alt="" onerror="this.remove()">Google Workspace</span>
     </div></div>
     <div class="sgroup reveal"><h3>📐 Industrial Engineering</h3><div class="chips">
-      <span class="chip">Process optimisation</span><span class="chip">Value Stream Mapping</span><span class="chip">ERP</span><span class="chip">PERT/CPM</span><span class="chip">Workforce planning</span><span class="chip">Supply chain &amp; logistics</span><span class="chip">Quality management</span>
+      <span class="chip">Process optimisation</span><span class="chip">Value Stream Mapping</span><span class="chip">ERP</span><span class="chip">PERT/CPM</span><span class="chip">Workforce planning</span><span class="chip">Supply chain &amp; logistics</span><span class="chip">Quality management</span><span class="chip">Stakeholder management</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=autodesk.com&sz=64" alt="" onerror="this.remove()">AutoCAD</span>
       <span class="chip"><img class="favicon" src="https://www.google.com/s2/favicons?domain=mathworks.com&sz=64" alt="" onerror="this.remove()">Matlab</span>
     </div></div>
@@ -334,14 +460,14 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
     <div class="cert reveal"><img class="favicon" src="https://www.google.com/s2/favicons?domain=deeplearning.ai&sz=128" alt="" onerror="this.remove()"><div><b>Machine Learning Specialization</b><span>Stanford University &amp; DeepLearning.AI — Feb 2026</span><a class="dip" data-dip="ml-spec" target="_blank">View diploma →</a><a class="dip" data-dip="ml-c1" target="_blank">1 · Supervised ML: Regression &amp; Classification →</a><a class="dip" data-dip="ml-c2" target="_blank">2 · Advanced Learning Algorithms →</a><a class="dip" data-dip="ml-c3" target="_blank">3 · Unsupervised Learning, Recommenders, RL →</a></div></div>
     <div class="cert reveal"><img class="favicon" src="https://www.google.com/s2/favicons?domain=harvard.edu&sz=128" alt="" onerror="this.remove()"><div><b>Business for All</b><span>Harvard Business School Publishing — 2024</span><a class="dip" data-dip="harvard" target="_blank">View diploma →</a></div></div>
     <div class="cert reveal"><img class="favicon" src="https://www.google.com/s2/favicons?domain=santanderx.com&sz=128" alt="" onerror="this.remove()"><div><b>Entrepreneurship</b><span>Santander X Explorer — 2024 · Tech Business Acceleration Program — Spinout, 2023–24</span><a class="dip" data-dip="santander" target="_blank">View Santander X diploma →</a><a class="dip" data-dip="spinout" target="_blank">View Spinout certificate →</a></div></div>
-    <div class="cert prog reveal"><img class="favicon" src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=128" alt="" onerror="this.remove()"><div><b>In progress (2026)</b><span>Microsoft Power Platform Fundamentals PL-900 (Coursera) · Anthropic Academy — Claude API &amp; MCP</span></div></div>
+    <div class="cert prog reveal"><img class="favicon" src="https://www.google.com/s2/favicons?domain=claude.com&sz=128" alt="" onerror="this.remove()"><div><b>In progress (2026)</b><span>Anthropic Academy — Claude API, Claude Code &amp; MCP · Microsoft Power Platform Fundamentals PL-900 (Coursera)</span></div></div>
   </div>
 </section>
 
 <section class="wrap" id="contact">
   <div class="contact reveal">
     <h2>Building a team in Berlin?</h2>
-    <p>I'm relocating in September 2026 and looking for a team where AI automation creates real operational leverage. If that sounds like yours, let's talk.</p>
+    <p>I'm relocating in October 2026 and looking for a team where AI automation creates real operational leverage. If that sounds like yours, let's talk.</p>
     <div class="cta-row" style="justify-content:center">
       <a class="btn primary" href="mailto:tellenemathieu@gmail.com">tellenemathieu@gmail.com</a>
       <a class="btn ghost" href="https://linkedin.com/in/mathieu-tellene" target="_blank" rel="noopener">LinkedIn</a>
@@ -352,6 +478,7 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
 
 <footer>
   Designed &amp; built by Mathieu Tellene — plain HTML/CSS/JS, no frameworks, because the best demo of automation skills is a fast site.<br>
+  <span class="built"><img src="https://www.google.com/s2/favicons?domain=claude.com&sz=64" alt="" onerror="this.remove()">Built with Claude Code</span><br>
   © <span id="year"></span> · Madrid → Berlin
 </footer>
 
@@ -361,60 +488,154 @@ footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;b
 /* ================= DATA ================= */
 const FAV=d=>`<img class="favicon" src="https://www.google.com/s2/favicons?domain=${d}&sz=128" alt="${d}" title="${d}" onerror="this.remove()">`;
 
+/* inline schematic: a labelled chain of boxes, theme-aware */
+const SCHEMA=(items)=>{
+  const W=420,H=64,n=items.length,gap=13,bw=(W-8-(n-1)*gap)/n,y=14,bh=36;
+  let o=`<div class="schema"><svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  items.forEach((t,i)=>{
+    const x=4+i*(bw+gap);
+    o+=`<rect class="sb" x="${x}" y="${y}" width="${bw}" height="${bh}" rx="7" stroke-width="1.2"/>`;
+    const words=t.split(' · ');
+    words.forEach((wd,k)=>{
+      o+=`<text class="${k===0?'st':'sl'}" x="${x+bw/2}" y="${y+(words.length===1?22:15+k*11)}" text-anchor="middle">${wd}</text>`;
+    });
+    if(i<n-1){const ax=x+bw+2;o+=`<path class="sa" d="M${ax},${y+bh/2} L${ax+gap-4},${y+bh/2}"/><path class="sa" d="M${ax+gap-8},${y+bh/2-3} L${ax+gap-4},${y+bh/2} L${ax+gap-8},${y+bh/2+3}"/>`;}
+  });
+  return o+'</svg></div>';
+};
+
 const PROJECTS=[
- {slug:"fleet-audit",title:"AI Fleet Audit System",impact:"€470K/mo verified",
-  tags:["Computer Vision","AI Agents","Low-Code"],tools:["n8n.io","anthropic.com","google.com","tableau.com"],
-  desc:"Continuous quality auditing of a 4,000+ vehicle fleet with n8n from driver-submitted photos: vinyl branding type & condition, damage, cleanliness and plate OCR."},
+ {slug:"aqm",title:"AQM — Asset Quality Management",impact:"€500K/mo verified",star:true,
+  tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
+  tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
+  desc:"Continuous AI quality auditing of a 21,000+ vehicle fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Built, shipped, and now handed to Product as a native initiative.",
+  detail:"Capture first: four live forms from one codebase that reconfigures itself per domain — driver version (plate + 4 photos, minimum friction) and vendor versions (date, action, region, comments). Plate autocomplete runs against the real master list, so nobody can invent a plate; a guided silhouette overlays the camera so framing is comparable between vehicles, which is exactly what the model needs later to tell \"not visible\" from \"actual defect\"; and an OCR check warns when the photo disagrees with the typed plate but never blocks the submission, because a false negative cannot leave a driver unpaid. Three versioned microservices behind it, CI/CD publishing all four sites in 5–12 minutes per push.<br><br>Then the engine. The v2 analyser makes one AI call per image instead of five, returning six fields at once across 17 vinyl categories, over five parallel branches per vehicle. Where an official reference exists it measures both images, builds a real-vs-reference collage at exact size and asks a strict-assessor prompt for complete / incomplete / not visible, with explicit anti-false-positive rules. Seven results merge into one verdict, and tokens and cost are logged per run, so the AI bill is auditable row by row. 96% accuracy, and human supervision down to about 1.5 hours a week.",
+  shots:[["assets/shots/aqm-canvas.jpg","The v2 analysis engine — 81 nodes, five parallel branches per vehicle"],["assets/shots/ocr-canvas.jpg","The plate-OCR microservice behind the capture form"]]},
+
+ {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"71% QR conversion",star:true,
+  tags:["AI Agents","Low-Code"],tools:["whatsapp.com","developers.facebook.com","n8n.io","claude.ai","redis.io","zendesk.com","sheets.google.com","cabify.com"],
+  desc:"Book a ride without downloading the app: scan a QR, have a conversation, get a quote, get a car. It produced the company's first fully automated ride — no human in the loop — and runs live at a stadium, an international airport and a corporate account.",
+  detail:"A six-phase state machine written as a ~2,500-word master prompt structured in XML blocks, so every rule is addressable and the conversation cannot skip a step. Claude runs through an internal gateway at temperature 0 with a hard iteration cap; Redis holds a 15-minute session window. Five tool sub-workflows cover address resolution, quoting, booking, cancellation and an emergency path that overrides everything else. Addresses are filtered to the operating region and snapped to the official coordinates of 44 city hubs, because a pickup point thirty metres off is a failed pickup. Anti-fraud runs before the agent: blacklist plus a message-rate ceiling. Seven response templates, a post-trip ticket opened automatically, every interaction written to a datatable for audit. Eleven workflows, ~190 live nodes.<br><br>The agent is useless if nobody scans, so I also designed and shipped the capture pack: 21 designs across 37 files — print-ready posters, flyers, counter cards, plus social and screen formats — every one carrying the same verified QR, built on the official brand portal without going through design.",
+  shots:[["assets/shots/whatsapp-canvas.jpg","The main agent: trigger → anti-fraud → AI Agent with five tools → seven response templates"]]},
+
+ {slug:"dqm",title:"DQM — Driver Quality Management",impact:"H2 flagship",star:true,
+  tags:["AI Agents","Machine Learning","Low-Code","Forecasting"],
+  tools:["tableau.com","claude.ai","n8n.io","sheets.google.com","python.org","slack.com","cabify.com"],
+  desc:"The company priority I am delivering right now: one 0–100 quality score per driver, built from signals that today live in five separate systems, with a forecast and an escalation ladder attached to it.",
+  detail:"The brief is short and hard: score the driver, forecast where that score is heading, propose how to improve it, and hang rewards and penalties off it. The work is not modelling — it is that no composite score exists today, and the closest thing is a loyalty tier that counts volume rather than quality, plus a bad-practice engine whose output is binary. The quality signals that matter are all trapped at trip level: route deviation, waiting time, speed per event, missed stops, chat and calls. Everything exists; nothing is aggregated per driver.<br><br>The score I have put forward for validation is a 0–100 index over a rolling 28-day window with a minimum trip count to qualify, weighted across five blocks — reliability 30, rider experience 25, conduct 25, compliance 10 and asset quality 10, that last one coming straight from AQM. Hard gates sit outside the weights: a serious red flag drops a driver into the critical band whatever the number says. Four bands, and a single escalation ladder — inform, support, limit, exclude.<br><br>Two constraints shape the whole design. Around 60% of the active base belongs to fleets, so you rarely act on the driver: you act with the fleet manager. And the legal frame requires informing the fleet before any measure is executed, which gives the rule I keep coming back to: <b>the score can be automatic, the sanction cannot be silent</b>. The economic lever reuses what already worked in AQM — condition incentives on the score instead of paying them by volume. Six-week roadmap, pilot on our own fleet first.",
+  schema:["Signals across 5 systems","Weighted score 0–100","Four bands","Inform → support → limit"]},
+
+ {slug:"rpa-fleet",title:"Fleet Products RPA · Supply Ops",impact:"21,800+ vehicles",
+  tags:["Low-Code","Web","Automation"],tools:["script.google.com","python.org","sheets.google.com","drive.google.com","slack.com","code.visualstudio.com","cabify.com"],
+  desc:"A rules engine and approval portal deciding which commercial products every vehicle in the fleet should carry — plus the unattended bridge that pushes the resulting changes into the RPA that executes them.",
+  detail:"I built the whole chain. A web app where operations composes a request — which products to add or remove, to which slice of the fleet — and watches the vehicle count update live as they narrow it. Nothing executes until someone approves. Behind it, 56 business rules define what each fleet profile should carry, so any product on any car can be explained. Every working day at 09:00 a scheduled pass compares the day's fleet against those rules and produces exactly what is missing and what is left over.<br><br>The hard part was never the rules: it was the login. The internal tools sit behind SSO with 2FA and the credential is an HttpOnly session cookie that only exists inside a real browser. I attacked that three ways and documented what each one could and could not do. What runs today is a Playwright service on a Mac mini with a persistent browser profile: 2FA once, reused until it expires, a Slack warning when it does, and a processed-file log so a submission is never duplicated. Verified end to end before it touched anything real, with a written safeguard that the first pass against the live folder needs explicit confirmation.",
+  shots:[["assets/shots/rpa-request.jpg","Composing a request — live vehicle count, nothing runs without approval"],["assets/shots/rpa-daily.jpg","The daily 09:00 pass and its history"],["assets/shots/rpa-rules.jpg","One of the 56 business rules, fully explainable"]]},
+
+ {slug:"email-pipeline",title:"Email-to-Reservation Pipeline (B2B)",impact:"200–300 rides/day",star:true,
+  tags:["AI Agents","Low-Code","Automation"],tools:["n8n.io","claude.ai","drive.google.com","sheets.google.com","script.google.com","slack.com","cabify.com"],
+  desc:"Fully automated, end to end: two documents arrive by email from two different senders, and the ride is created and the driver assigned without anyone touching it.",
+  detail:"For a corporate account (a national public broadcaster). The client emails an Excel of what it wants; the fleet supplier emails a PDF of what it will actually do — driver, plate, route. They do not always agree, and the mismatch used to surface after the car was already booked. Now two AI agents read each stream as it lands, normalise them and cross-check eight fields, three of which are blocking. When both documents are in and the check passes, the pipeline books the ride against the public API and pre-assigns the named driver by itself, then posts the result to Slack. When the check fails it does the opposite of guessing: it refuses to book, names the field that disagrees, attaches the PDF and raises it for a human.<br><br>Assigning the driver is its own small problem, because the name on a PDF is not an id. A matching agent generates search variants — phone in three formats, national id — scores the candidates it finds, and assigns directly on an exact unique id match. Anything ambiguous goes to the model, and then a validation step requires that the id it returned actually exists in the candidate list, with a deterministic fallback. An invented id never reaches the write call.",
+  shots:[["assets/shots/b2b-canvas.jpg","Two Drive triggers, two AI agents, eight-field cross-check and the Slack trace"]]},
+
+ {slug:"cabibot",title:"CabiBot — Help Center AI Agent",impact:"15,000+ interactions",
+  tags:["AI Agents","Low-Code"],tools:["n8n.io","claude.ai","zendesk.com","redis.io","docs.google.com","whatsapp.com","cabify.com"],
+  desc:"Public-facing support agent embedded in the Help Center: it resolves rider sign-in and registration problems, and files a structured ticket when a human is genuinely needed.",
+  detail:"Live on the public Help Center. An agent with Redis conversational memory and two tools: live search against the help articles, and a ticket lookup for anything they do not cover. It opened at 1,450 conversations in week one with 86% self-resolution and has held above 90% since. Escalation is deliberate rather than automatic: it asks for consent, then hands Zendesk a structured summary, the validated data and the full transcript, so nobody has to ask the customer to repeat themselves.<br><br>When it cannot unblock a login it does something better than apologising — it offers to book the ride over WhatsApp instead, and the ride still happens. A side branch writes token usage back to a sheet, so the cost of every answered question stays visible.",
+  shots:[["assets/shots/cabibot-chat.jpg","Live on the public Help Center"],["assets/shots/cabibot-canvas.jpg","The agent: Redis memory, article search, ticket fallback"]],
+  link:"https://help.cabify.com",linkLabel:"See it live on help.cabify.com"},
+
  {slug:"hybrid-engine",title:"Hybrid ML + LLM Vision Engine",impact:"~80% AI cost cut",
-  tags:["Computer Vision","Machine Learning"],tools:["python.org","anthropic.com"],
-  desc:"Two-tier architecture: locally-trained CNN + OCR (16,000+ labelled images) for deterministic checks, LLM reserved for qualitative judgment calls."},
- {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"71% conversion",
-  tags:["AI Agents","Low-Code"],tools:["whatsapp.com","n8n.io","anthropic.com","redis.io","zendesk.com"],
-  desc:"End-to-end conversational booking for non-app users: QR scan → chat → booking → driver assignment → billing. Live at a major stadium and an international airport."},
- {slug:"cabibot",title:"CabiBot — Help Center AI Agent",impact:"90%+ self-resolved",
-  tags:["AI Agents","Low-Code"],tools:["n8n.io","anthropic.com","zendesk.com"],
-  desc:"Public-facing support agent embedded in the Help Center: resolves rider questions, opens accounts, and files structured tickets when a human is needed."},
- {slug:"email-pipeline",title:"Email-to-Reservation Pipeline",impact:"0 manual dispatch",
-  tags:["AI Agents","Low-Code"],tools:["n8n.io","google.com"],
-  desc:"For a corporate client (national public broadcaster): PDF work orders arriving by email become booked rides with drivers assigned — automatically."},
- {slug:"forecasting",title:"Demand Forecasting + Events Intelligence",impact:"+58% accuracy",
-  tags:["Machine Learning","Forecasting","AI Agents"],tools:["python.org","anthropic.com","google.com","tableau.com"],
-  desc:"City-level demand forecasting (Prophet + LightGBM + SARIMAX ensemble, 12 cities) fed by an AI events scanner that scores concerts, sport and festivals by demand impact."},
- {slug:"cops-board",title:"Ops Control Board",impact:"35 KPIs live",
-  tags:["Low-Code","Web"],tools:["n8n.io","tableau.com","lovable.dev","slack.com"],
-  desc:"Self-updating control tower: n8n extracts 35 Tableau processes weekly into a web app with automatic Slack alerts on deviations."},
+  tags:["Computer Vision","Machine Learning"],tools:["python.org","tensorflow.org","pytorch.org","colab.google","claude.ai","drive.google.com","code.visualstudio.com"],
+  desc:"The engine underneath the fleet audit: models I trained myself handle the deterministic checks, and the LLM is reserved for judgement calls.",
+  detail:"The dataset is the part almost nobody builds. I assembled it from the images the audit itself was already producing: ten class folders, one per real vinyl category, plus a reference folder holding the ideal pattern for each type — 16,000+ labelled images. That dataset is now a reusable company asset rather than a by-product.<br><br>Four models came out of it: a vinyl classifier (CNN in TensorFlow/Keras, with the trained artefact and class map versioned), a plate OCR validated against the ESP plate format, a condition model that compares a vehicle against the reference for its own class, and a rear-panel reader for the logo and the small regulatory labels. The architecture that followed is the point: deterministic checks resolve locally, and only low-confidence qualitative judgements escalate to the LLM. It cut the AI bill by around 80% and it keeps personal data — plates, surroundings — processed in-house, which is a privacy argument as much as a cost one.",
+  shots:[["assets/shots/ocr-canvas.jpg","The OCR service in production, wrapping the model"]]},
+
+ {slug:"forecasting",title:"Demand & KPI Forecasting Engine",impact:"+58% vs baseline",
+  tags:["Machine Learning","Forecasting"],tools:["python.org","colab.google","scikit-learn.org","tableau.com","lookerstudio.google.com","sheets.google.com","code.visualstudio.com"],
+  desc:"Four production notebooks forecasting operational KPIs across 12 cities — my own models, configured per indicator, not one global setting applied to everything.",
+  detail:"One notebook per metric family: requests by city, follow-up daily volume, the critical-process KPIs by audience, and mystery shopper. Each KPI carries its own configuration rather than inheriting a global one — logistic growth where there is a natural ceiling and linear where there is not, its own seasonality mode and prior scale — and each is compared against its quarterly target with a ±15% band. Prophet, LightGBM and SARIMAX ensemble according to the series, and every run writes a forecast log with predicted value, actual value and error per KPI, so the model can be audited afterwards instead of believed.<br><br>Before using Prophet I wrote my own study of it: the additive decomposition, what changepoints and the changepoint prior actually control, Fourier terms for seasonality, holiday windows, and the difference between MAP estimation and full Bayesian inference. That document also says when not to use it — series with no clear seasonality, or non-linear interactions an additive model will not capture.",
+  schema:["Prophet · LightGBM · SARIMAX","Per-KPI config","Ensemble","Forecast + error log"]},
+
+ {slug:"events",title:"Events Intelligence",impact:"13 regions · 215 events",
+  tags:["AI Agents","Forecasting","Machine Learning"],tools:["claude.ai","n8n.io","sheets.google.com","tableau.com","slack.com"],
+  desc:"The scheduled scanner that tells the operation what is about to move a city — before it moves. It feeds the forecast the one thing history cannot predict: the exception.",
+  detail:"Forecasting from history alone fails exactly when it matters — the night of a stadium concert, the week of a trade fair, the morning of a transport strike. This sweeps 13 regions on a fixed monthly and weekly cadence and scores every event for operational impact.<br><br>Two things make it useful rather than a calendar. First, thresholds are calibrated per city in four tiers, using real demand per region against municipal population — because a 30,000-person event does not weigh the same in Madrid as in Murcia, and the calibration surfaced that our weight does not track population at all. Second, it covers both directions: demand events (football, concerts, festivals, fairs, motorsport, esports, graduations) and supply-side disruption with no attendance figure at all (roadworks, metro closures, transport and taxi strikes, cruise calls, airport incidents, low-emission-zone changes, elections). The output is a 15-tab master file backed by a curated registry of around 90 official sources, plus a consolidated day-and-hour view that came from a specific request: one team covers every city at once, so they needed load by hour, not by city. The first production run returned 215 events, 43 of them critical.",
+  schema:["13 regions","~90 curated sources","4 city tiers","15-tab master file"]},
+
+ {slug:"cops-board",title:"Ops Control Board",impact:"35 processes live",
+  tags:["Low-Code","Web"],tools:["n8n.io","tableau.com","claude.ai","lovable.dev","script.google.com","sheets.google.com","slack.com"],
+  desc:"Self-updating control tower: n8n pulls 35 operational processes out of Tableau every week into one board, with automatic Slack alerts when something drifts.",
+  detail:"A dozen parallel branches each pull a live Tableau view, hand the chart image to an LLM to read and tag, flatten and map what comes back, and append it to a master sheet. A second branch parses the reports that arrive as emails and PDFs the same way, so a process reports identically whether it lives in a dashboard or an attachment. Deviations raise themselves in Slack instead of waiting for someone to notice at the weekly.<br><br>The unglamorous half came first: mapping 60+ processes from the KPI inventory to their actual Tableau views, filters included, and covering all five reporting frequencies — without touching anyone else's dashboards.",
+  shots:[["assets/shots/cops-canvas.jpg","108 nodes: a dozen parallel branches, one per process family"]]},
+
+ {slug:"local-agent",title:"Local AI Agent · Mac Mini",impact:"24/7, own hardware",
+  tags:["AI Agents"],tools:["claude.ai","anthropic.com","slack.com","python.org","modelcontextprotocol.io","gmail.com","drive.google.com","clickup.com","tableau.com"],
+  desc:"An always-on agent on a Mac mini that watches my work surface and drafts my replies in my own voice, with RAG memory across every tool I use.",
+  detail:"Answering a Slack message rarely costs time; rebuilding the context does — the earlier thread, the email where it was agreed, the meeting where it was decided, the doc with the numbers. So this is not a summariser: it researches each topic across every connected system before proposing anything.<br><br>I wrote the Slack app and took it through the workspace security review. It was approved on an explicit basis: read-only on my own conversations, no write scope on the user token, so it cannot post, send or edit anything as me. It runs every 20 minutes on working hours and splits what it finds into two lanes — items still waiting on me get full research and a draft; items I already handled get a light read to capture the decision, because handled threads are where the decisions live. A ten-step cycle with an anti-overlap lock and four layers of deduplication keeps it from repeating itself. Memory lives in local files, holding conclusions rather than transcripts. Drafts only: I send.",
+  schema:["Slack Events API","Action lane · research","Memory lane · decisions","Draft in my voice"]},
+
+ {slug:"assistant",title:"Personal AI Chief of Staff",impact:"On demand",
+  tags:["AI Agents"],tools:["claude.ai","modelcontextprotocol.io","slack.com","gmail.com","calendar.google.com","drive.google.com","tableau.com","clickup.com"],
+  desc:"Claude with my projects and MCP connectors wired to Slack, Gmail, Calendar, Drive, Tableau and ClickUp — triggered by me, not running in the background.",
+  detail:"Deliberately manual: I open it when I need it. The value is not autonomy, it is that the context is already there — the connectors mean it can read the thread, the doc, the dashboard and the ticket before answering, so the first draft is usually close. Six of the seven connectors are read-only, and anything that would write outside Slack is proposed and waits for me.<br><br>The always-on half of this idea is the Mac mini agent above; this one stays on demand on purpose, because a chief of staff that acts without being asked is a liability, not a feature.",
+  schema:["Slack · Gmail · Calendar","Drive · Tableau · ClickUp","Claude + MCP","Answer with context"]},
+
  {slug:"hackathon",title:"Smart Fleet Manager",impact:"Built in 1 day",
-  tags:["Web","AI Agents","Hackathon"],tools:["lovable.dev","elevenlabs.io","react.dev"],
-  desc:"Hackathon build (team of 3): real-time fleet portal with a unified Driver Quality Score and AI voice coaching for drivers. Live demo: cabify-lauria.lovable.app"},
- {slug:"assistant",title:"Personal AI Chief of Staff",impact:"Daily briefings",
-  tags:["AI Agents"],tools:["anthropic.com","slack.com","google.com","clickup.com","tableau.com"],
-  desc:"My own assistant: Claude + MCP connected to Slack, Gmail, Calendar, Drive, Tableau and ClickUp — with RAG memory and tone-aware drafting."}
+  tags:["Web","AI Agents","Hackathon"],tools:["lovable.dev","react.dev","elevenlabs.io","cabify.com"],
+  desc:"Hackathon build with a team of three: a real-time fleet portal with a unified Driver Quality Score, decision-impact simulator and AI voice coaching for drivers.",
+  detail:"One day, three people, a working product at the end of it — I led the build in Lovable (React 19) with AI-assisted development, and the demo went live and stayed up. The Driver Quality Score from this build is the direct ancestor of the DQM programme I am now delivering for real.",
+  link:"https://cabify-lauria.lovable.app/",linkLabel:"Open the live demo"}
 ];
 
 /* ================= RENDER CARDS + FILTERS ================= */
 const grid=document.getElementById('projectGrid');
-const allTags=[...new Set(PROJECTS.flatMap(p=>p.tags))];
+const allTags=[...new Set(PROJECTS.flatMap(p=>p.tags))].sort();
 const filters=document.getElementById('filters');
 const mkBtn=(t,active)=>{const b=document.createElement('button');b.className='fbtn'+(active?' active':'');b.textContent=t;b.onclick=()=>{document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderGrid(t);};return b;};
 filters.appendChild(mkBtn('All',true));
 allTags.forEach(t=>filters.appendChild(mkBtn(t,false)));
 
+const CARET='<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+
 function renderGrid(filter){
   grid.innerHTML='';
   PROJECTS.filter(p=>filter==='All'||p.tags.includes(filter)).forEach(p=>{
     const card=document.createElement('article');
-    card.className='pcard';
+    card.className='pcard'+(p.star?' star':'');
+    const media=(p.shots||[]).map(([src,alt])=>
+      `<div class="shot" data-full="${src}" title="${alt}"><img src="${src}" alt="${alt}" loading="lazy"></div>`).join('');
+    const mediaWrap=media?`<div class="media">${media}</div>`:'';
+    const schema=p.schema?SCHEMA(p.schema):'';
+    const link=p.link?`<a class="plink" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel||'Open'} ↗</a>`:'';
     card.innerHTML=`
       <div class="top"><h3>${p.title}</h3><span class="impact">${p.impact}</span></div>
-      <p class="desc">${p.desc}</p>
+      <div class="body">
+        <p class="desc">${p.desc}</p>
+        <div class="pdetail"><div><p>${p.detail}</p>${schema}${mediaWrap}${link}</div></div>
+      </div>
+      <button class="pmore" aria-expanded="false">How it works ${CARET}</button>
       <div class="toolrow">${(p.tools||[]).map(FAV).join('')}</div>
       <div class="chips">${p.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</div>`;
+    const btn=card.querySelector('.pmore');
+    btn.onclick=()=>{
+      const open=card.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.innerHTML=(open?'Show less ':'How it works ')+CARET;
+    };
+    card.querySelectorAll('.shot').forEach(sh=>{
+      sh.onclick=e=>{e.stopPropagation();lightbox(sh.dataset.full);};
+    });
+    card.addEventListener('pointermove',e=>{
+      const r=card.getBoundingClientRect();
+      card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      card.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
     grid.appendChild(card);
   });
 }
 renderGrid('All');
 
-/* ================= LIGHTBOX (diplomas) ================= */
+/* ================= LIGHTBOX ================= */
 const lb=document.getElementById('lightbox');
 function lightbox(src){lb.querySelector('img').src=src;lb.classList.add('open');}
 lb.onclick=()=>lb.classList.remove('open');
@@ -462,6 +683,22 @@ document.querySelectorAll('.num').forEach(el=>statObs.observe(el));
 /* ================= REVEAL ================= */
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* ================= SCROLL PROGRESS + ACTIVE NAV ================= */
+const bar=document.getElementById('progress');
+const navA=[...document.querySelectorAll('.nav-links a')];
+const secs=navA.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+let ticking=false;
+function onScroll(){
+  const h=document.documentElement;
+  bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  let idx=-1;
+  secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<=140)idx=i;});
+  navA.forEach((a,i)=>a.classList.toggle('on',i===idx));
+  ticking=false;
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+onScroll();
 
 /* ================= THEME ================= */
 const tbtn=document.getElementById('themeBtn');
