@@ -8,7 +8,16 @@
 <meta property="og:title" content="Mathieu Tellene — AI &amp; Business Automation">
 <meta property="og:description" content="Production AI automation: WhatsApp booking agents, hybrid CV/LLM audit pipelines, ML forecasting, agentic document pipelines. n8n · Claude · Python/JS. Berlin, Oct 2026.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/profile.jpg">
+<meta property="og:url" content="https://mathieutellene.github.io/">
+<meta property="og:site_name" content="Mathieu Tellene">
+<meta property="og:image" content="https://mathieutellene.github.io/assets/og-image.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mathieu Tellene — AI &amp; Business Automation Analyst · Berlin, October 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mathieu Tellene — AI &amp; Business Automation">
+<meta name="twitter:description" content="Production AI automation: WhatsApp booking agents, hybrid CV/LLM audit pipelines, ML forecasting, agentic document pipelines. n8n · Claude · Python/JS. Berlin, Oct 2026.">
+<meta name="twitter:image" content="https://mathieutellene.github.io/assets/og-image.png?v=2">
 <meta name="theme-color" content="#0a0e16">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +89,7 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 .hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .type-row{font-size:clamp(1.1rem,2.6vw,1.5rem);color:var(--muted);min-height:2.2em;font-weight:500}
 #typed{color:var(--text);border-right:2px solid var(--accent2);padding-right:3px}
-.hero p.lead{max-width:660px;color:var(--muted);margin:18px 0 8px}
+.hero p.lead{color:var(--muted);margin:18px 0 8px;max-width:none}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
 .badge{font-size:.8rem;border:1px solid var(--border);background:var(--chipbg);color:var(--muted);padding:6px 12px;border-radius:999px;transition:border-color .2s,transform .2s}
 .badge:hover{border-color:var(--accent);transform:translateY(-1px)}
@@ -112,6 +121,9 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 .btn.gh:hover{background:#181717;box-shadow:0 10px 30px #00000066}
 [data-theme="light"] .btn.gh:hover{background:#24292f}
 .btn.gm:hover{background:#fff;color:#1b1b25;box-shadow:0 10px 30px #00000033}
+#contact .btn.brand{background:var(--bg);border-color:var(--border)}
+#contact .btn.brand:hover{border-color:transparent}
+#contact .btn.gm:hover{border-color:var(--border)}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:56px}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 18px;text-align:center;transition:transform .2s,border-color .2s,box-shadow .2s}
@@ -121,21 +133,23 @@ section{padding:120px 0 60px;scroll-margin-top:90px}
 
 .sec-tag{color:var(--accent2);font-weight:700;letter-spacing:.14em;font-size:.82rem;text-transform:uppercase}
 h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
-.sec-sub{color:var(--muted);max-width:680px;margin-bottom:34px}
+.sec-sub{color:var(--muted);max-width:none;margin-bottom:34px}
+.hero p.lead b,.about p b,.sec-sub b{color:var(--text);font-weight:700}
 
-.about-grid{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
-@media(max-width:800px){.about-grid{grid-template-columns:1fr}}
-.avatar{width:230px;height:230px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative;transition:box-shadow .3s}
+.about-grid{display:block}
+.about-grid::after{content:"";display:block;clear:both}
+.avatar{float:left;width:212px;height:212px;margin:4px 30px 14px 0;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative;transition:box-shadow .3s}
 .avatar:hover{box-shadow:0 18px 44px rgba(124,107,255,.22)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;z-index:2}
 .avatar .mono{font-family:'Space Grotesk';font-size:3.4rem;font-weight:700;color:#fff}
 .about p{color:var(--muted);margin-bottom:14px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:18px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:18px;clear:left}
+@media(max-width:800px){.avatar{float:none;width:170px;height:170px;margin:0 0 18px}}
 .fact{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;font-size:.86rem;color:var(--muted);transition:transform .2s,border-color .2s}
 .fact:hover{transform:translateY(-3px);border-color:#7c6bff55}
 .fact b{color:var(--text);display:block;font-size:.92rem;margin-bottom:2px}
 
-.spotlight{margin-top:30px;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px 24px;position:relative;overflow:hidden}
+.spotlight{margin-top:18px;clear:left;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px 24px;position:relative;overflow:hidden}
 .spotlight::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 160px at 12% 0%,var(--glow),transparent 70%);pointer-events:none}
 .spotlight h3{font-size:1.02rem;margin-bottom:8px;display:flex;align-items:center;gap:10px}
 .spotlight h3 .cmark{width:26px;height:26px;border-radius:7px;flex:0 0 26px;display:block}
@@ -228,12 +242,12 @@ h2.sec-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 14px}
 .cert span{color:var(--muted);font-size:.84rem;display:block}
 .cert a.dip{color:var(--accent2);font-weight:600;font-size:.82rem;display:none;margin-top:6px;margin-right:12px}
 .cert a.dip[data-dip^="ml-c"]{display:none;font-weight:500;font-size:.78rem}
-.cert.prog{border-style:dashed}
+.cert.prog{border-style:dashed;grid-column:1/-1}
 
 .contact{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:56px 30px;text-align:center;position:relative;overflow:hidden}
 .contact::before{content:"";position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:500px;height:260px;background:radial-gradient(closest-side,#7c6bff2b,transparent);pointer-events:none}
 .contact h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:12px}
-.contact p{color:var(--muted);max-width:520px;margin:0 auto 26px}
+.contact p{color:var(--muted);max-width:660px;margin:0 auto 26px}
 footer{padding:34px 0 44px;color:var(--dim);font-size:.82rem;text-align:center;border-top:1px solid var(--border);margin-top:80px}
 footer .built{display:inline-flex;align-items:center;gap:6px;margin-top:8px}
 footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
@@ -271,7 +285,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   <div class="hello">Hi, I'm</div>
   <h1>Mathieu <span>Tellene</span></h1>
   <div class="type-row">I build <span id="typed"></span></div>
-  <p class="lead">AI &amp; Business Automation Analyst at Cabify and Industrial Engineer. I turn manual operations into production-grade AI systems — low-code-first, measured in € verified, hours recovered and conversion gained.</p>
+  <p class="lead"><b>AI &amp; Business Automation Analyst at Cabify</b> and <b>Industrial Engineer</b>. I turn manual operations into <b>production-grade AI systems</b> — low-code-first, measured in <b>€ verified</b>, <b>hours recovered</b> and <b>conversion gained</b>.</p>
   <div class="badges">
     <span class="badge">📍 <b>Berlin</b> — relocating Oct 2026</span>
     <span class="badge">🇪🇺 <b>EU citizen</b> · no work permit needed</span>
@@ -301,9 +315,9 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   <div class="about-grid reveal">
     <div class="avatar"><span class="mono">MT</span><img src="assets/profile.jpg" alt="Mathieu Tellene" onerror="this.remove()"></div>
     <div class="about">
-      <p>I'm an Industrial Engineer who found my sweet spot where operations meet AI. At Cabify (ride-hailing, 40+ cities) I went from Customer Operations trainee to OEx Automation Analyst in ten months by doing one thing consistently: finding painful manual processes and shipping automations that make them disappear.</p>
-      <p>My toolkit is deliberately pragmatic — n8n for orchestration, Claude for reasoning, Claude Code for the things that need real software, locally-trained ML where LLMs are overkill, and enough Python/JavaScript to glue it together. Everything listed here runs in production with real users, real money and real deadlines — not tutorials.</p>
-      <p>I also teach: selected by Talent Development, I run Cabify Academy's internal n8n workshops.</p>
+      <p>I'm an <b>Industrial Engineer</b> who found my sweet spot where <b>operations meet AI</b>. At <b>Cabify</b> (ride-hailing, 40+ cities) I went from <b>Customer Operations trainee to OEx Automation Analyst in ten months</b> by doing one thing consistently: finding painful manual processes and shipping automations that make them disappear.</p>
+      <p>My toolkit is deliberately pragmatic — <b>n8n</b> for orchestration, <b>Claude</b> for reasoning, <b>Claude Code</b> for the things that need real software, <b>locally-trained ML</b> where LLMs are overkill, and enough <b>Python/JavaScript</b> to glue it together. Everything listed here <b>runs in production with real users, real money and real deadlines</b> — not tutorials.</p>
+      <p>I also teach: selected by <b>Talent Development</b>, I run <b>Cabify Academy's internal n8n workshops</b>.</p>
       <div class="facts">
         <div class="fact"><b>Current role</b>OEx Automation Analyst @ Cabify</div>
         <div class="fact"><b>Education</b>BSc Industrial Organization Engineering (URJC, Oct 2026)</div>
@@ -326,7 +340,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 <section id="projects" class="wrap">
   <div class="sec-tag">Projects</div>
   <h2 class="sec-title">Built, shipped, measured</h2>
-  <p class="sec-sub">Production systems built at Cabify and beyond — measured in €, hours recovered and conversion gained. Client names and internal links are kept out on purpose; full case studies in interviews.</p>
+  <p class="sec-sub"><b>Production systems built at Cabify</b> and beyond — measured in <b>€</b>, <b>hours recovered</b> and <b>conversion gained</b>. Client names and internal links are kept out on purpose; full case studies in interviews.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="projectGrid"></div>
 </section>
@@ -469,9 +483,9 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
     <h2>Building a team in Berlin?</h2>
     <p>I'm relocating in October 2026 and looking for a team where AI automation creates real operational leverage. If that sounds like yours, let's talk.</p>
     <div class="cta-row" style="justify-content:center">
-      <a class="btn primary" href="mailto:tellenemathieu@gmail.com">tellenemathieu@gmail.com</a>
-      <a class="btn ghost" href="https://linkedin.com/in/mathieu-tellene" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn ghost" href="https://github.com/mathieutellene" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn brand gm" href="mailto:tellenemathieu@gmail.com"><img class="blogo" src="https://www.google.com/s2/favicons?domain=gmail.com&sz=128" alt="" onerror="this.remove()">tellenemathieu@gmail.com</a>
+      <a class="btn brand li" href="https://linkedin.com/in/mathieu-tellene" target="_blank" rel="noopener"><svg class="limark" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a>
+      <a class="btn brand gh" href="https://github.com/mathieutellene" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
     </div>
   </div>
 </section>
@@ -486,7 +500,26 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 
 <script>
 /* ================= DATA ================= */
-const FAV=d=>`<img class="favicon" src="https://www.google.com/s2/favicons?domain=${d}&sz=128" alt="${d}" title="${d}" onerror="this.remove()">`;
+/* Google subdomains all resolve to the generic Google favicon, so those marks are served locally */
+const LOGO={
+  "script.google.com":"assets/logos/appsscript.svg",
+  "sheets.google.com":"assets/logos/sheets.svg",
+  "drive.google.com":"assets/logos/drive.svg",
+  "docs.google.com":"assets/logos/docs.svg",
+  "calendar.google.com":"assets/logos/calendar.svg",
+  "colab.google":"assets/logos/colab.svg",
+  "lookerstudio.google.com":"assets/logos/looker.svg",
+  "cloud.google.com":"assets/logos/bigquery.svg"
+};
+const LABEL={
+  "script.google.com":"Google Apps Script","sheets.google.com":"Google Sheets",
+  "drive.google.com":"Google Drive","docs.google.com":"Google Docs",
+  "calendar.google.com":"Google Calendar","colab.google":"Google Colab",
+  "lookerstudio.google.com":"Looker Studio","cloud.google.com":"BigQuery"
+};
+const FAV=d=>LOGO[d]
+  ? `<img class="favicon" src="${LOGO[d]}" alt="${LABEL[d]||d}" title="${LABEL[d]||d}">`
+  : `<img class="favicon" src="https://www.google.com/s2/favicons?domain=${d}&sz=128" alt="${d}" title="${d}" onerror="this.remove()">`;
 
 /* inline schematic: a labelled chain of boxes, theme-aware */
 const SCHEMA=(items)=>{
@@ -656,7 +689,7 @@ document.querySelectorAll('a.dip').forEach(a=>{
 });
 
 /* ================= TYPING ================= */
-const phrases=["AI agents that book rides.","vision pipelines that audit fleets.","workflows that kill manual work.","forecasts that beat baselines.","automation people actually use."];
+const phrases=["AI agents that book rides.","automations that gate \u20ac500K every month.","vision models that audited 22,000+ car photos.","support agents that run without humans.","forecasts that beat the baseline.","systems that run in production, not in demos."];
 let pi=0,ci=0,del=false;
 const typed=document.getElementById('typed');
 (function type(){
