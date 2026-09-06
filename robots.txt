@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Mathieu_Tellene_n8n_Workflow_Portfolio.pdf
+
+Sitemap: https://mathieutellene.github.io/

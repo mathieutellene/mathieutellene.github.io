@@ -10,14 +10,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mathieutellene.github.io/">
 <meta property="og:site_name" content="Mathieu Tellene">
-<meta property="og:image" content="https://mathieutellene.github.io/assets/og-image.png?v=2">
+<meta property="og:image" content="https://mathieutellene.github.io/assets/og-image.png?v=4">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Mathieu Tellene — AI &amp; Business Automation Analyst · Berlin, October 2026">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mathieu Tellene — AI &amp; Business Automation">
 <meta name="twitter:description" content="Production AI automation: WhatsApp booking agents, hybrid CV/LLM audit pipelines, ML forecasting, agentic document pipelines. n8n · Claude · Python/JS. Berlin, Oct 2026.">
-<meta name="twitter:image" content="https://mathieutellene.github.io/assets/og-image.png?v=2">
+<meta name="twitter:image" content="https://mathieutellene.github.io/assets/og-image.png?v=4">
 <meta name="theme-color" content="#0a0e16">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -190,8 +190,8 @@ h2.sec-title{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spaci
 .pcard.open .pdetail{grid-template-rows:1fr}
 .pdetail>div{overflow:hidden}
 .pdetail p{color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}
-.pdetail .plink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:600;color:var(--accent)}
-.pdetail .plink:hover{text-decoration:underline}
+.plink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:600;color:var(--accent)}
+.plink:hover{text-decoration:underline}
 .media{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .shot{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--chipbg);cursor:zoom-in;flex:1 1 150px;max-width:100%}
 .shot img{width:100%;height:auto;display:block;transition:transform .3s}
@@ -225,8 +225,7 @@ h2.sec-title{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spaci
 .quote p{margin-top:22px;font-size:.95rem}
 .qwho{display:flex;align-items:center;gap:10px;margin-top:16px}
 .qwho .who{font-size:.8rem;color:var(--muted);font-weight:600}
-.qav{width:36px;height:36px;border-radius:50%;position:relative;flex:0 0 36px;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.78rem;font-family:'Space Grotesk'}
-.qav img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.qav{background:var(--grad);color:#fff;font-weight:700;font-size:.72rem;border-radius:20px;padding:5px 11px;align-self:flex-start;line-height:1.35;max-width:190px}
 .quote-note{font-size:.76rem;color:var(--dim);margin-top:14px}
 
 .skill-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
@@ -239,6 +238,7 @@ h2.sec-title{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spaci
 .cert{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;font-size:.9rem;display:flex;gap:14px;align-items:flex-start;transition:transform .25s,border-color .25s}
 .cert:hover{transform:translateY(-3px);border-color:#7c6bff55}
 .cert img.favicon{width:26px;height:26px;margin-top:2px}
+.favicon.inl{width:15px;height:15px;vertical-align:-2px;margin:0 4px 0 1px;display:inline-block}
 .cert b{display:block;margin-bottom:3px}
 .cert span{color:var(--muted);font-size:.84rem;display:block}
 .cert a.dip{color:var(--accent2);font-weight:600;font-size:.82rem;display:none;margin-top:6px;margin-right:12px}
@@ -256,6 +256,22 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 #lightbox{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;background:rgba(2,4,10,.9);cursor:zoom-out;padding:20px}
 #lightbox.open{display:flex}
 #lightbox img{max-width:96%;max-height:92vh;border-radius:12px}
+#ndagate{position:fixed;inset:0;background:rgba(5,8,14,.80);backdrop-filter:blur(6px);z-index:120;
+  display:none;align-items:center;justify-content:center;padding:24px}
+#ndagate.open{display:flex}
+.ndacard{background:var(--card);border:1px solid var(--border);border-radius:20px;max-width:580px;width:100%;
+  padding:28px 30px;box-shadow:var(--shadow);animation:ndain .22s ease}
+@keyframes ndain{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
+.ndahead{display:flex;align-items:center;gap:11px;color:var(--accent);margin-bottom:14px}
+.ndahead h3{font-family:Inter,system-ui,sans-serif;font-size:1.08rem;font-weight:700;letter-spacing:-.015em;color:var(--text)}
+.ndacard p{color:var(--muted);font-size:.9rem;line-height:1.6}
+.ndacard p b{color:var(--text)}
+.ndalist{list-style:none;margin:14px 0 16px;display:grid;gap:7px}
+.ndalist li{position:relative;padding-left:20px;color:var(--muted);font-size:.86rem}
+.ndalist li::before{content:"";position:absolute;left:3px;top:7px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.ndafoot{font-size:.82rem!important;border-top:1px solid var(--border);padding-top:13px}
+.ndabtns{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap}
+@media(max-width:520px){.ndabtns{justify-content:stretch}.ndabtns .btn{flex:1;justify-content:center}}
 
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.vis{opacity:1;transform:none}
@@ -302,9 +318,9 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   </div>
   <div class="stats">
     <div class="stat"><div class="num" data-count="22000" data-suffix="+">0</div><div class="lbl">vehicle images analysed by AI</div></div>
-    <div class="stat"><div class="num" data-count="500" data-prefix="€" data-suffix="K/mo">0</div><div class="lbl">incentives under automated verification</div></div>
-    <div class="stat"><div class="num" data-count="15000" data-suffix="+">0</div><div class="lbl">chatbot interactions</div></div>
-    <div class="stat"><div class="num" data-count="71" data-suffix="%">0</div><div class="lbl">QR-scan → ride-request conversion</div></div>
+    <div class="stat"><div class="num" data-count="96" data-suffix="%">0</div><div class="lbl">audit agreement with human review</div></div>
+    <div class="stat"><div class="num" data-count="15000" data-suffix="+">0</div><div class="lbl">chatbot conversations handled</div></div>
+    <div class="stat"><div class="num" data-count="80" data-prefix="~" data-suffix="%">0</div><div class="lbl">lower AI inference cost</div></div>
     <div class="stat"><div class="num" data-count="58" data-prefix="+" data-suffix="%">0</div><div class="lbl">forecast accuracy vs. baseline</div></div>
     <div class="stat"><div class="num" data-count="26" data-suffix="">0</div><div class="lbl">n8n workflows live in production</div></div>
   </div>
@@ -326,11 +342,11 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
         <div class="fact"><b>Next stop</b>Berlin, October 2026</div>
       </div>
       <div class="spotlight">
-        <h3><img class="cmark" src="assets/cabify-mark.png" alt="Cabify">Featured at Cabify's Global All Hands — September 2026</h3>
-        <p>My work was presented to the whole company in the ESP + HQ block: <b>AQM / DQM</b> and <b>booking a Cabify straight from WhatsApp</b>. AQM is built and shipped — it now runs the operation and Product has taken it on as a native initiative. <b>DQM is the one that sits inside the company's headline priorities for the second half of 2026</b>.</p>
+        <h3><img class="cmark" src="https://www.google.com/s2/favicons?domain=cabify.com&sz=128" alt="Cabify" onerror="this.remove()">Featured at Cabify's Global All Hands — September 2026</h3>
+        <p>My work was presented to the whole company in the ESP + HQ block: <b>AQM / DQM</b> and <b>booking a Cabify straight from WhatsApp</b>. AQM is built and shipped; <b>DQM is the one I am delivering now</b>.</p>
         <div class="kb">
           <span><b>AQM</b> · asset quality — shipped</span>
-          <span><b>DQM</b> · driver quality — H2 priority</span>
+          <span><b>DQM</b> · driver quality — in delivery</span>
           <span><b>WhatsApp</b> · booking without the app</span>
         </div>
       </div>
@@ -351,31 +367,31 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   <h2 class="sec-title">In their words</h2>
   <div class="quotes">
     <div class="quote reveal"><p>Tremendous work, team! I have no doubt that what's being built here will become the master process that enables us to deliver a superior service and differentiate on quality control within the sector. Congrats — let's go!! 🚀</p>
-      <div class="qwho"><div class="qav">AG</div><div class="who">Country Manager · Cabify ESP<br>on the AI fleet audit</div></div></div>
+      <div class="qwho"><div class="qav">Country Manager</div><div class="who">Cabify ESP · on the AI fleet audit</div></div></div>
     <div class="quote reveal"><p>I'm blown away that you built all of this. CONGRATULATIONS!! 👏👏👏</p>
-      <div class="qwho"><div class="qav">EP</div><div class="who">VP of Product · Cabify<br>on the AI fleet audit</div></div></div>
+      <div class="qwho"><div class="qav">VP of Product</div><div class="who">Cabify · on the AI fleet audit</div></div></div>
     <div class="quote reveal"><p>Great progress on this battle: rides can now be cancelled, usage is rate-limited, all the data is being stored… Thanks Mat, great work 💪</p>
-      <div class="qwho"><div class="qav">KC</div><div class="who">Head of Operations &amp; Customer Experience · Cabify ESP<br>on the WhatsApp agent</div></div></div>
+      <div class="qwho"><div class="qav">Head of Operations &amp; Customer Experience</div><div class="who">Cabify ESP · on the WhatsApp agent</div></div></div>
     <div class="quote reveal"><p>Team — we've completed the first ride order requested via WhatsApp, handled 100% automatically through n8n. Congratulations, Mat 👏</p>
-      <div class="qwho"><div class="qav">SP</div><div class="who">Operational Excellence Manager · Cabify ESP</div></div></div>
+      <div class="qwho"><div class="qav">Operational Excellence Manager</div><div class="who">Cabify ESP</div></div></div>
     <div class="quote reveal"><p>Congratulations to Mat on the great work — it's an important step that will let us reduce errors and keep tightening control over the quality of our vehicles. Onward 🚀</p>
-      <div class="qwho"><div class="qav">DG</div><div class="who">Operational Excellence Specialist · Cabify ESP<br>on the AQM capture forms</div></div></div>
+      <div class="qwho"><div class="qav">Operational Excellence Specialist</div><div class="who">Cabify ESP · on the AQM capture forms</div></div></div>
     <div class="quote reveal"><p>First of all, a huge thank-you to everyone involved — but above all to Mat. 💜</p>
-      <div class="qwho"><div class="qav">JC</div><div class="who">Global Ads Ops &amp; Client Success Senior Specialist · Cabify<br>on AQM going autonomous for Ads</div></div></div>
+      <div class="qwho"><div class="qav">Global Ads Ops &amp; Client Success Senior Specialist</div><div class="who">Cabify · on AQM going autonomous for Ads</div></div></div>
     <div class="quote reveal"><p>Top 🔝 — all the work it took to get here. Thank you! 👏</p>
-      <div class="qwho"><div class="qav">DB</div><div class="who">Ads Operations · Cabify<br>on the AQM campaign-assignment release</div></div></div>
+      <div class="qwho"><div class="qav">Ads Operations</div><div class="who">Cabify · on the AQM campaign-assignment release</div></div></div>
     <div class="quote reveal"><p>Wow — tremendous! This pilot looks amazing. Keep us posted!</p>
-      <div class="qwho"><div class="qav">AV</div><div class="who">Product Manager, B2B Mobility · Cabify<br>on the same-day API workaround</div></div></div>
+      <div class="qwho"><div class="qav">Product Manager, B2B Mobility</div><div class="who">Cabify · on the same-day API workaround</div></div></div>
     <div class="quote reveal"><p>Congratulations on the great work, Mat!!</p>
-      <div class="qwho"><div class="qav">AP</div><div class="who">Operations Communications · partner fleet operator<br>external partner, on the AQM rollout</div></div></div>
+      <div class="qwho"><div class="qav">Operations Communications</div><div class="who">partner fleet operator · external partner, on the AQM rollout</div></div></div>
     <div class="quote reveal"><p>A thousand thanks for the detail — and congratulations on such a creative and powerful solution!</p>
-      <div class="qwho"><div class="qav">RP</div><div class="who">Head of Driver Experience &amp; Business Transformation · partner fleet</div></div></div>
+      <div class="qwho"><div class="qav">Head of Driver Experience &amp; Business Transformation</div><div class="who">partner fleet</div></div></div>
     <div class="quote reveal"><p>From the local team, we never get tired of showcasing Mat's outstanding work on the vinyl-audit analysis 🚀</p>
-      <div class="qwho"><div class="qav">DG</div><div class="who">Operational Excellence Specialist · Cabify ESP</div></div></div>
+      <div class="qwho"><div class="qav">Operational Excellence Specialist</div><div class="who">Cabify ESP</div></div></div>
     <div class="quote reveal"><p>This work is top quality — it's going to help so many different teams. Congratulations!</p>
-      <div class="qwho"><div class="qav">FM</div><div class="who">Rider Growth Specialist · Cabify ESP</div></div></div>
+      <div class="qwho"><div class="qav">Rider Growth Specialist</div><div class="who">Cabify ESP</div></div></div>
   </div>
-  <div class="quote-note">Quotes translated from Spanish — internal Slack, 2026. Names and photos withheld; titles are accurate.</div>
+  <div class="quote-note">Quotes translated from ESP — internal Slack, 2026. Names and photos withheld; titles are accurate.</div>
 </section>
 
 <section id="experience" class="wrap">
@@ -405,9 +421,9 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
     </div>
     <div class="tl-item reveal">
       <div class="when">2021 — OCT 2026</div>
-      <h3><img class="favicon" src="https://www.google.com/s2/favicons?domain=urjc.es&sz=128" alt="URJC" onerror="this.remove()">BSc Industrial Organization Engineering</h3>
+      <h3><img class="favicon" src="https://icons.duckduckgo.com/ip3/aulavirtual.urjc.es.ico" alt="URJC" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://icons.duckduckgo.com/ip3/urjc.es.ico'}else{this.remove()}">BSc Industrial Organization Engineering</h3>
       <div class="org">Universidad Rey Juan Carlos · Madrid</div>
-      <ul><li>GPA 7.71/10 with honors distinctions · first year of Software Engineering completed at UPM (2020–21).</li></ul>
+      <ul><li>GPA 7.71/10 with honors distinctions · first year of Software Engineering completed at <img class="favicon inl" src="https://www.upm.es/favicon.ico" alt="UPM" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://icons.duckduckgo.com/ip3/upm.es.ico'}else{this.remove()}">UPM (2020–21).</li></ul>
     </div>
   </div>
 </section>
@@ -499,6 +515,26 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 
 <div id="lightbox"><img alt=""></div>
 
+<div id="ndagate" role="dialog" aria-modal="true" aria-labelledby="ndaTitle">
+  <div class="ndacard">
+    <div class="ndahead">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+      <h3 id="ndaTitle">Confidential — shared for evaluation only</h3>
+    </div>
+    <p>This document contains <b>system architecture belonging to my employer</b>. It is shared solely so you can assess my engineering work as part of a hiring process.</p>
+    <ul class="ndalist">
+      <li>Please do not redistribute, publish or reuse it.</li>
+      <li>No operating, financial or customer data is included.</li>
+      <li>No parameters, credentials or endpoints are shown.</li>
+    </ul>
+    <p class="ndafoot">By opening it you agree to keep it within your own evaluation process.</p>
+    <div class="ndabtns">
+      <button class="btn ghost" id="ndaNo">Cancel</button>
+      <a class="btn primary" id="ndaYes" href="#" target="_blank" rel="noopener">I agree — open the document</a>
+    </div>
+  </div>
+</div>
+
 <script>
 /* ================= DATA ================= */
 /* Google subdomains all resolve to the generic Google favicon, so those marks are served locally */
@@ -539,85 +575,64 @@ const SCHEMA=(items)=>{
 };
 
 const PROJECTS=[
- {slug:"aqm",title:"AQM — Asset Quality Management",impact:"€500K/mo verified",star:true,
+ {slug:"aqm",title:"AQM — Asset Quality Management",impact:"22,000+ images audited",star:true,
   tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
   tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
-  desc:"Continuous AI quality auditing of a 4,000+ vehicle fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Built, shipped, and now handed to Product as a native initiative.",
-  detail:"Capture first: four live forms from one codebase that reconfigures itself per domain — driver version (plate + 4 photos, minimum friction) and vendor versions (date, action, region, comments). Plate autocomplete runs against the real master list, so nobody can invent a plate; a guided silhouette overlays the camera so framing is comparable between vehicles, which is exactly what the model needs later to tell \"not visible\" from \"actual defect\"; and an OCR check warns when the photo disagrees with the typed plate but never blocks the submission, because a false negative cannot leave a driver unpaid. Three versioned microservices behind it, CI/CD publishing all four sites in 5–12 minutes per push.<br><br>Then the engine. The v2 analyser makes one AI call per image instead of five, returning six fields at once across 17 vinyl categories, over five parallel branches per vehicle. Where an official reference exists it measures both images, builds a real-vs-reference collage at exact size and asks a strict-assessor prompt for complete / incomplete / not visible, with explicit anti-false-positive rules. Seven results merge into one verdict, and tokens and cost are logged per run, so the AI bill is auditable row by row. 96% accuracy, and human supervision down to about 1.5 hours a week.",
-  shots:[["assets/shots/aqm-canvas.jpg","The v2 analysis engine — 81 nodes, five parallel branches per vehicle"],["assets/shots/ocr-canvas.jpg","The plate-OCR microservice behind the capture form"]]},
+  desc:"Continuous AI quality auditing of the ESP fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Over 22,000 images audited by the engine, at 96% agreement with human review."},
 
- {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"71% QR conversion",star:true,
+ {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"First fully automated ride",star:true,
   tags:["AI Agents","Low-Code"],tools:["whatsapp.com","developers.facebook.com","n8n.io","claude.ai","redis.io","zendesk.com","sheets.google.com","cabify.com"],
-  desc:"Book a ride without downloading the app: scan a QR, have a conversation, get a quote, get a car. It produced the company's first fully automated ride — no human in the loop — and runs live at a stadium, an international airport and a corporate account.",
-  detail:"A six-phase state machine written as a ~2,500-word master prompt structured in XML blocks, so every rule is addressable and the conversation cannot skip a step. Claude runs through an internal gateway at temperature 0 with a hard iteration cap; Redis holds a 15-minute session window. Five tool sub-workflows cover address resolution, quoting, booking, cancellation and an emergency path that overrides everything else. Addresses are filtered to the operating region and snapped to the official coordinates of 44 city hubs, because a pickup point thirty metres off is a failed pickup. Anti-fraud runs before the agent: blacklist plus a message-rate ceiling. Seven response templates, a post-trip ticket opened automatically, every interaction written to a datatable for audit. Eleven workflows, ~190 live nodes.<br><br>The agent is useless if nobody scans, so I also designed and shipped the capture pack: 21 designs across 37 files — print-ready posters, flyers, counter cards, plus social and screen formats — every one carrying the same verified QR, built on the official brand portal without going through design.",
-  shots:[["assets/shots/whatsapp-canvas.jpg","The main agent: trigger → anti-fraud → AI Agent with five tools → seven response templates"]]},
+  desc:"Book a ride without downloading the app: scan a QR, have a conversation, get a quote, get a car. It produced the company's first fully automated ride — no human in the loop — and runs live across several venues and corporate accounts."},
 
- {slug:"dqm",title:"DQM — Driver Quality Management",impact:"H2 flagship",star:true,
+ {slug:"dqm",title:"DQM — Driver Quality Management",impact:"Presented at All Hands",star:true,
   tags:["AI Agents","Machine Learning","Low-Code","Forecasting"],
   tools:["tableau.com","claude.ai","n8n.io","sheets.google.com","python.org","slack.com","cabify.com"],
-  desc:"The company priority I am delivering right now: one 0–100 quality score per driver, built from signals that today live in five separate systems, with a forecast and an escalation ladder attached to it.",
-  detail:"The brief is short and hard: score the driver, forecast where that score is heading, propose how to improve it, and hang rewards and penalties off it. The work is not modelling — it is that no composite score exists today, and the closest thing is a loyalty tier that counts volume rather than quality, plus a bad-practice engine whose output is binary. The quality signals that matter are all trapped at trip level: route deviation, waiting time, speed per event, missed stops, chat and calls. Everything exists; nothing is aggregated per driver.<br><br>The score I have put forward for validation is a 0–100 index over a rolling 28-day window with a minimum trip count to qualify, weighted across five blocks — reliability 30, rider experience 25, conduct 25, compliance 10 and asset quality 10, that last one coming straight from AQM. Hard gates sit outside the weights: a serious red flag drops a driver into the critical band whatever the number says. Four bands, and a single escalation ladder — inform, support, limit, exclude.<br><br>Two constraints shape the whole design. Around 60% of the active base belongs to fleets, so you rarely act on the driver: you act with the fleet manager. And the legal frame requires informing the fleet before any measure is executed, which gives the rule I keep coming back to: <b>the score can be automatic, the sanction cannot be silent</b>. The economic lever reuses what already worked in AQM — condition incentives on the score instead of paying them by volume. Six-week roadmap, pilot on our own fleet first.",
+  desc:"One 0–100 quality score per driver, built from signals that today live in five separate systems, with a forecast and an escalation ladder attached to it. Presented at the global All Hands; currently in delivery.",
   schema:["Signals across 5 systems","Weighted score 0–100","Four bands","Inform → support → limit"]},
 
- {slug:"rpa-fleet",title:"Fleet Products RPA · Supply Ops",impact:"21,800+ vehicles",
+ {slug:"rpa-fleet",title:"Fleet Products RPA · Supply Ops",impact:"Rules engine + RPA",
   tags:["Low-Code","Web","Automation"],tools:["script.google.com","python.org","sheets.google.com","drive.google.com","slack.com","code.visualstudio.com","cabify.com"],
-  desc:"A rules engine and approval portal deciding which commercial products every vehicle in the fleet should carry — plus the unattended bridge that pushes the resulting changes into the RPA that executes them.",
-  detail:"I built the whole chain. A web app where operations composes a request — which products to add or remove, to which slice of the fleet — and watches the vehicle count update live as they narrow it. Nothing executes until someone approves. Behind it, 56 business rules define what each fleet profile should carry, so any product on any car can be explained. Every working day at 09:00 a scheduled pass compares the day's fleet against those rules and produces exactly what is missing and what is left over.<br><br>The hard part was never the rules: it was the login. The internal tools sit behind SSO with 2FA and the credential is an HttpOnly session cookie that only exists inside a real browser. I attacked that three ways and documented what each one could and could not do. What runs today is a Playwright service on a Mac mini with a persistent browser profile: 2FA once, reused until it expires, a Slack warning when it does, and a processed-file log so a submission is never duplicated. Verified end to end before it touched anything real, with a written safeguard that the first pass against the live folder needs explicit confirmation.",
-  shots:[["assets/shots/rpa-request.jpg","Composing a request — live vehicle count, nothing runs without approval"],["assets/shots/rpa-daily.jpg","The daily 09:00 pass and its history"],["assets/shots/rpa-rules.jpg","One of the 56 business rules, fully explainable"]]},
+  desc:"A rules engine and approval portal deciding which commercial products each vehicle in the fleet should carry — plus the unattended bridge that pushes the resulting changes into the RPA that executes them."},
 
- {slug:"email-pipeline",title:"Email-to-Reservation Pipeline (B2B)",impact:"200–300 rides/day",star:true,
+ {slug:"email-pipeline",title:"Email-to-Reservation Pipeline (B2B)",impact:"Zero-touch, end to end",star:true,
   tags:["AI Agents","Low-Code","Automation"],tools:["n8n.io","claude.ai","drive.google.com","sheets.google.com","script.google.com","slack.com","cabify.com"],
-  desc:"Fully automated, end to end: two documents arrive by email from two different senders, and the ride is created and the driver assigned without anyone touching it.",
-  detail:"For a corporate account (a national public broadcaster). The client emails an Excel of what it wants; the fleet supplier emails a PDF of what it will actually do — driver, plate, route. They do not always agree, and the mismatch used to surface after the car was already booked. Now two AI agents read each stream as it lands, normalise them and cross-check eight fields, three of which are blocking. When both documents are in and the check passes, the pipeline books the ride against the public API and pre-assigns the named driver by itself, then posts the result to Slack. When the check fails it does the opposite of guessing: it refuses to book, names the field that disagrees, attaches the PDF and raises it for a human.<br><br>Assigning the driver is its own small problem, because the name on a PDF is not an id. A matching agent generates search variants — phone in three formats, national id — scores the candidates it finds, and assigns directly on an exact unique id match. Anything ambiguous goes to the model, and then a validation step requires that the id it returned actually exists in the candidate list, with a deterministic fallback. An invented id never reaches the write call.",
-  shots:[["assets/shots/b2b-canvas.jpg","Two Drive triggers, two AI agents, eight-field cross-check and the Slack trace"]]},
+  desc:"Fully automated, end to end: two documents arrive by email from two different senders, and the ride is created and the driver assigned without anyone touching it."},
 
  {slug:"cabibot",title:"CabiBot — Help Center AI Agent",impact:"15,000+ interactions",
   tags:["AI Agents","Low-Code"],tools:["n8n.io","claude.ai","zendesk.com","redis.io","docs.google.com","whatsapp.com","cabify.com"],
-  desc:"Public-facing support agent embedded in the Help Center: it resolves rider sign-in and registration problems, and files a structured ticket when a human is genuinely needed.",
-  detail:"Live on the public Help Center. An agent with Redis conversational memory and two tools: live search against the help articles, and a ticket lookup for anything they do not cover. It opened at 1,450 conversations in week one with 86% self-resolution and has held above 90% since. Escalation is deliberate rather than automatic: it asks for consent, then hands Zendesk a structured summary, the validated data and the full transcript, so nobody has to ask the customer to repeat themselves.<br><br>When it cannot unblock a login it does something better than apologising — it offers to book the ride over WhatsApp instead, and the ride still happens. A side branch writes token usage back to a sheet, so the cost of every answered question stays visible.",
-  shots:[["assets/shots/cabibot-chat.jpg","Live on the public Help Center"],["assets/shots/cabibot-canvas.jpg","The agent: Redis memory, article search, ticket fallback"]],
-  link:"https://help.cabify.com",linkLabel:"See it live on help.cabify.com"},
+  desc:"Public-facing support agent embedded in the Help Center: it resolves rider sign-in and registration problems, and files a structured ticket when a human is genuinely needed."},
 
  {slug:"hybrid-engine",title:"Hybrid ML + LLM Vision Engine",impact:"~80% AI cost cut",
   tags:["Computer Vision","Machine Learning"],tools:["python.org","tensorflow.org","pytorch.org","colab.google","claude.ai","drive.google.com","code.visualstudio.com"],
-  desc:"The engine underneath the fleet audit: models I trained myself handle the deterministic checks, and the LLM is reserved for judgement calls.",
-  detail:"The dataset is the part almost nobody builds. I assembled it from the images the audit itself was already producing: ten class folders, one per real vinyl category, plus a reference folder holding the ideal pattern for each type — 16,000+ labelled images. That dataset is now a reusable company asset rather than a by-product.<br><br>Four models came out of it: a vinyl classifier (CNN in TensorFlow/Keras, with the trained artefact and class map versioned), a plate OCR validated against the ESP plate format, a condition model that compares a vehicle against the reference for its own class, and a rear-panel reader for the logo and the small regulatory labels. The architecture that followed is the point: deterministic checks resolve locally, and only low-confidence qualitative judgements escalate to the LLM. It cut the AI bill by around 80% and it keeps personal data — plates, surroundings — processed in-house, which is a privacy argument as much as a cost one.",
-  shots:[["assets/shots/ocr-canvas.jpg","The OCR service in production, wrapping the model"]]},
+  desc:"The engine underneath the fleet audit: CNN and OCR models I trained myself on 16,000+ labelled images handle the deterministic checks, and the LLM is reserved for judgement calls."},
 
  {slug:"forecasting",title:"Demand & KPI Forecasting Engine",impact:"+58% vs baseline",
   tags:["Machine Learning","Forecasting"],tools:["python.org","colab.google","scikit-learn.org","tableau.com","lookerstudio.google.com","sheets.google.com","code.visualstudio.com"],
   desc:"Four production notebooks forecasting operational KPIs across 12 cities — my own models, configured per indicator, not one global setting applied to everything.",
-  detail:"One notebook per metric family: requests by city, follow-up daily volume, the critical-process KPIs by audience, and mystery shopper. Each KPI carries its own configuration rather than inheriting a global one — logistic growth where there is a natural ceiling and linear where there is not, its own seasonality mode and prior scale — and each is compared against its quarterly target with a ±15% band. Prophet, LightGBM and SARIMAX ensemble according to the series, and every run writes a forecast log with predicted value, actual value and error per KPI, so the model can be audited afterwards instead of believed.<br><br>Before using Prophet I wrote my own study of it: the additive decomposition, what changepoints and the changepoint prior actually control, Fourier terms for seasonality, holiday windows, and the difference between MAP estimation and full Bayesian inference. That document also says when not to use it — series with no clear seasonality, or non-linear interactions an additive model will not capture.",
   schema:["Prophet · LightGBM · SARIMAX","Per-KPI config","Ensemble","Forecast + error log"]},
 
  {slug:"events",title:"Events Intelligence",impact:"13 regions · 215 events",
   tags:["AI Agents","Forecasting","Machine Learning"],tools:["claude.ai","n8n.io","sheets.google.com","tableau.com","slack.com"],
   desc:"The scheduled scanner that tells the operation what is about to move a city — before it moves. It feeds the forecast the one thing history cannot predict: the exception.",
-  detail:"Forecasting from history alone fails exactly when it matters — the night of a stadium concert, the week of a trade fair, the morning of a transport strike. This sweeps 13 regions on a fixed monthly and weekly cadence and scores every event for operational impact.<br><br>Two things make it useful rather than a calendar. First, thresholds are calibrated per city in four tiers, using real demand per region against municipal population — because a 30,000-person event does not weigh the same in Madrid as in Murcia, and the calibration surfaced that our weight does not track population at all. Second, it covers both directions: demand events (football, concerts, festivals, fairs, motorsport, esports, graduations) and supply-side disruption with no attendance figure at all (roadworks, metro closures, transport and taxi strikes, cruise calls, airport incidents, low-emission-zone changes, elections). The output is a 15-tab master file backed by a curated registry of around 90 official sources, plus a consolidated day-and-hour view that came from a specific request: one team covers every city at once, so they needed load by hour, not by city. The first production run returned 215 events, 43 of them critical.",
   schema:["13 regions","~90 curated sources","4 city tiers","15-tab master file"]},
 
- {slug:"cops-board",title:"Ops Control Board",impact:"35 processes live",
+ {slug:"cops-board",title:"COPs Control Board",impact:"35 processes live",
   tags:["Low-Code","Web"],tools:["n8n.io","tableau.com","claude.ai","lovable.dev","script.google.com","sheets.google.com","slack.com"],
-  desc:"Self-updating control tower: n8n pulls 35 operational processes out of Tableau every week into one board, with automatic Slack alerts when something drifts.",
-  detail:"A dozen parallel branches each pull a live Tableau view, hand the chart image to an LLM to read and tag, flatten and map what comes back, and append it to a master sheet. A second branch parses the reports that arrive as emails and PDFs the same way, so a process reports identically whether it lives in a dashboard or an attachment. Deviations raise themselves in Slack instead of waiting for someone to notice at the weekly.<br><br>The unglamorous half came first: mapping 60+ processes from the KPI inventory to their actual Tableau views, filters included, and covering all five reporting frequencies — without touching anyone else's dashboards.",
-  shots:[["assets/shots/cops-canvas.jpg","108 nodes: a dozen parallel branches, one per process family"]]},
+  desc:"Self-updating control tower: n8n pulls 35 operational processes out of Tableau every week into one board, with automatic Slack alerts when something drifts."},
 
  {slug:"local-agent",title:"Local AI Agent · Mac Mini",impact:"24/7, own hardware",
   tags:["AI Agents"],tools:["claude.ai","anthropic.com","slack.com","python.org","modelcontextprotocol.io","gmail.com","drive.google.com","clickup.com","tableau.com"],
   desc:"An always-on agent on a Mac mini that watches my work surface and drafts my replies in my own voice, with RAG memory across every tool I use.",
-  detail:"Answering a Slack message rarely costs time; rebuilding the context does — the earlier thread, the email where it was agreed, the meeting where it was decided, the doc with the numbers. So this is not a summariser: it researches each topic across every connected system before proposing anything.<br><br>I wrote the Slack app and took it through the workspace security review. It was approved on an explicit basis: read-only on my own conversations, no write scope on the user token, so it cannot post, send or edit anything as me. It runs every 20 minutes on working hours and splits what it finds into two lanes — items still waiting on me get full research and a draft; items I already handled get a light read to capture the decision, because handled threads are where the decisions live. A ten-step cycle with an anti-overlap lock and four layers of deduplication keeps it from repeating itself. Memory lives in local files, holding conclusions rather than transcripts. Drafts only: I send.",
   schema:["Slack Events API","Action lane · research","Memory lane · decisions","Draft in my voice"]},
 
  {slug:"assistant",title:"Personal AI Chief of Staff",impact:"On demand",
   tags:["AI Agents"],tools:["claude.ai","modelcontextprotocol.io","slack.com","gmail.com","calendar.google.com","drive.google.com","tableau.com","clickup.com"],
   desc:"Claude with my projects and MCP connectors wired to Slack, Gmail, Calendar, Drive, Tableau and ClickUp — triggered by me, not running in the background.",
-  detail:"Deliberately manual: I open it when I need it. The value is not autonomy, it is that the context is already there — the connectors mean it can read the thread, the doc, the dashboard and the ticket before answering, so the first draft is usually close. Six of the seven connectors are read-only, and anything that would write outside Slack is proposed and waits for me.<br><br>The always-on half of this idea is the Mac mini agent above; this one stays on demand on purpose, because a chief of staff that acts without being asked is a liability, not a feature.",
   schema:["Slack · Gmail · Calendar","Drive · Tableau · ClickUp","Claude + MCP","Answer with context"]},
 
  {slug:"hackathon",title:"Smart Fleet Manager",impact:"Built in 1 day",
   tags:["Web","AI Agents","Hackathon"],tools:["lovable.dev","react.dev","elevenlabs.io","cabify.com"],
   desc:"Hackathon build with a team of three: a real-time fleet portal with a unified Driver Quality Score, decision-impact simulator and AI voice coaching for drivers.",
-  detail:"One day, three people, a working product at the end of it — I led the build in Lovable (React 19) with AI-assisted development, and the demo went live and stayed up. The Driver Quality Score from this build is the direct ancestor of the DQM programme I am now delivering for real.",
   link:"https://cabify-lauria.lovable.app/",linkLabel:"Open the live demo"}
 ];
 
@@ -636,29 +651,15 @@ function renderGrid(filter){
   PROJECTS.filter(p=>filter==='All'||p.tags.includes(filter)).forEach(p=>{
     const card=document.createElement('article');
     card.className='pcard'+(p.star?' star':'');
-    const media=(p.shots||[]).map(([src,alt])=>
-      `<div class="shot" data-full="${src}" title="${alt}"><img src="${src}" alt="${alt}" loading="lazy"></div>`).join('');
-    const mediaWrap=media?`<div class="media">${media}</div>`:'';
-    const schema=p.schema?SCHEMA(p.schema):'';
     const link=p.link?`<a class="plink" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel||'Open'} ↗</a>`:'';
     card.innerHTML=`
       <div class="top"><h3>${p.title}</h3><span class="impact">${p.impact}</span></div>
       <div class="body">
         <p class="desc">${p.desc}</p>
-        <div class="pdetail"><div><p>${p.detail}</p>${schema}${mediaWrap}${link}</div></div>
+        ${link}
       </div>
-      <button class="pmore" aria-expanded="false">How it works ${CARET}</button>
       <div class="toolrow">${(p.tools||[]).map(FAV).join('')}</div>
       <div class="chips">${p.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</div>`;
-    const btn=card.querySelector('.pmore');
-    btn.onclick=()=>{
-      const open=card.classList.toggle('open');
-      btn.setAttribute('aria-expanded',open);
-      btn.innerHTML=(open?'Show less ':'How it works ')+CARET;
-    };
-    card.querySelectorAll('.shot').forEach(sh=>{
-      sh.onclick=e=>{e.stopPropagation();lightbox(sh.dataset.full);};
-    });
     card.addEventListener('pointermove',e=>{
       const r=card.getBoundingClientRect();
       card.style.setProperty('--mx',(e.clientX-r.left)+'px');
@@ -668,6 +669,25 @@ function renderGrid(filter){
   });
 }
 renderGrid('All');
+
+/* ============ CONFIDENTIALITY GATE ============ */
+/* Shown every time: the notice is the point, so it is never remembered away. */
+(function(){
+  const gate=document.getElementById('ndagate'), yes=document.getElementById('ndaYes'),
+        no=document.getElementById('ndaNo');
+  const close=()=>gate.classList.remove('open');
+  document.querySelectorAll('a[href$="Workflow_Portfolio.pdf"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      e.preventDefault();
+      yes.href=a.getAttribute('href');
+      gate.classList.add('open');
+    });
+  });
+  no.onclick=close;
+  yes.onclick=close;
+  gate.addEventListener('click',e=>{if(e.target===gate)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+})();
 
 /* ================= LIGHTBOX ================= */
 const lb=document.getElementById('lightbox');
@@ -690,7 +710,7 @@ document.querySelectorAll('a.dip').forEach(a=>{
 });
 
 /* ================= TYPING ================= */
-const phrases=["AI agents that book rides.","automations that gate \u20ac500K every month.","vision models that audited 22,000+ car photos.","support agents that run without humans.","forecasts that beat the baseline.","systems that run in production, not in demos."];
+const phrases=["AI agents that book rides.","vision models that audited 22,000+ car photos.","support agents that run without humans.","forecasts that beat the baseline.","automations that survive a restart.","systems that run in production, not in demos."];
 let pi=0,ci=0,del=false;
 const typed=document.getElementById('typed');
 (function type(){
