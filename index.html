@@ -580,62 +580,62 @@ const SCHEMA=(items)=>{
 };
 
 const PROJECTS=[
- {slug:"aqm",title:"AQM — Asset Quality Management",impact:"22,000+ images audited",auto:"automatización n8n",star:true,
+ {slug:"aqm",title:"AQM — Asset Quality Management",impact:"22,000+ images audited",auto:"n8n automation",star:true,
   tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
   tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
   desc:"Continuous AI quality auditing of the ESP fleet: vinyl type and condition, damage, cleanliness and plate OCR, from photos submitted by drivers and wrapping vendors. Over 22,000 images audited by the engine, at 96% agreement with human review."},
 
- {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"First fully automated ride",auto:"automatización n8n",star:true,
+ {slug:"whatsapp",title:"WhatsApp Ride-Booking AI Agent",impact:"First fully automated ride",auto:"n8n automation",star:true,
   tags:["AI Agents","Low-Code"],tools:["whatsapp.com","developers.facebook.com","n8n.io","claude.ai","redis.io","zendesk.com","sheets.google.com","cabify.com"],
   desc:"Book a ride without downloading the app: scan a QR, have a conversation, get a quote, get a car. It produced the company's first fully automated ride — no human in the loop — and runs live across several venues and corporate accounts."},
 
- {slug:"dqm",title:"DQM — Driver Quality Management",impact:"Presented at All Hands",auto:"automatización n8n",star:true,
+ {slug:"dqm",title:"DQM — Driver Quality Management",impact:"Presented at All Hands",auto:"n8n automation",star:true,
   tags:["AI Agents","Machine Learning","Low-Code","Forecasting"],
   tools:["tableau.com","claude.ai","n8n.io","sheets.google.com","python.org","slack.com","cabify.com"],
   desc:"One 0–100 quality score per driver, built from signals that today live in five separate systems, with a forecast and an escalation ladder attached to it. Presented at the global All Hands; currently in delivery.",
   schema:["Signals across 5 systems","Weighted score 0–100","Four bands","Inform → support → limit"]},
 
- {slug:"rpa-fleet",title:"Fleet Products RPA · Supply Ops",impact:"Rules engine + RPA",auto:"automatización local",
+ {slug:"rpa-fleet",title:"Fleet Products RPA · Supply Ops",impact:"Rules engine + RPA",auto:"local automation",
   tags:["Low-Code","Web","Automation"],tools:["python.org","claude.ai","apple.com","script.google.com","sheets.google.com","drive.google.com","slack.com","code.visualstudio.com","cabify.com"],
   desc:"A rules engine and approval portal deciding which commercial products each vehicle in the fleet should carry, plus the unattended bridge that pushes the approved changes into the RPA that executes them: a Python service I built with Claude and run 24/7 on a Mac mini I administer myself, with every hand-off verified against the destination before a row is marked done."},
 
- {slug:"email-pipeline",title:"Email-to-Reservation Pipeline (B2B)",impact:"Zero-touch, end to end",auto:"automatización n8n",star:true,
+ {slug:"email-pipeline",title:"Email-to-Reservation Pipeline (B2B)",impact:"Zero-touch, end to end",auto:"n8n automation",star:true,
   tags:["AI Agents","Low-Code","Automation"],tools:["n8n.io","claude.ai","drive.google.com","sheets.google.com","script.google.com","slack.com","cabify.com"],
   desc:"Fully automated, end to end: two documents arrive by email from two different senders, and the ride is created and the driver assigned without anyone touching it."},
 
- {slug:"cabibot",title:"CabiBot — Help Center AI Agent",impact:"15,000+ interactions",auto:"automatización n8n",
+ {slug:"cabibot",title:"CabiBot — Help Center AI Agent",impact:"15,000+ interactions",auto:"n8n automation",
   tags:["AI Agents","Low-Code"],tools:["n8n.io","claude.ai","zendesk.com","redis.io","docs.google.com","whatsapp.com","cabify.com"],
   desc:"Public-facing support agent embedded in the Help Center: it resolves rider sign-in and registration problems, and files a structured ticket when a human is genuinely needed."},
 
- {slug:"hybrid-engine",title:"Hybrid ML + LLM Vision Engine",impact:"~80% AI cost cut",auto:"automatización local",
+ {slug:"hybrid-engine",title:"Hybrid ML + LLM Vision Engine",impact:"~80% AI cost cut",auto:"local automation",
   tags:["Computer Vision","Machine Learning"],tools:["python.org","tensorflow.org","pytorch.org","colab.google","claude.ai","drive.google.com","code.visualstudio.com"],
   desc:"The engine underneath the fleet audit: CNN and OCR models I trained myself on 16,000+ labelled images handle the deterministic checks, and the LLM is reserved for judgement calls."},
 
- {slug:"forecasting",title:"Demand & KPI Forecasting Engine",impact:"+58% vs baseline",auto:"automatización local",
+ {slug:"forecasting",title:"Demand & KPI Forecasting Engine",impact:"+58% vs baseline",auto:"local automation",
   tags:["Machine Learning","Forecasting"],tools:["python.org","colab.google","scikit-learn.org","tableau.com","lookerstudio.google.com","sheets.google.com","code.visualstudio.com"],
   desc:"Four production notebooks forecasting operational KPIs across 12 cities — my own models, configured per indicator, not one global setting applied to everything.",
   schema:["Prophet · LightGBM · SARIMAX","Per-KPI config","Ensemble","Forecast + error log"]},
 
- {slug:"events",title:"Events Intelligence",impact:"13 regions · 215 events",auto:"automatización Claude",
+ {slug:"events",title:"Events Intelligence",impact:"13 regions · 215 events",auto:"Claude automation",
   tags:["AI Agents","Forecasting","Machine Learning"],tools:["claude.ai","n8n.io","sheets.google.com","tableau.com","slack.com"],
   desc:"The scheduled scanner that tells the operation what is about to move a city — before it moves. It feeds the forecast the one thing history cannot predict: the exception.",
   schema:["13 regions","~90 curated sources","4 city tiers","15-tab master file"]},
 
- {slug:"cops-board",title:"COPs Control Board",impact:"35 processes live",auto:"automatización n8n",
+ {slug:"cops-board",title:"COPs Control Board",impact:"35 processes live",auto:"n8n automation",
   tags:["Low-Code","Web"],tools:["n8n.io","tableau.com","claude.ai","lovable.dev","script.google.com","sheets.google.com","slack.com"],
   desc:"Self-updating control tower: n8n pulls 35 operational processes out of Tableau every week into one board, with automatic Slack alerts when something drifts."},
 
- {slug:"local-agent",title:"Local AI Agent · Mac Mini",impact:"24/7, own hardware",auto:"automatización local",
+ {slug:"local-agent",title:"Local AI Agent · Mac Mini",impact:"24/7, own hardware",auto:"local automation",
   tags:["AI Agents"],tools:["claude.ai","anthropic.com","slack.com","python.org","modelcontextprotocol.io","gmail.com","drive.google.com","clickup.com","tableau.com"],
   desc:"An always-on agent on a Mac mini that watches my work surface and drafts my replies in my own voice, with RAG memory across every tool I use.",
   schema:["Slack Events API","Action lane · research","Memory lane · decisions","Draft in my voice"]},
 
- {slug:"assistant",title:"Personal AI Chief of Staff",impact:"On demand",auto:"automatización Claude",
+ {slug:"assistant",title:"Personal AI Chief of Staff",impact:"On demand",auto:"Claude automation",
   tags:["AI Agents"],tools:["claude.ai","modelcontextprotocol.io","slack.com","gmail.com","calendar.google.com","drive.google.com","tableau.com","clickup.com"],
   desc:"Claude with my projects and MCP connectors wired to Slack, Gmail, Calendar, Drive, Tableau and ClickUp — triggered by me, not running in the background.",
   schema:["Slack · Gmail · Calendar","Drive · Tableau · ClickUp","Claude + MCP","Answer with context"]},
 
- {slug:"hackathon",title:"Smart Fleet Manager",impact:"Built in 1 day",auto:"automatización Lovable",
+ {slug:"hackathon",title:"Smart Fleet Manager",impact:"Built in 1 day",auto:"Lovable automation",
   tags:["Web","AI Agents","Hackathon"],tools:["lovable.dev","react.dev","elevenlabs.io","cabify.com"],
   desc:"Hackathon build with a team of three: a real-time fleet portal with a unified Driver Quality Score, decision-impact simulator and AI voice coaching for drivers.",
   link:"https://cabify-lauria.lovable.app/",linkLabel:"Open the live demo"}
