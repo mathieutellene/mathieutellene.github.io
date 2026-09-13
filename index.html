@@ -435,7 +435,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 <section id="oss" class="wrap">
   <div class="sec-tag">Open source</div>
   <h2 class="sec-title">My own repos</h2>
-  <p class="sec-sub">Built outside work, in the open. Unlike the projects above, these are <b>fully public</b> — read the code, or just open the demo and play with it in your browser. All three run entirely in the page: no server, no sign-up, nothing to install.</p>
+  <p class="sec-sub">Built outside work, in the open. Unlike the projects above, these are <b>fully public</b> — read the code, or just open the demo and play with it in your browser. All four run entirely in the page: no server, no sign-up, nothing to install.</p>
   <div class="grid">
 
     <article class="pcard reveal">
@@ -472,6 +472,18 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
       </div>
       <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=128" alt="PyTorch" title="PyTorch" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=opencv.org&sz=128" alt="OpenCV" title="OpenCV" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=onnx.ai&sz=128" alt="ONNX Runtime" title="ONNX Runtime" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=ultralytics.com&sz=128" alt="YOLOv8 · Ultralytics" title="YOLOv8 · Ultralytics" onerror="this.remove()"></div>
       <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Machine Learning</span><span class="chip">Recommender Systems</span></div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pshot"><img loading="lazy" decoding="async" src="assets/repos/sightline.jpg" alt="Chicago's 77 community areas shaded by measured ride demand, beside the scores the network got on a city it never trained on"></div>
+      <div class="top"><h3>Sightline</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">Transfer test</span></div></div>
+      <div class="body">
+        <p class="desc">A city you have never operated in has no ride data. It does have satellite imagery. A small CNN reads demand off Sentinel-2 chips, trained on New York alone and then scored cold on Chicago &mdash; 77 community areas it had never encountered. The honest result is the interesting one: <b>0.88 rank correlation but only +0.23 R&sup2;</b>, so the ordering transfers and the level does not. It will tell you which neighbourhood outranks which; it will be off by 2.65&times; on how much. Click any zone on the map and watch its chip pass through the network block by block.</p>
+        <a class="plink" href="https://mathieutellene.github.io/sightline/" target="_blank" rel="noopener">Open the interactive map &#8599;</a>
+        <a class="plink" href="https://github.com/mathieutellene/sightline" target="_blank" rel="noopener">Source on GitHub &#8599;</a>
+      </div>
+      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=128" alt="PyTorch" title="PyTorch" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=numpy.org&sz=128" alt="NumPy" title="NumPy" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=geopandas.org&sz=128" alt="GeoPandas" title="GeoPandas" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=rasterio.readthedocs.io&sz=128" alt="Rasterio" title="Rasterio" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=dataspace.copernicus.eu&sz=128" alt="Copernicus Sentinel-2" title="Copernicus Sentinel-2" onerror="this.remove()"></div>
+      <div class="chips"><span class="chip">Machine Learning</span><span class="chip">Computer Vision</span><span class="chip">Geospatial</span><span class="chip">Transfer Learning</span><span class="chip">Remote Sensing</span></div>
     </article>
 
   </div>
