@@ -30,18 +30,18 @@
 :root{
   --bg:#0a0e16; --card:#121a2a; --border:#233049; --text:#e8edf7; --muted:#93a1bb; --dim:#5d6b85;
   --accent:#7c6bff; --accent2:#2dd4ee; --grad:linear-gradient(100deg,#7c6bff,#2dd4ee);
-  --chipbg:#1a2438; --shadow:0 20px 60px rgba(3,7,18,.55); --nav:rgba(10,14,22,.82);
+  --chipbg:#1a2438; --shadow:0 20px 60px rgba(3,7,18,.55); --nav:rgba(18,26,42,.72);
   --glow:rgba(124,107,255,.16); --n8n:#ea4b71;
   --pink:#f9a8d4; --pinkbg:rgba(244,114,182,.13); --pinkbd:rgba(244,114,182,.34);
 }
 [data-theme="light"]{
   --bg:#f7f8fc; --card:#ffffff; --border:#dfe4f0; --text:#131a2a; --muted:#4b5a76; --dim:#8a96ad;
-  --chipbg:#edf0fa; --shadow:0 16px 44px rgba(19,26,42,.10); --nav:rgba(247,248,252,.85);
+  --chipbg:#edf0fa; --shadow:0 16px 44px rgba(19,26,42,.10); --nav:rgba(255,255,255,.74);
   --accent2:#0b7c99; --glow:rgba(124,107,255,.12);
   --pink:#9d174d; --pinkbg:#fdf2f8; --pinkbd:#f7b8d6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth;scroll-padding-top:104px}
 body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
 h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif}
 a{color:inherit;text-decoration:none}
@@ -60,10 +60,29 @@ img.favicon{width:18px;height:18px;border-radius:4px;vertical-align:-3px}
   filter:blur(10px);animation:drift 18s ease-in-out infinite alternate}
 @keyframes drift{from{transform:translateX(-52%) scale(1)}to{transform:translateX(-48%) scale(1.08)}}
 
-#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--grad);z-index:60;transition:width .1s linear}
+/* The bar has no background of its own at rest: the hero runs straight up behind
+   it. It only condenses into a floating panel once there is content to sit on. */
+.progress-track{position:absolute;left:0;right:0;bottom:0;height:2px;overflow:hidden;
+  border-radius:0 0 15px 15px;opacity:0;transition:opacity .3s}
+nav.stuck .progress-track{opacity:1}
+#progress{height:100%;width:0;background:var(--grad);transition:width .1s linear}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:var(--nav);border-bottom:1px solid var(--border)}
-.nav-in{max-width:1140px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:20px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:14px 24px;transition:padding .3s ease}
+nav.stuck{padding:9px 24px}
+/* A fade instead of a rule: text dissolves into the top of the page rather than
+   hitting a line. Masked so the gradient itself never shows an edge either. */
+nav::before{content:"";position:absolute;inset:0 0 -40px;pointer-events:none;opacity:0;transition:opacity .35s;
+  background:linear-gradient(to bottom,var(--bg),color-mix(in srgb,var(--bg) 50%,transparent) 60%,transparent);
+  -webkit-mask-image:linear-gradient(to bottom,#000 52%,transparent);
+  mask-image:linear-gradient(to bottom,#000 52%,transparent)}
+nav.stuck::before{opacity:.92}
+.nav-in{position:relative;max-width:1140px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:20px;
+  border-radius:16px;border:1px solid transparent;background:transparent;
+  transition:background .3s,border-color .3s,box-shadow .3s,padding .3s}
+nav.stuck .nav-in{background:var(--nav);border-color:var(--border);
+  backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
+  box-shadow:0 12px 34px rgba(3,7,18,.34)}
+[data-theme="light"] nav.stuck .nav-in{box-shadow:0 10px 28px rgba(19,26,42,.09)}
 .logo{font-weight:700;font-size:1.15rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav-links{display:flex;gap:18px;margin-left:auto;font-size:.9rem;color:var(--muted)}
 .nav-links a{position:relative;padding:2px 0;transition:color .2s}
@@ -80,10 +99,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);ba
 #themeBtn{background:var(--chipbg);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:6px 11px;cursor:pointer;font-size:.9rem;transition:transform .2s,border-color .2s}
 #themeBtn:hover{transform:translateY(-1px);border-color:var(--accent)}
 @media(max-width:980px){.nav-links{display:none}.nav-cta{margin-left:auto}}
+@media(max-width:520px){nav{padding:10px 12px}nav.stuck{padding:8px 12px}.nav-in{padding:9px 13px}}
 @media(max-width:520px){.n8n-btn span{display:none}}
 
 .wrap{max-width:1140px;margin:0 auto;padding-left:24px;padding-right:24px}
-section{padding:84px 0 44px;scroll-margin-top:90px}
+section{padding:84px 0 44px;scroll-margin-top:104px}
 
 .hero{padding:160px 0 60px}
 .hello{color:var(--accent2);font-weight:600;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}
@@ -302,10 +322,10 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 </head>
 <body>
 <div class="bg-fx"></div>
-<div id="progress"></div>
 
 <nav>
   <div class="nav-in">
+    <div class="progress-track"><div id="progress"></div></div>
     <a class="logo" href="#top">MT<span style="color:var(--accent2)">.</span></a>
     <div class="nav-links">
       <a href="#about">About</a><a href="#projects">Projects</a><a href="#voices">Testimonials</a><a href="#oss">Open source</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
@@ -827,12 +847,14 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 /* ================= SCROLL PROGRESS + ACTIVE NAV ================= */
 const bar=document.getElementById('progress');
+const navEl=document.querySelector('nav');
 const navA=[...document.querySelectorAll('.nav-links a')];
 const secs=navA.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 let ticking=false;
 function onScroll(){
   const h=document.documentElement;
   bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  navEl.classList.toggle('stuck',h.scrollTop>8);
   let idx=-1;
   secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<=140)idx=i;});
   navA.forEach((a,i)=>a.classList.toggle('on',i===idx));
