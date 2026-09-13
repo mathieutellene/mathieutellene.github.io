@@ -62,10 +62,10 @@ img.favicon{width:18px;height:18px;border-radius:4px;vertical-align:-3px}
 
 /* The bar has no background of its own at rest: the hero runs straight up behind
    it. It only condenses into a floating panel once there is content to sit on. */
-.progress-track{position:absolute;left:0;right:0;bottom:0;height:2px;overflow:hidden;
-  border-radius:0 0 15px 15px;opacity:0;transition:opacity .3s}
+.progress-track{position:absolute;left:16px;right:16px;bottom:0;height:2px;overflow:hidden;
+  border-radius:99px;opacity:0;transition:opacity .3s}
 nav.stuck .progress-track{opacity:1}
-#progress{height:100%;width:0;background:var(--grad);transition:width .1s linear}
+#progress{height:100%;width:0;background:var(--grad);border-radius:99px;transition:width .1s linear}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:14px 24px;transition:padding .3s ease}
 nav.stuck{padding:9px 24px}
