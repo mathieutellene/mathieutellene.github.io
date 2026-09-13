@@ -194,7 +194,7 @@ h2.sec-title{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spaci
 .pcard.open .pdetail{grid-template-rows:1fr}
 .pdetail>div{overflow:hidden}
 .pdetail p{color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}
-.plink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:600;color:var(--accent)}
+.plink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;margin-right:16px;font-size:.82rem;font-weight:600;color:var(--accent)}
 .plink:hover{text-decoration:underline}
 .media{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .shot{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--chipbg);cursor:zoom-in;flex:1 1 150px;max-width:100%}
@@ -361,7 +361,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 <section id="projects" class="wrap">
   <div class="sec-tag">Projects</div>
   <h2 class="sec-title">Built, shipped, measured</h2>
-  <p class="sec-sub"><b>Production systems built at Cabify</b> and beyond — measured in <b>€</b>, <b>hours recovered</b> and <b>conversion gained</b>. Client names and internal links are kept out on purpose; full case studies in interviews.</p>
+  <p class="sec-sub"><b>Production systems built at Cabify</b> and beyond — measured in <b>€</b>, <b>hours recovered</b> and <b>conversion gained</b>. Client names and internal links are kept out on purpose; full case studies in interviews. The two <b>open-source</b> projects are fully public — code and live demo, both one click away.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="projectGrid"></div>
 </section>
@@ -580,6 +580,20 @@ const SCHEMA=(items)=>{
 };
 
 const PROJECTS=[
+ {slug:"boarding-sim",title:"Boarding Sim — fifteen ways to fill an aircraft",impact:"Live demo + source",auto:"open source",
+  tags:["Open source","Simulation","Web"],
+  tools:["github.com"],
+  desc:"An agent-based model of aircraft boarding: fifteen methods race on the identical passenger manifest, so any difference is the ordering and not the luck of the draw. The model contradicted four of my own hypotheses — each is documented with the measurement that overruled it. One HTML file, no dependencies and no build step, 3D renderer included.",
+  links:[{href:"https://mathieutellene.github.io/boarding-sim/",label:"Open the live demo"},
+         {href:"https://github.com/mathieutellene/boarding-sim",label:"Source on GitHub"}]},
+
+ {slug:"kadenz",title:"Kadenz — closing the loop on music recommendation",impact:"Live demo + source",auto:"open source",
+  tags:["Open source","Computer Vision","Machine Learning"],
+  tools:["github.com","python.org","pytorch.org","opencv.org"],
+  desc:"Music recommenders are open loop: they know what was played, never whether the floor emptied. Kadenz closes that loop with computer vision — pose estimation and optical flow measuring crowd response in real time — and ranks the same catalogue both ways at once, so the premise is testable instead of asserted. Runs on a laptop CPU; the whole loop also runs client-side in a browser.",
+  links:[{href:"https://mathieutellene.github.io/kadenz/",label:"Try it on your camera"},
+         {href:"https://github.com/mathieutellene/kadenz",label:"Source on GitHub"}]},
+
  {slug:"aqm",title:"AQM — Asset Quality Management",impact:"22,000+ images audited",auto:"n8n automation",star:true,
   tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
   tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
@@ -656,7 +670,8 @@ function renderGrid(filter){
   PROJECTS.filter(p=>filter==='All'||p.tags.includes(filter)).forEach(p=>{
     const card=document.createElement('article');
     card.className='pcard'+(p.star?' star':'');
-    const link=p.link?`<a class="plink" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel||'Open'} ↗</a>`:'';
+    const ls=p.links||(p.link?[{href:p.link,label:p.linkLabel||'Open'}]:[]);
+    const link=ls.map(l=>`<a class="plink" href="${l.href}" target="_blank" rel="noopener">${l.label} ↗</a>`).join('');
     card.innerHTML=`
       <div class="top"><h3>${p.title}</h3><div class="pills"><span class="impact">${p.impact}</span><span class="auto">${p.auto}</span></div></div>
       <div class="body">
