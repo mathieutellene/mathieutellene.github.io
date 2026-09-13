@@ -294,7 +294,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   <div class="nav-in">
     <a class="logo" href="#top">MT<span style="color:var(--accent2)">.</span></a>
     <div class="nav-links">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#voices">Testimonials</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#voices">Testimonials</a><a href="#oss">Open source</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
     </div>
     <div class="nav-cta">
       <button id="themeBtn" aria-label="Toggle theme">🌙</button>
@@ -361,7 +361,7 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 <section id="projects" class="wrap">
   <div class="sec-tag">Projects</div>
   <h2 class="sec-title">Built, shipped, measured</h2>
-  <p class="sec-sub"><b>Production systems built at Cabify</b> and beyond — measured in <b>€</b>, <b>hours recovered</b> and <b>conversion gained</b>. Client names and internal links are kept out on purpose; full case studies in interviews. The two <b>open-source</b> projects are fully public — code and live demo, both one click away.</p>
+  <p class="sec-sub"><b>Production systems built at Cabify</b> and beyond — measured in <b>€</b>, <b>hours recovered</b> and <b>conversion gained</b>. Client names and internal links are kept out on purpose; full case studies in interviews.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="projectGrid"></div>
 </section>
@@ -397,6 +397,48 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   </div>
   <div class="quote-note">Quotes translated from ESP — internal Slack, 2026. Names and photos withheld; titles are accurate.</div>
 </section>
+
+<section id="oss" class="wrap">
+  <div class="sec-tag">Open source</div>
+  <h2 class="sec-title">My own repos</h2>
+  <p class="sec-sub">Built outside work, in the open. Unlike the projects above, these are <b>fully public</b> — read the code, or just open the demo and play with it in your browser.</p>
+  <div class="grid">
+
+    <article class="pcard reveal">
+      <div class="top"><h3>Boarding Sim</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">MIT</span></div></div>
+      <div class="body">
+        <p class="desc">Fifteen aircraft boarding methods race on the identical passenger manifest, so any difference is the ordering and not the luck of the draw. The model contradicted four of my own hypotheses — each is documented with the measurement that overruled it. One HTML file, no dependencies and no build step, 3D renderer included.</p>
+        <a class="plink" href="https://mathieutellene.github.io/boarding-sim/" target="_blank" rel="noopener">Open the live demo ↗</a>
+        <a class="plink" href="https://github.com/mathieutellene/boarding-sim" target="_blank" rel="noopener">Source on GitHub ↗</a>
+      </div>
+      <div class="toolrow"><img class="favicon" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"></div>
+      <div class="chips"><span class="chip">Simulation</span><span class="chip">Monte Carlo</span><span class="chip">Data Visualization</span><span class="chip">3D Rendering</span></div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="top"><h3>Kadenz</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">AGPL-3.0</span></div></div>
+      <div class="body">
+        <p class="desc">Music recommenders are open loop: they know what was played, never whether the floor emptied. Kadenz closes that loop with computer vision — pose estimation and optical flow measuring crowd response in real time — and ranks the same catalogue both ways at once, so the premise is testable instead of asserted. Runs on a laptop CPU; the whole loop also runs client-side in a browser.</p>
+        <a class="plink" href="https://mathieutellene.github.io/kadenz/" target="_blank" rel="noopener">Try it on your camera ↗</a>
+        <a class="plink" href="https://github.com/mathieutellene/kadenz" target="_blank" rel="noopener">Source on GitHub ↗</a>
+      </div>
+      <div class="toolrow"><img class="favicon" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=128" alt="PyTorch" title="PyTorch" onerror="this.remove()"><img class="favicon" src="https://www.google.com/s2/favicons?domain=opencv.org&sz=128" alt="OpenCV" title="OpenCV" onerror="this.remove()"></div>
+      <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Machine Learning</span><span class="chip">Recommender Systems</span></div>
+    </article>
+
+  </div>
+</section>
+
+<script>
+/* same cursor glow the project cards get, for the two static ones above */
+document.querySelectorAll('#oss .pcard').forEach(card=>{
+  card.addEventListener('pointermove',e=>{
+    const r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    card.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+</script>
 
 <section id="experience" class="wrap">
   <div class="sec-tag">Experience</div>
@@ -557,11 +599,11 @@ const LABEL={
   "script.google.com":"Google Apps Script","sheets.google.com":"Google Sheets",
   "drive.google.com":"Google Drive","docs.google.com":"Google Docs",
   "calendar.google.com":"Google Calendar","colab.google":"Google Colab",
-  "apple.com":"Mac mini (macOS)","lookerstudio.google.com":"Looker Studio","cloud.google.com":"Google Cloud · BigQuery"
+  "aws.amazon.com":"Amazon Redshift","postgresql.org":"PostgreSQL","apple.com":"Mac mini (macOS)","lookerstudio.google.com":"Looker Studio","cloud.google.com":"Google Cloud · BigQuery"
 };
 const FAV=d=>LOGO[d]
   ? `<img class="favicon" src="${LOGO[d]}" alt="${LABEL[d]||d}" title="${LABEL[d]||d}" onerror="this.remove()">`
-  : `<img class="favicon" src="https://www.google.com/s2/favicons?domain=${d}&sz=128" alt="${d}" title="${d}" onerror="this.remove()">`;
+  : `<img class="favicon" src="https://www.google.com/s2/favicons?domain=${d}&sz=128" alt="${LABEL[d]||d}" title="${LABEL[d]||d}" onerror="this.remove()">`;
 
 /* inline schematic: a labelled chain of boxes, theme-aware */
 const SCHEMA=(items)=>{
@@ -580,20 +622,6 @@ const SCHEMA=(items)=>{
 };
 
 const PROJECTS=[
- {slug:"boarding-sim",title:"Boarding Sim — fifteen ways to fill an aircraft",impact:"Live demo + source",auto:"open source",
-  tags:["Open source","Simulation","Web"],
-  tools:["github.com"],
-  desc:"An agent-based model of aircraft boarding: fifteen methods race on the identical passenger manifest, so any difference is the ordering and not the luck of the draw. The model contradicted four of my own hypotheses — each is documented with the measurement that overruled it. One HTML file, no dependencies and no build step, 3D renderer included.",
-  links:[{href:"https://mathieutellene.github.io/boarding-sim/",label:"Open the live demo"},
-         {href:"https://github.com/mathieutellene/boarding-sim",label:"Source on GitHub"}]},
-
- {slug:"kadenz",title:"Kadenz — closing the loop on music recommendation",impact:"Live demo + source",auto:"open source",
-  tags:["Open source","Computer Vision","Machine Learning"],
-  tools:["github.com","python.org","pytorch.org","opencv.org"],
-  desc:"Music recommenders are open loop: they know what was played, never whether the floor emptied. Kadenz closes that loop with computer vision — pose estimation and optical flow measuring crowd response in real time — and ranks the same catalogue both ways at once, so the premise is testable instead of asserted. Runs on a laptop CPU; the whole loop also runs client-side in a browser.",
-  links:[{href:"https://mathieutellene.github.io/kadenz/",label:"Try it on your camera"},
-         {href:"https://github.com/mathieutellene/kadenz",label:"Source on GitHub"}]},
-
  {slug:"aqm",title:"AQM — Asset Quality Management",impact:"22,000+ images audited",auto:"n8n automation",star:true,
   tags:["Computer Vision","AI Agents","Low-Code","Machine Learning"],
   tools:["n8n.io","claude.ai","script.google.com","sheets.google.com","drive.google.com","about.gitlab.com","cloud.google.com","tableau.com","slack.com","cabify.com"],
@@ -605,7 +633,7 @@ const PROJECTS=[
 
  {slug:"dqm",title:"DQM — Driver Quality Management",impact:"Presented at All Hands",auto:"n8n automation",star:true,
   tags:["AI Agents","Machine Learning","Low-Code","Forecasting"],
-  tools:["tableau.com","claude.ai","n8n.io","sheets.google.com","python.org","slack.com","cabify.com"],
+  tools:["tableau.com","aws.amazon.com","postgresql.org","claude.ai","n8n.io","sheets.google.com","python.org","slack.com","cabify.com"],
   desc:"One 0–100 quality score per driver, built from signals that today live in five separate systems, with a forecast and an escalation ladder attached to it. Presented at the global All Hands; currently in delivery.",
   schema:["Signals across 5 systems","Weighted score 0–100","Four bands","Inform → support → limit"]},
 
@@ -670,8 +698,7 @@ function renderGrid(filter){
   PROJECTS.filter(p=>filter==='All'||p.tags.includes(filter)).forEach(p=>{
     const card=document.createElement('article');
     card.className='pcard'+(p.star?' star':'');
-    const ls=p.links||(p.link?[{href:p.link,label:p.linkLabel||'Open'}]:[]);
-    const link=ls.map(l=>`<a class="plink" href="${l.href}" target="_blank" rel="noopener">${l.label} ↗</a>`).join('');
+    const link=p.link?`<a class="plink" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel||'Open'} ↗</a>`:'';
     card.innerHTML=`
       <div class="top"><h3>${p.title}</h3><div class="pills"><span class="impact">${p.impact}</span><span class="auto">${p.auto}</span></div></div>
       <div class="body">
