@@ -284,6 +284,20 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
   *{animation:none!important}
   .btn:hover,.pcard:hover,.quote:hover,.stat:hover,.sgroup:hover,.cert:hover,.fact:hover{transform:none}
 }
+
+/* repo cards: a picture of the thing, above the words about it */
+#oss .pcard{padding:0;overflow:hidden}
+#oss .pcard .top,#oss .pcard .body,#oss .pcard .toolrow,#oss .pcard .chips{padding-left:24px;padding-right:24px}
+#oss .pcard .top{padding-top:20px}
+#oss .pcard .chips{padding-bottom:22px}
+.pshot{position:relative;aspect-ratio:2/1;overflow:hidden;background:#0e1422;
+  border-bottom:1px solid var(--border)}
+.pshot img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .55s cubic-bezier(.2,.7,.3,1);transform-origin:center}
+#oss .pcard:hover .pshot img{transform:scale(1.045)}
+.pshot::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,transparent 55%,rgba(10,12,20,.45) 100%)}
+@media (max-width:640px){ .pshot{aspect-ratio:16/9} }
 </style>
 </head>
 <body>
@@ -401,28 +415,42 @@ footer .built img{width:15px;height:15px;border-radius:4px;vertical-align:-2px}
 <section id="oss" class="wrap">
   <div class="sec-tag">Open source</div>
   <h2 class="sec-title">My own repos</h2>
-  <p class="sec-sub">Built outside work, in the open. Unlike the projects above, these are <b>fully public</b> — read the code, or just open the demo and play with it in your browser.</p>
+  <p class="sec-sub">Built outside work, in the open. Unlike the projects above, these are <b>fully public</b> — read the code, or just open the demo and play with it in your browser. All three run entirely in the page: no server, no sign-up, nothing to install.</p>
   <div class="grid">
 
     <article class="pcard reveal">
+      <div class="pshot"><img loading="lazy" decoding="async" src="assets/repos/boarding-grid.jpg" alt="Fourteen aircraft cabins boarding at once, each shaded by seat occupancy"></div>
       <div class="top"><h3>Boarding Sim</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">MIT</span></div></div>
       <div class="body">
-        <p class="desc">Fifteen aircraft boarding methods race on the identical passenger manifest, so any difference is the ordering and not the luck of the draw. The model contradicted four of my own hypotheses — each is documented with the measurement that overruled it. One HTML file, no dependencies and no build step, 3D renderer included.</p>
+        <p class="desc">Fourteen aircraft boarding methods race on the identical passenger manifest, so any difference is the ordering and not the luck of the draw. The model contradicted four of my own hypotheses — each is documented with the measurement that overruled it. One HTML file, no dependencies and no build step, with a 3D renderer written from scratch: perspective projection and painter's algorithm on a 2D canvas.</p>
         <a class="plink" href="https://mathieutellene.github.io/boarding-sim/" target="_blank" rel="noopener">Open the live demo ↗</a>
         <a class="plink" href="https://github.com/mathieutellene/boarding-sim" target="_blank" rel="noopener">Source on GitHub ↗</a>
       </div>
-      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"></div>
-      <div class="chips"><span class="chip">Simulation</span><span class="chip">Monte Carlo</span><span class="chip">Data Visualization</span><span class="chip">3D Rendering</span></div>
+      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=developer.mozilla.org&sz=128" alt="JavaScript" title="JavaScript" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=w3.org&sz=128" alt="HTML Canvas" title="HTML Canvas" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=web.dev&sz=128" alt="Web Performance" title="Web Performance" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pages.github.com&sz=128" alt="GitHub Pages" title="GitHub Pages" onerror="this.remove()"></div>
+      <div class="chips"><span class="chip">Agent-Based Simulation</span><span class="chip">Monte Carlo</span><span class="chip">Queueing Theory</span><span class="chip">Data Visualization</span><span class="chip">3D Rendering</span></div>
     </article>
 
     <article class="pcard reveal">
+      <div class="pshot"><img loading="lazy" decoding="async" src="assets/repos/shiftmesh.jpg" alt="A 24x7 heatmap of agents needed per hour beside the weekly roster that covers it"></div>
+      <div class="top"><h3>Shiftmesh</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">MIT</span></div></div>
+      <div class="body">
+        <p class="desc">Workforce planning end to end on real open data: forecast the contacts, size the floor, build a roster that obeys the law, and put a price on it. Runs on 3.17M rows of NYC 311 open data, sizes each channel with the model that actually applies to it — Erlang C for voice, a concurrency model for chat, backlog conservation for tickets, because email is not a queue — and solves the week with CP-SAT under Spanish working-time law. The whole pipeline is also ported to JavaScript, so you can move the headcount on the page and watch the distribution matrix rebuild.</p>
+        <a class="plink" href="https://mathieutellene.github.io/shiftmesh/" target="_blank" rel="noopener">Open the live report ↗</a>
+        <a class="plink" href="https://github.com/mathieutellene/shiftmesh" target="_blank" rel="noopener">Source on GitHub ↗</a>
+      </div>
+      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=developers.google.com&sz=128" alt="Google OR-Tools · CP-SAT" title="Google OR-Tools · CP-SAT" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=numpy.org&sz=128" alt="NumPy" title="NumPy" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pytest.org&sz=128" alt="pytest" title="pytest" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=opendata.cityofnewyork.us&sz=128" alt="NYC Open Data" title="NYC Open Data" onerror="this.remove()"></div>
+      <div class="chips"><span class="chip">Constraint Programming</span><span class="chip">Operations Research</span><span class="chip">Time-Series Forecasting</span><span class="chip">Queueing Theory</span><span class="chip">Workforce Management</span></div>
+    </article>
+
+    <article class="pcard reveal">
+      <div class="pshot"><img loading="lazy" decoding="async" src="assets/repos/kadenz.jpg" alt="The Kadenz dashboard: crowd-response signal against the track being played"></div>
       <div class="top"><h3>Kadenz</h3><div class="pills"><span class="impact">Live demo</span><span class="auto">AGPL-3.0</span></div></div>
       <div class="body">
         <p class="desc">Music recommenders are open loop: they know what was played, never whether the floor emptied. Kadenz closes that loop with computer vision — pose estimation and optical flow measuring crowd response in real time — and ranks the same catalogue both ways at once, so the premise is testable instead of asserted. Runs on a laptop CPU; the whole loop also runs client-side in a browser.</p>
         <a class="plink" href="https://mathieutellene.github.io/kadenz/" target="_blank" rel="noopener">Try it on your camera ↗</a>
         <a class="plink" href="https://github.com/mathieutellene/kadenz" target="_blank" rel="noopener">Source on GitHub ↗</a>
       </div>
-      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=128" alt="PyTorch" title="PyTorch" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=opencv.org&sz=128" alt="OpenCV" title="OpenCV" onerror="this.remove()"></div>
+      <div class="toolrow"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" title="GitHub" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=python.org&sz=128" alt="Python" title="Python" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=pytorch.org&sz=128" alt="PyTorch" title="PyTorch" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=opencv.org&sz=128" alt="OpenCV" title="OpenCV" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=onnx.ai&sz=128" alt="ONNX Runtime" title="ONNX Runtime" onerror="this.remove()"><img class="favicon" loading="lazy" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=ultralytics.com&sz=128" alt="YOLOv8 · Ultralytics" title="YOLOv8 · Ultralytics" onerror="this.remove()"></div>
       <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Machine Learning</span><span class="chip">Recommender Systems</span></div>
     </article>
 
@@ -744,14 +772,23 @@ const lb=document.getElementById('lightbox');
 function lightbox(src){lb.querySelector('img').src=src;lb.classList.add('open');}
 lb.onclick=()=>lb.classList.remove('open');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open');});
-function tryImg(png,jpg,ok,fail){
-  const a=new Image();a.src=png;
-  a.onload=()=>ok(a);
-  a.onerror=()=>{const b=new Image();b.src=jpg;b.onload=()=>ok(b);b.onerror=fail;};
+/* Try each candidate in turn and keep the first that loads. The list used to
+   start with .png for every diploma when all seven are .jpg, which cost
+   fourteen failed requests and fourteen console errors on every single visit,
+   so the extension that actually exists goes first. */
+function tryImg(sources,ok,fail){
+  const list=[...sources];
+  (function next(){
+    if(!list.length) return fail&&fail();
+    const img=new Image();
+    img.src=list.shift();
+    img.onload=()=>ok(img);
+    img.onerror=next;
+  })();
 }
 document.querySelectorAll('a.dip').forEach(a=>{
   const key=a.dataset.dip;
-  tryImg(`assets/diplomas/${key}.png`,`assets/diplomas/${key}.jpg`,img=>{
+  tryImg([`assets/diplomas/${key}.jpg`,`assets/diplomas/${key}.png`],img=>{
     a.style.display='inline-block';a.href=img.src;
     a.onclick=e=>{e.preventDefault();e.stopPropagation();lightbox(img.src);};
     const card=a.closest('.cert');
