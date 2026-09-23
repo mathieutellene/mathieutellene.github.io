@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1449" height="649.4" viewBox="0 0 1449 649.4" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Request and work-order agents">
+<title>Request and work-order agents</title>
+<rect width="1449" height="649.4" fill="#ffffff"/>
+<text x="28" y="44" font-size="18" font-weight="600" fill="#1F2733">Request and work-order agents</text>
+<g transform="translate(888.3 336.8)">
+<g fill="none" stroke-linecap="round">
+<path d="M-25.6 -112.8 C-25.6 -154.2 3.7 -163.4 3.7 -204.8" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Claude (LiteLLM) → Requests agent (Chat model)</title></path>
+<path d="M-25.6 -62.8 C-25.6 -22.8 3.7 -13.9 3.7 26.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Claude (LiteLLM) → Work-order agent (Chat model)</title></path>
+<path d="M-204.8 -112.8 C-204.8 -154.2 57.7 -163.4 57.7 -204.8" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>find_row → Requests agent (Tool)</title></path>
+<path d="M-204.8 -62.8 C-204.8 -22.8 57.7 -13.9 57.7 26.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>find_row → Work-order agent (Tool)</title></path>
+<path d="M-102.4 -112.8 C-102.4 -154.2 57.7 -163.4 57.7 -204.8" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>upsert_request → Requests agent (Tool)</title></path>
+<path d="M102.4 167.6 C102.4 132.8 57.7 125 57.7 90.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>update_work_order → Work-order agent (Tool)</title></path>
+<path d="M282.8 167.6 C282.8 132.8 57.7 125 57.7 90.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>create_row_no_request → Work-order agent (Tool)</title></path>
+<path d="M385.2 167.6 C505.2 -55.8 177.7 18.6 57.7 -204.8" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>notify_slack → Requests agent (Tool)</title></path>
+<path d="M385.2 167.6 C385.2 132.8 57.7 125 57.7 90.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>notify_slack → Work-order agent (Tool)</title></path>
+<path d="M487.6 167.6 C487.6 -93.1 57.7 55.9 57.7 -204.8" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>notify_slack_ops → Requests agent (Tool)</title></path>
+<path d="M487.6 167.6 C487.6 132.8 57.7 125 57.7 90.2" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>notify_slack_ops → Work-order agent (Tool)</title></path>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-640 -236.8 C-611.8 -236.8 -611.8 -236.8 -583.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-512 -226.1 C-483.8 -226.1 -483.8 -236.8 -455.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-384 -236.8 C-355.8 -236.8 -355.8 -236.8 -327.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-256 -236.8 C-227.8 -236.8 -227.8 -236.8 -199.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-640 58.2 C-611.8 58.2 -611.8 58.2 -583.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-512 68.9 C-483.8 68.9 -483.8 58.2 -455.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-384 58.2 C-355.8 58.2 -355.8 58.2 -327.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-256 58.2 C-227.8 58.2 -227.8 58.2 -199.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M231.6 58.2 C259.9 58.2 259.9 58.2 288.1 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-780.8 -236.8 C-746.2 -236.8 -746.2 -236.8 -711.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-780.8 58.2 C-746.2 58.2 -746.2 58.2 -711.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M111.6 58.2 C135.9 58.2 135.9 58.2 160.1 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-128 -236.8 C-92.8 -236.8 -92.8 -236.8 -57.7 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-128 58.2 C-92.8 58.2 -92.8 58.2 -57.7 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M111.6 -236.8 L119.6 -236.8 Q127.6 -236.8 127.6 -228.8 L127.6 -184.8 Q127.6 -172.8 115.6 -172.8 L-587.5 -172.8 Q-599.5 -172.8 -599.5 -184.8 L-599.5 -228.8 Q-599.5 -236.8 -591.5 -236.8 L-583.5 -236.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M359.6 58.2 L367.6 58.2 Q375.6 58.2 375.6 50.2 L375.6 23.2 Q375.6 11.2 363.6 11.2 L-587.5 11.2 Q-599.5 11.2 -599.5 23.2 L-599.5 50.2 Q-599.5 58.2 -591.5 58.2 L-583.5 58.2" stroke="#A2AAB6" stroke-width="1.5"/>
+</g>
+<path d="M-576.5 -236.8L-583.5 -240.4L-582.3 -236.8L-583.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-448.5 -236.8L-455.5 -240.4L-454.3 -236.8L-455.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-320.5 -236.8L-327.5 -240.4L-326.3 -236.8L-327.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-192.5 -236.8L-199.5 -240.4L-198.3 -236.8L-199.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-576.5 58.2L-583.5 54.6L-582.3 58.2L-583.5 61.8Z" fill="#8E97A4"/>
+<path d="M-448.5 58.2L-455.5 54.6L-454.3 58.2L-455.5 61.8Z" fill="#8E97A4"/>
+<path d="M-320.5 58.2L-327.5 54.6L-326.3 58.2L-327.5 61.8Z" fill="#8E97A4"/>
+<path d="M-192.5 58.2L-199.5 54.6L-198.3 58.2L-199.5 61.8Z" fill="#8E97A4"/>
+<path d="M295.1 58.2L288.1 54.6L289.3 58.2L288.1 61.8Z" fill="#8E97A4"/>
+<path d="M-704.5 -236.8L-711.5 -240.4L-710.3 -236.8L-711.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-704.5 58.2L-711.5 54.6L-710.3 58.2L-711.5 61.8Z" fill="#8E97A4"/>
+<path d="M167.1 58.2L160.1 54.6L161.3 58.2L160.1 61.8Z" fill="#8E97A4"/>
+<path d="M-50.7 -236.8L-57.7 -240.4L-56.5 -236.8L-57.7 -233.2Z" fill="#8E97A4"/>
+<path d="M-50.7 58.2L-57.7 54.6L-56.5 58.2L-57.7 61.8Z" fill="#8E97A4"/>
+<path d="M-576.5 -236.8L-583.5 -240.4L-582.3 -236.8L-583.5 -233.2Z" fill="#8E97A4"/>
+<path d="M-576.5 58.2L-583.5 54.6L-582.3 58.2L-583.5 61.8Z" fill="#8E97A4"/>
+<g><title>Claude (LiteLLM) · LiteLLM</title>
+<circle cx="-25.6" cy="-87.8" r="25" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.4"/>
+<text x="-25.6" y="-84.3" text-anchor="middle" font-size="9.8" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>find_row · Google Sheets Tool</title>
+<circle cx="-204.8" cy="-87.8" r="25" fill="#E9F4EB" stroke="#74B283" stroke-width="1.4"/>
+<g transform="translate(-215.8 -98.8) scale(0.9167)" fill="none" stroke="#276334" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>upsert_request · Google Sheets Tool</title>
+<circle cx="-102.4" cy="-87.8" r="25" fill="#E9F4EB" stroke="#74B283" stroke-width="1.4"/>
+<g transform="translate(-113.4 -98.8) scale(0.9167)" fill="none" stroke="#276334" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>update_work_order · Google Sheets Tool</title>
+<circle cx="102.4" cy="192.6" r="25" fill="#E9F4EB" stroke="#74B283" stroke-width="1.4"/>
+<g transform="translate(91.4 181.6) scale(0.9167)" fill="none" stroke="#276334" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>create_row_no_request · Google Sheets Tool</title>
+<circle cx="282.8" cy="192.6" r="25" fill="#E9F4EB" stroke="#74B283" stroke-width="1.4"/>
+<g transform="translate(271.8 181.6) scale(0.9167)" fill="none" stroke="#276334" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>notify_slack · Slack Tool</title>
+<circle cx="385.2" cy="192.6" r="25" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.4"/>
+<g transform="translate(374.2 181.6) scale(0.9167)" fill="none" stroke="#145B80" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M9.7 4 8.2 20M15.8 4l-1.5 16M4.8 9h15M4.2 15h15"/></g>
+</g>
+<g><title>notify_slack_ops · Slack Tool</title>
+<circle cx="487.6" cy="192.6" r="25" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.4"/>
+<g transform="translate(476.6 181.6) scale(0.9167)" fill="none" stroke="#145B80" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M9.7 4 8.2 20M15.8 4l-1.5 16M4.8 9h15M4.2 15h15"/></g>
+</g>
+<g><title>New request file · Google Drive Trigger</title>
+<path d="M-818.8 -268.8H-792.8A12 12 0 0 1 -780.8 -256.8V-216.8A12 12 0 0 1 -792.8 -204.8H-818.8A26 26 0 0 1 -844.8 -230.8V-242.8A26 26 0 0 1 -818.8 -268.8Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(-824.8 -250.8) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.2a2 2 0 0 1 2-2h3.8l2.2 2.4h7a2 2 0 0 1 2 2v7.6a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></g>
+</g>
+<g><title>Only XLSX · Filter</title>
+<rect x="-704" y="-268.8" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-686 -250.8) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Each request · Loop Over Items</title>
+<rect x="-576" y="-268.8" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-558 -250.8) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3.8 20 6.8l-3 3"/><path d="M4 11.5v-.7a4 4 0 0 1 4-4h12"/><path d="M7 20.2 4 17.2l3-3"/><path d="M20 12.5v.7a4 4 0 0 1-4 4H4"/></g>
+</g>
+<g><title>Download request · Google Drive</title>
+<rect x="-448" y="-268.8" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(-430 -250.8) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.2a2 2 0 0 1 2-2h3.8l2.2 2.4h7a2 2 0 0 1 2 2v7.6a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></g>
+</g>
+<g><title>Read XLSX · Extract from File</title>
+<rect x="-320" y="-268.8" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(-302 -250.8) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v11.3a1.7 1.7 0 0 1-1.7 1.7H7.7A1.7 1.7 0 0 1 6 18.8V5.2A1.7 1.7 0 0 1 7.7 3.5z"/><path d="M13.8 3.7v4h4M9 12h6M9 15.5h6"/></g>
+</g>
+<g><title>XLSX to text · Code</title>
+<rect x="-192" y="-268.8" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(-174 -250.8) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Requests agent · AI Agent</title>
+<rect x="-50.2" y="-268.8" width="161.8" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<rect x="-40.2" y="-253.8" width="34" height="34" rx="8" fill="#ffffff" fill-opacity="0.75" stroke="#A88ADC" stroke-opacity="0.55" stroke-width="1"/>
+<text x="-23.2" y="-231.8" text-anchor="middle" font-size="14.1" font-weight="700" letter-spacing="0.2" fill="#5B36A6">AI</text>
+<text text-anchor="start" font-size="12.5" font-weight="600" fill="#1F2733"><tspan x="2.8" y="-232.3">Requests agent</tspan></text>
+</g>
+<g><title>New work order · Google Drive Trigger</title>
+<path d="M-818.8 26.2H-792.8A12 12 0 0 1 -780.8 38.2V78.2A12 12 0 0 1 -792.8 90.2H-818.8A26 26 0 0 1 -844.8 64.2V52.2A26 26 0 0 1 -818.8 26.2Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(-824.8 44.2) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.2a2 2 0 0 1 2-2h3.8l2.2 2.4h7a2 2 0 0 1 2 2v7.6a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></g>
+</g>
+<g><title>Only PDF · Filter</title>
+<rect x="-704" y="26.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-686 44.2) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Each work order · Loop Over Items</title>
+<rect x="-576" y="26.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-558 44.2) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3.8 20 6.8l-3 3"/><path d="M4 11.5v-.7a4 4 0 0 1 4-4h12"/><path d="M7 20.2 4 17.2l3-3"/><path d="M20 12.5v.7a4 4 0 0 1-4 4H4"/></g>
+</g>
+<g><title>Download work order · Google Drive</title>
+<rect x="-448" y="26.2" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(-430 44.2) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.2a2 2 0 0 1 2-2h3.8l2.2 2.4h7a2 2 0 0 1 2 2v7.6a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></g>
+</g>
+<g><title>Read PDF text · Extract from File</title>
+<rect x="-320" y="26.2" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(-302 44.2) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v11.3a1.7 1.7 0 0 1-1.7 1.7H7.7A1.7 1.7 0 0 1 6 18.8V5.2A1.7 1.7 0 0 1 7.7 3.5z"/><path d="M13.8 3.7v4h4M9 12h6M9 15.5h6"/></g>
+</g>
+<g><title>PDF to text · Code</title>
+<rect x="-192" y="26.2" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(-174 44.2) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Work-order agent · AI Agent</title>
+<rect x="-50.2" y="26.2" width="161.8" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<rect x="-40.2" y="41.2" width="34" height="34" rx="8" fill="#ffffff" fill-opacity="0.75" stroke="#A88ADC" stroke-opacity="0.55" stroke-width="1"/>
+<text x="-23.2" y="63.2" text-anchor="middle" font-size="14.1" font-weight="700" letter-spacing="0.2" fill="#5B36A6">AI</text>
+<text text-anchor="start" font-size="12.5" font-weight="600" fill="#1F2733"><tspan x="2.8" y="55.2">Work-order</tspan><tspan x="2.8" y="70.2">agent</tspan></text>
+</g>
+<g><title>Prepare PDF for Slack · Code</title>
+<rect x="167.6" y="26.2" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(185.6 44.2) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Send PDF to Slack · Slack</title>
+<rect x="295.6" y="26.2" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(313.6 44.2) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.7 4 8.2 20M15.8 4l-1.5 16M4.8 9h15M4.2 15h15"/></g>
+</g>
+<circle cx="-780.8" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-640" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-512" cy="-247.5" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-512" cy="-226.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="-505" y="-222.8">loop</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="-505" y="-222.8">loop</tspan></text>
+<circle cx="-384" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-256" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-128" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="111.6" cy="-236.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<g><title>Chat model</title><path d="M3.7 -209L7.9 -204.8L3.7 -200.6L-0.5 -204.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<g><title>Tool</title><path d="M57.7 -209L61.9 -204.8L57.7 -200.6L53.5 -204.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<circle cx="-780.8" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-640" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-512" cy="47.5" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-512" cy="68.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="-505" y="72.2">loop</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="-505" y="72.2">loop</tspan></text>
+<circle cx="-384" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-256" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-128" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="111.6" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<g><title>Chat model</title><path d="M3.7 22L7.9 26.2L3.7 30.4L-0.5 26.2Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<g><title>Tool</title><path d="M57.7 86L61.9 90.2L57.7 94.4L53.5 90.2Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<g><title>Tool</title><path d="M57.7 22L61.9 26.2L57.7 30.4L53.5 26.2Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<circle cx="231.6" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="359.6" cy="58.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<path d="M-25.6 -116.4L-22 -112.8L-25.6 -109.2L-29.2 -112.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M-25.6 -66.4L-22 -62.8L-25.6 -59.2L-29.2 -62.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M-204.8 -116.4L-201.2 -112.8L-204.8 -109.2L-208.4 -112.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M-204.8 -66.4L-201.2 -62.8L-204.8 -59.2L-208.4 -62.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M-102.4 -116.4L-98.8 -112.8L-102.4 -109.2L-106 -112.8Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M102.4 164L106 167.6L102.4 171.2L98.8 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M282.8 164L286.4 167.6L282.8 171.2L279.2 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M385.2 164L388.8 167.6L385.2 171.2L381.6 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M385.2 164L388.8 167.6L385.2 171.2L381.6 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M487.6 164L491.2 167.6L487.6 171.2L484 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M487.6 164L491.2 167.6L487.6 171.2L484 167.6Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-812.8" y="-188.3">New request file</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-672" y="-188.3">Only XLSX</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-544" y="-188.3">Each request</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-416" y="-188.3">Download request</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-288" y="-188.3">Read XLSX</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-160" y="-188.3">XLSX to text</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-812.8" y="106.7">New work order</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-672" y="106.7">Only PDF</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-544" y="106.7">Each work order</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-416" y="106.7">Download</tspan><tspan x="-416" y="121.7">work order</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-288" y="106.7">Read PDF text</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-160" y="106.7">PDF to text</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#fff" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"><tspan x="-25.6" y="-47.2">Claude</tspan><tspan x="-25.6" y="-33.7">(LiteLLM)</tspan></text><text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="-25.6" y="-47.2">Claude</tspan><tspan x="-25.6" y="-33.7">(LiteLLM)</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#fff" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"><tspan x="-204.8" y="-47.2">find_row</tspan></text><text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="-204.8" y="-47.2">find_row</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="-102.4" y="-47.2">upsert_request</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="102.4" y="233.2">update_work_</tspan><tspan x="102.4" y="246.7">order</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="282.8" y="233.2">create_row_no_</tspan><tspan x="282.8" y="246.7">request</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="385.2" y="233.2">notify_slack</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#fff" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"><tspan x="199.6" y="106.7">Prepare PDF</tspan><tspan x="199.6" y="121.7">for Slack</tspan></text><text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="199.6" y="106.7">Prepare PDF</tspan><tspan x="199.6" y="121.7">for Slack</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="327.6" y="106.7">Send PDF to Slack</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="487.6" y="233.2">notify_slack_ops</tspan></text>
+</g>
+<line x1="28" y1="621.4" x2="1421" y2="621.4" stroke="#EEF0F3" stroke-width="1"/>
+<rect x="28" y="629.4" width="13" height="13" rx="3.5" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.3"/>
+<text x="48" y="639.4" font-size="11" fill="#6B7480">Trigger</text>
+<rect x="102.9" y="629.4" width="13" height="13" rx="3.5" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.3"/>
+<text x="122.9" y="639.4" font-size="11" fill="#6B7480">AI / LLM</text>
+<rect x="184.3" y="629.4" width="13" height="13" rx="3.5" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.3"/>
+<text x="204.3" y="639.4" font-size="11" fill="#6B7480">Logic &amp; flow</text>
+<rect x="285.2" y="629.4" width="13" height="13" rx="3.5" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.3"/>
+<text x="305.2" y="639.4" font-size="11" fill="#6B7480">Data &amp; storage</text>
+<rect x="401" y="629.4" width="13" height="13" rx="3.5" fill="#E9F4EB" stroke="#74B283" stroke-width="1.3"/>
+<text x="421" y="639.4" font-size="11" fill="#6B7480">Google Workspace</text>
+<rect x="538.1" y="629.4" width="13" height="13" rx="3.5" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.3"/>
+<text x="558.1" y="639.4" font-size="11" fill="#6B7480">Messaging</text>
+<rect x="632.5" y="629.4" width="13" height="13" rx="3.5" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.3"/>
+<text x="652.5" y="639.4" font-size="11" fill="#6B7480">Code</text>
+<path d="M698.4 635.9H716.4" stroke="#A2AAB6" stroke-width="1.5"/><path d="M722.4 635.9L715.4 632.3L716.6 635.9L715.4 639.5Z" fill="#8E97A4"/>
+<text x="728.4" y="639.4" font-size="11" fill="#6B7480">Flow</text>
+<path d="M771 635.9H795" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"/>
+<text x="801" y="639.4" font-size="11" fill="#6B7480">AI connection</text>
+<text x="1421" y="639.4" text-anchor="end" font-size="11" fill="#8A929C">n8n workflow · 23 nodes</text>
+</svg>

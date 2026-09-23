@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1076.2" height="501.9" viewBox="0 0 1076.2 501.9" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Tool · resolve pickup">
+<title>Tool · resolve pickup</title>
+<rect width="1076.2" height="501.9" fill="#ffffff"/>
+<text x="28" y="44" font-size="18" font-weight="600" fill="#1F2733">Tool · resolve pickup</text>
+<g transform="translate(58 68)">
+<line x1="-30" y1="247.4" x2="990.2" y2="247.4" stroke="#E3E6EB" stroke-width="1" stroke-dasharray="2 4"/>
+<g fill="none" stroke-linecap="round">
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M237.4 318.9 C273.3 318.9 273.3 318.9 309.2 318.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M524.1 318.9 C560 318.9 560 318.9 595.9 318.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M667.4 318.9 C703.4 318.9 703.4 318.9 739.3 318.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M94 93.4 C129.9 93.4 129.9 93.4 165.9 93.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M524.1 93.4 C560 93.4 560 93.4 595.9 93.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M667.4 93.4 C703.4 93.4 703.4 93.4 739.3 93.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M94 318.9 C129.9 318.9 129.9 318.9 165.9 318.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M380.7 318.9 C416.7 318.9 416.7 318.9 452.6 318.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M237.4 104.1 C273.3 104.1 273.3 154.9 309.2 154.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M380.7 154.9 C416.7 154.9 416.7 93.4 452.6 93.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M810.8 104.1 C846.7 104.1 846.7 154.9 882.7 154.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M237.4 82.8 C273.3 82.8 273.3 32 309.2 32" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M380.7 32 C416.7 32 416.7 93.4 452.6 93.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M810.8 82.8 C846.7 82.8 846.7 32 882.7 32" stroke="#A2AAB6" stroke-width="1.5"/>
+</g>
+<path d="M316.2 318.9L309.2 315.3L310.4 318.9L309.2 322.5Z" fill="#8E97A4"/>
+<path d="M602.9 318.9L595.9 315.3L597.1 318.9L595.9 322.5Z" fill="#8E97A4"/>
+<path d="M746.3 318.9L739.3 315.3L740.5 318.9L739.3 322.5Z" fill="#8E97A4"/>
+<path d="M172.9 93.4L165.9 89.8L167.1 93.4L165.9 97Z" fill="#8E97A4"/>
+<path d="M602.9 93.4L595.9 89.8L597.1 93.4L595.9 97Z" fill="#8E97A4"/>
+<path d="M746.3 93.4L739.3 89.8L740.5 93.4L739.3 97Z" fill="#8E97A4"/>
+<path d="M172.9 318.9L165.9 315.3L167.1 318.9L165.9 322.5Z" fill="#8E97A4"/>
+<path d="M459.6 318.9L452.6 315.3L453.8 318.9L452.6 322.5Z" fill="#8E97A4"/>
+<path d="M316.2 154.9L309.2 151.3L310.4 154.9L309.2 158.5Z" fill="#8E97A4"/>
+<path d="M459.6 93.4L452.6 89.8L453.8 93.4L452.6 97Z" fill="#8E97A4"/>
+<path d="M889.7 154.9L882.7 151.3L883.9 154.9L882.7 158.5Z" fill="#8E97A4"/>
+<path d="M316.2 32L309.2 28.4L310.4 32L309.2 35.6Z" fill="#8E97A4"/>
+<path d="M459.6 93.4L452.6 89.8L453.8 93.4L452.6 97Z" fill="#8E97A4"/>
+<path d="M889.7 32L882.7 28.4L883.9 32L882.7 35.6Z" fill="#8E97A4"/>
+<g><title>Get row(s) · n8n Data Tables</title>
+<rect x="890.2" y="0" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(908.2 18) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Reverse geocode · HTTP Request</title>
+<rect x="316.7" y="0" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="348.7" y="36.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Called by the agent · Execute Workflow Trigger</title>
+<path d="M56 61.4H82A12 12 0 0 1 94 73.4V113.4A12 12 0 0 1 82 125.4H56A26 26 0 0 1 30 99.4V87.4A26 26 0 0 1 56 61.4Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(50 79.4) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Shared location? · If</title>
+<rect x="173.4" y="61.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="205.4" y="98.9" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Rank candidates · Code</title>
+<rect x="460.1" y="61.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(478.1 79.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Snap to pickup hub · Code</title>
+<rect x="603.4" y="61.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(621.4 79.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Address clear? · If</title>
+<rect x="746.8" y="61.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="778.8" y="98.9" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Ask to clarify · Code</title>
+<rect x="890.2" y="122.9" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(908.2 140.9) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Places search · HTTP Request</title>
+<rect x="316.7" y="122.9" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="348.7" y="159" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Hub by coordinates · HTTP Request</title>
+<rect x="30" y="286.9" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="62" y="323" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Resolve pickup · Code</title>
+<rect x="173.4" y="286.9" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(191.4 304.9) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Read state (Redis) · Redis</title>
+<rect x="316.7" y="286.9" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(334.7 304.9) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Merge into state · Code</title>
+<rect x="460.1" y="286.9" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(478.1 304.9) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Save state (Redis) · Redis</title>
+<rect x="603.4" y="286.9" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(621.4 304.9) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Return to agent · Code</title>
+<rect x="746.8" y="286.9" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(764.8 304.9) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<circle cx="94" cy="93.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="954.2" cy="32" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="94" cy="318.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="237.4" cy="318.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="237.4" cy="82.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="244.4" y="86.1">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="244.4" y="86.1">true</tspan></text>
+<circle cx="237.4" cy="104.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="244.4" y="107.4">false</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="244.4" y="107.4">false</tspan></text>
+<circle cx="380.7" cy="32" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="380.7" cy="154.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="524.1" cy="93.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="667.4" cy="93.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="810.8" cy="82.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="817.8" y="86.1">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="817.8" y="86.1">true</tspan></text>
+<circle cx="810.8" cy="104.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="817.8" y="107.4">false</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="817.8" y="107.4">false</tspan></text>
+<circle cx="380.7" cy="318.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="524.1" cy="318.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="667.4" cy="318.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="62" y="141.9">Called by the agent</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="922.2" y="80.5">Get row(s)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="62" y="367.4">Hub by coordinates</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="205.4" y="367.4">Resolve pickup</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="922.2" y="203.4">Ask to clarify</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="205.4" y="141.9">Shared location?</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="348.7" y="80.5">Reverse geocode</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="348.7" y="203.4">Places search</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="492.1" y="141.9">Rank candidates</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="635.4" y="141.9">Snap to pickup hub</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="778.8" y="141.9">Address clear?</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="348.7" y="367.4">Read state (Redis)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="492.1" y="367.4">Merge into state</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="635.4" y="367.4">Save state (Redis)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="778.8" y="367.4">Return to agent</tspan></text>
+<g><title>continues to Hub by coordinates</title><path d="M954.2 32H970.2" stroke="#A2AAB6" stroke-width="1.5" fill="none"/><circle cx="978.2" cy="32" r="8.0" fill="#4B5563"/><text x="978.2" y="35.4" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">1</text></g>
+<circle cx="954.2" cy="32" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<g><title>from Get row(s)</title><path d="M8 318.9 L22.5 318.9" stroke="#A2AAB6" stroke-width="1.5" fill="none"/><circle cx="0" cy="318.9" r="8.0" fill="#4B5563"/><text x="0" y="322.3" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">1</text></g>
+<path d="M29.5 318.9L22.5 315.3L23.7 318.9L22.5 322.5Z" fill="#8E97A4"/>
+</g>
+<line x1="28" y1="473.9" x2="1048.2" y2="473.9" stroke="#EEF0F3" stroke-width="1"/>
+<rect x="28" y="481.9" width="13" height="13" rx="3.5" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.3"/>
+<text x="48" y="491.9" font-size="11" fill="#6B7480">Trigger</text>
+<rect x="102.9" y="481.9" width="13" height="13" rx="3.5" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.3"/>
+<text x="122.9" y="491.9" font-size="11" fill="#6B7480">Logic &amp; flow</text>
+<rect x="203.8" y="481.9" width="13" height="13" rx="3.5" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.3"/>
+<text x="223.8" y="491.9" font-size="11" fill="#6B7480">Data &amp; storage</text>
+<rect x="319.6" y="481.9" width="13" height="13" rx="3.5" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.3"/>
+<text x="339.6" y="491.9" font-size="11" fill="#6B7480">HTTP / APIs</text>
+<rect x="422.4" y="481.9" width="13" height="13" rx="3.5" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.3"/>
+<text x="442.4" y="491.9" font-size="11" fill="#6B7480">Code</text>
+<path d="M488.2 488.4H506.2" stroke="#A2AAB6" stroke-width="1.5"/><path d="M512.2 488.4L505.2 484.8L506.4 488.4L505.2 492Z" fill="#8E97A4"/>
+<text x="518.2" y="491.9" font-size="11" fill="#6B7480">Flow</text>
+<circle cx="567.8" cy="488.4" r="7" fill="#4B5563"/><text x="567.8" y="491.6" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff">1</text>
+<text x="582.8" y="491.9" font-size="11" fill="#6B7480">Continues</text>
+<text x="1048.2" y="491.9" text-anchor="end" font-size="11" fill="#8A929C">n8n workflow · 15 nodes</text>
+</svg>

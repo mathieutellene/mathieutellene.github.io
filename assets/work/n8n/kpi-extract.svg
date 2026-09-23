@@ -1,0 +1,758 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1874" height="1731.8" viewBox="0 0 1874 1731.8" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Weekly KPI extraction from dashboards">
+<title>Weekly KPI extraction from dashboards</title>
+<rect width="1874" height="1731.8" fill="#ffffff"/>
+<text x="28" y="44" font-size="18" font-weight="600" fill="#1F2733">Weekly KPI extraction from dashboards</text>
+<g transform="translate(476 -60)">
+<g fill="none" stroke-linecap="round">
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-384 1121.6 C-355.8 1121.6 -355.8 1121.6 -327.5 1121.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-256 1121.6 C-227.8 1121.6 -227.8 1121.6 -199.5 1121.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 160 C88.2 160 88.2 160 116.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 160 C216.2 160 216.2 160 244.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 160 C344.2 160 344.2 160 372.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 160 C472.2 160 472.2 160 500.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 160 C600.2 160 600.2 160 628.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 160 C728.2 160 728.2 160 756.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 160 C856.2 160 856.2 160 884.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 316 C88.2 316 88.2 316 116.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 316 C216.2 316 216.2 316 244.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 316 C344.2 316 344.2 316 372.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 316 C472.2 316 472.2 316 500.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 316 C600.2 316 600.2 316 628.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 316 C728.2 316 728.2 316 756.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 316 C856.2 316 856.2 316 884.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 472 C88.2 472 88.2 472 116.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 472 C216.2 472 216.2 472 244.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 472 C344.2 472 344.2 472 372.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 472 C472.2 472 472.2 472 500.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 472 C600.2 472 600.2 472 628.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 472 C728.2 472 728.2 472 756.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 472 C856.2 472 856.2 472 884.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 472 C984.2 472 984.2 472 1012.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1084 472 C1112.2 472 1112.2 472 1140.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1212 472 C1240.2 472 1240.2 472 1268.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 628 C88.2 628 88.2 628 116.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 628 C216.2 628 216.2 628 244.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 628 C344.2 628 344.2 628 372.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 628 C472.2 628 472.2 628 500.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 628 C600.2 628 600.2 628 628.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 628 C728.2 628 728.2 628 756.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 628 C856.2 628 856.2 628 884.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 628 C984.2 628 984.2 628 1012.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1084 628 C1112.2 628 1112.2 628 1140.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1212 628 C1240.2 628 1240.2 628 1268.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 784 C88.2 784 88.2 784 116.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 784 C216.2 784 216.2 784 244.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 784 C344.2 784 344.2 784 372.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 784 C472.2 784 472.2 784 500.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 784 C600.2 784 600.2 784 628.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 784 C728.2 784 728.2 784 756.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 784 C856.2 784 856.2 784 884.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 940 C88.2 940 88.2 940 116.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 940 C216.2 940 216.2 940 244.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 940 C344.2 940 344.2 940 372.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 940 C472.2 940 472.2 940 500.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 940 C600.2 940 600.2 940 628.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 940 C728.2 940 728.2 940 756.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 940 C856.2 940 856.2 940 884.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 1096 C88.2 1096 88.2 1096 116.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 1096 C216.2 1096 216.2 1096 244.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 1096 C344.2 1096 344.2 1096 372.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 1096 C472.2 1096 472.2 1096 500.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 1096 C600.2 1096 600.2 1096 628.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 1096 C728.2 1096 728.2 1096 756.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 1096 C856.2 1096 856.2 1096 884.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 1096 C984.2 1096 984.2 1096 1012.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 1262.4 C88.2 1262.4 88.2 1262.4 116.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 1262.4 C216.2 1262.4 216.2 1262.4 244.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 1262.4 C344.2 1262.4 344.2 1262.4 372.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 1262.4 C472.2 1262.4 472.2 1262.4 500.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 1262.4 C600.2 1262.4 600.2 1262.4 628.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 1262.4 C728.2 1262.4 728.2 1262.4 756.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 1262.4 C856.2 1262.4 856.2 1262.4 884.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 1418.4 C88.2 1418.4 88.2 1418.4 116.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 1418.4 C216.2 1418.4 216.2 1418.4 244.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 1418.4 C344.2 1418.4 344.2 1418.4 372.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 1418.4 C472.2 1418.4 472.2 1418.4 500.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 1418.4 C600.2 1418.4 600.2 1418.4 628.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 1418.4 C728.2 1418.4 728.2 1418.4 756.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 1418.4 C856.2 1418.4 856.2 1418.4 884.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 1418.4 C984.2 1418.4 984.2 1418.4 1012.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 1574.4 C88.2 1574.4 88.2 1574.4 116.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M188 1574.4 C216.2 1574.4 216.2 1574.4 244.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M316 1574.4 C344.2 1574.4 344.2 1574.4 372.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M444 1574.4 C472.2 1574.4 472.2 1574.4 500.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M572 1574.4 C600.2 1574.4 600.2 1574.4 628.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M700 1574.4 C728.2 1574.4 728.2 1574.4 756.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M828 1574.4 C856.2 1574.4 856.2 1574.4 884.5 1574.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M60 1574.4 C92.4 1574.4 92.4 1527.4 124.7 1527.4 L179.8 1527.4 C212.1 1527.4 212.1 1676.8 244.5 1676.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-128 1121.6 C-69.8 1121.6 -69.8 160 -11.5 160" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 160 L974 160 Q986 160 986 172 L986 257 Q986 269 974 269 L-15.5 269 Q-27.5 269 -27.5 281 L-27.5 308 Q-27.5 316 -19.5 316 L-11.5 316" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 316 L974 316 Q986 316 986 328 L986 413 Q986 425 974 425 L-15.5 425 Q-27.5 425 -27.5 437 L-27.5 464 Q-27.5 472 -19.5 472 L-11.5 472" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 784 L974 784 Q986 784 986 796 L986 881 Q986 893 974 893 L-15.5 893 Q-27.5 893 -27.5 905 L-27.5 932 Q-27.5 940 -19.5 940 L-11.5 940" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 940 L974 940 Q986 940 986 952 L986 1037 Q986 1049 974 1049 L-15.5 1049 Q-27.5 1049 -27.5 1061 L-27.5 1088 Q-27.5 1096 -19.5 1096 L-11.5 1096" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M956 1262.4 L964 1262.4 Q972 1262.4 972 1254.4 L972 1227.4 Q972 1215.4 960 1215.4 L-15.5 1215.4 Q-27.5 1215.4 -27.5 1227.4 L-27.5 1410.4 Q-27.5 1418.4 -19.5 1418.4 L-11.5 1418.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1084 1096 L1092 1096 Q1100 1096 1100 1104 L1100 1196.4 Q1100 1208.4 1088 1208.4 L-15.5 1208.4 Q-27.5 1208.4 -27.5 1220.4 L-27.5 1254.4 Q-27.5 1262.4 -19.5 1262.4 L-11.5 1262.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1340 472 L1358 472 Q1370 472 1370 484 L1370 569 Q1370 581 1358 581 L-15.5 581 Q-27.5 581 -27.5 593 L-27.5 620 Q-27.5 628 -19.5 628 L-11.5 628" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1340 628 L1358 628 Q1370 628 1370 640 L1370 725 Q1370 737 1358 737 L-15.5 737 Q-27.5 737 -27.5 749 L-27.5 776 Q-27.5 784 -19.5 784 L-11.5 784" stroke="#A2AAB6" stroke-width="1.5"/>
+</g>
+<path d="M-320.5 1121.6L-327.5 1118L-326.3 1121.6L-327.5 1125.2Z" fill="#8E97A4"/>
+<path d="M-192.5 1121.6L-199.5 1118L-198.3 1121.6L-199.5 1125.2Z" fill="#8E97A4"/>
+<path d="M123.5 160L116.5 156.4L117.7 160L116.5 163.6Z" fill="#8E97A4"/>
+<path d="M251.5 160L244.5 156.4L245.7 160L244.5 163.6Z" fill="#8E97A4"/>
+<path d="M379.5 160L372.5 156.4L373.7 160L372.5 163.6Z" fill="#8E97A4"/>
+<path d="M507.5 160L500.5 156.4L501.7 160L500.5 163.6Z" fill="#8E97A4"/>
+<path d="M635.5 160L628.5 156.4L629.7 160L628.5 163.6Z" fill="#8E97A4"/>
+<path d="M763.5 160L756.5 156.4L757.7 160L756.5 163.6Z" fill="#8E97A4"/>
+<path d="M891.5 160L884.5 156.4L885.7 160L884.5 163.6Z" fill="#8E97A4"/>
+<path d="M123.5 316L116.5 312.4L117.7 316L116.5 319.6Z" fill="#8E97A4"/>
+<path d="M251.5 316L244.5 312.4L245.7 316L244.5 319.6Z" fill="#8E97A4"/>
+<path d="M379.5 316L372.5 312.4L373.7 316L372.5 319.6Z" fill="#8E97A4"/>
+<path d="M507.5 316L500.5 312.4L501.7 316L500.5 319.6Z" fill="#8E97A4"/>
+<path d="M635.5 316L628.5 312.4L629.7 316L628.5 319.6Z" fill="#8E97A4"/>
+<path d="M763.5 316L756.5 312.4L757.7 316L756.5 319.6Z" fill="#8E97A4"/>
+<path d="M891.5 316L884.5 312.4L885.7 316L884.5 319.6Z" fill="#8E97A4"/>
+<path d="M123.5 472L116.5 468.4L117.7 472L116.5 475.6Z" fill="#8E97A4"/>
+<path d="M251.5 472L244.5 468.4L245.7 472L244.5 475.6Z" fill="#8E97A4"/>
+<path d="M379.5 472L372.5 468.4L373.7 472L372.5 475.6Z" fill="#8E97A4"/>
+<path d="M507.5 472L500.5 468.4L501.7 472L500.5 475.6Z" fill="#8E97A4"/>
+<path d="M635.5 472L628.5 468.4L629.7 472L628.5 475.6Z" fill="#8E97A4"/>
+<path d="M763.5 472L756.5 468.4L757.7 472L756.5 475.6Z" fill="#8E97A4"/>
+<path d="M891.5 472L884.5 468.4L885.7 472L884.5 475.6Z" fill="#8E97A4"/>
+<path d="M1019.5 472L1012.5 468.4L1013.7 472L1012.5 475.6Z" fill="#8E97A4"/>
+<path d="M1147.5 472L1140.5 468.4L1141.7 472L1140.5 475.6Z" fill="#8E97A4"/>
+<path d="M1275.5 472L1268.5 468.4L1269.7 472L1268.5 475.6Z" fill="#8E97A4"/>
+<path d="M123.5 628L116.5 624.4L117.7 628L116.5 631.6Z" fill="#8E97A4"/>
+<path d="M251.5 628L244.5 624.4L245.7 628L244.5 631.6Z" fill="#8E97A4"/>
+<path d="M379.5 628L372.5 624.4L373.7 628L372.5 631.6Z" fill="#8E97A4"/>
+<path d="M507.5 628L500.5 624.4L501.7 628L500.5 631.6Z" fill="#8E97A4"/>
+<path d="M635.5 628L628.5 624.4L629.7 628L628.5 631.6Z" fill="#8E97A4"/>
+<path d="M763.5 628L756.5 624.4L757.7 628L756.5 631.6Z" fill="#8E97A4"/>
+<path d="M891.5 628L884.5 624.4L885.7 628L884.5 631.6Z" fill="#8E97A4"/>
+<path d="M1019.5 628L1012.5 624.4L1013.7 628L1012.5 631.6Z" fill="#8E97A4"/>
+<path d="M1147.5 628L1140.5 624.4L1141.7 628L1140.5 631.6Z" fill="#8E97A4"/>
+<path d="M1275.5 628L1268.5 624.4L1269.7 628L1268.5 631.6Z" fill="#8E97A4"/>
+<path d="M123.5 784L116.5 780.4L117.7 784L116.5 787.6Z" fill="#8E97A4"/>
+<path d="M251.5 784L244.5 780.4L245.7 784L244.5 787.6Z" fill="#8E97A4"/>
+<path d="M379.5 784L372.5 780.4L373.7 784L372.5 787.6Z" fill="#8E97A4"/>
+<path d="M507.5 784L500.5 780.4L501.7 784L500.5 787.6Z" fill="#8E97A4"/>
+<path d="M635.5 784L628.5 780.4L629.7 784L628.5 787.6Z" fill="#8E97A4"/>
+<path d="M763.5 784L756.5 780.4L757.7 784L756.5 787.6Z" fill="#8E97A4"/>
+<path d="M891.5 784L884.5 780.4L885.7 784L884.5 787.6Z" fill="#8E97A4"/>
+<path d="M123.5 940L116.5 936.4L117.7 940L116.5 943.6Z" fill="#8E97A4"/>
+<path d="M251.5 940L244.5 936.4L245.7 940L244.5 943.6Z" fill="#8E97A4"/>
+<path d="M379.5 940L372.5 936.4L373.7 940L372.5 943.6Z" fill="#8E97A4"/>
+<path d="M507.5 940L500.5 936.4L501.7 940L500.5 943.6Z" fill="#8E97A4"/>
+<path d="M635.5 940L628.5 936.4L629.7 940L628.5 943.6Z" fill="#8E97A4"/>
+<path d="M763.5 940L756.5 936.4L757.7 940L756.5 943.6Z" fill="#8E97A4"/>
+<path d="M891.5 940L884.5 936.4L885.7 940L884.5 943.6Z" fill="#8E97A4"/>
+<path d="M123.5 1096L116.5 1092.4L117.7 1096L116.5 1099.6Z" fill="#8E97A4"/>
+<path d="M251.5 1096L244.5 1092.4L245.7 1096L244.5 1099.6Z" fill="#8E97A4"/>
+<path d="M379.5 1096L372.5 1092.4L373.7 1096L372.5 1099.6Z" fill="#8E97A4"/>
+<path d="M507.5 1096L500.5 1092.4L501.7 1096L500.5 1099.6Z" fill="#8E97A4"/>
+<path d="M635.5 1096L628.5 1092.4L629.7 1096L628.5 1099.6Z" fill="#8E97A4"/>
+<path d="M763.5 1096L756.5 1092.4L757.7 1096L756.5 1099.6Z" fill="#8E97A4"/>
+<path d="M891.5 1096L884.5 1092.4L885.7 1096L884.5 1099.6Z" fill="#8E97A4"/>
+<path d="M1019.5 1096L1012.5 1092.4L1013.7 1096L1012.5 1099.6Z" fill="#8E97A4"/>
+<path d="M123.5 1262.4L116.5 1258.8L117.7 1262.4L116.5 1266Z" fill="#8E97A4"/>
+<path d="M251.5 1262.4L244.5 1258.8L245.7 1262.4L244.5 1266Z" fill="#8E97A4"/>
+<path d="M379.5 1262.4L372.5 1258.8L373.7 1262.4L372.5 1266Z" fill="#8E97A4"/>
+<path d="M507.5 1262.4L500.5 1258.8L501.7 1262.4L500.5 1266Z" fill="#8E97A4"/>
+<path d="M635.5 1262.4L628.5 1258.8L629.7 1262.4L628.5 1266Z" fill="#8E97A4"/>
+<path d="M763.5 1262.4L756.5 1258.8L757.7 1262.4L756.5 1266Z" fill="#8E97A4"/>
+<path d="M891.5 1262.4L884.5 1258.8L885.7 1262.4L884.5 1266Z" fill="#8E97A4"/>
+<path d="M123.5 1418.4L116.5 1414.8L117.7 1418.4L116.5 1422Z" fill="#8E97A4"/>
+<path d="M251.5 1418.4L244.5 1414.8L245.7 1418.4L244.5 1422Z" fill="#8E97A4"/>
+<path d="M379.5 1418.4L372.5 1414.8L373.7 1418.4L372.5 1422Z" fill="#8E97A4"/>
+<path d="M507.5 1418.4L500.5 1414.8L501.7 1418.4L500.5 1422Z" fill="#8E97A4"/>
+<path d="M635.5 1418.4L628.5 1414.8L629.7 1418.4L628.5 1422Z" fill="#8E97A4"/>
+<path d="M763.5 1418.4L756.5 1414.8L757.7 1418.4L756.5 1422Z" fill="#8E97A4"/>
+<path d="M891.5 1418.4L884.5 1414.8L885.7 1418.4L884.5 1422Z" fill="#8E97A4"/>
+<path d="M1019.5 1418.4L1012.5 1414.8L1013.7 1418.4L1012.5 1422Z" fill="#8E97A4"/>
+<path d="M123.5 1574.4L116.5 1570.8L117.7 1574.4L116.5 1578Z" fill="#8E97A4"/>
+<path d="M251.5 1574.4L244.5 1570.8L245.7 1574.4L244.5 1578Z" fill="#8E97A4"/>
+<path d="M379.5 1574.4L372.5 1570.8L373.7 1574.4L372.5 1578Z" fill="#8E97A4"/>
+<path d="M507.5 1574.4L500.5 1570.8L501.7 1574.4L500.5 1578Z" fill="#8E97A4"/>
+<path d="M635.5 1574.4L628.5 1570.8L629.7 1574.4L628.5 1578Z" fill="#8E97A4"/>
+<path d="M763.5 1574.4L756.5 1570.8L757.7 1574.4L756.5 1578Z" fill="#8E97A4"/>
+<path d="M891.5 1574.4L884.5 1570.8L885.7 1574.4L884.5 1578Z" fill="#8E97A4"/>
+<path d="M251.5 1676.8L244.5 1673.2L245.7 1676.8L244.5 1680.4Z" fill="#8E97A4"/>
+<path d="M-4.5 160L-11.5 156.4L-10.3 160L-11.5 163.6Z" fill="#8E97A4"/>
+<path d="M-4.5 316L-11.5 312.4L-10.3 316L-11.5 319.6Z" fill="#8E97A4"/>
+<path d="M-4.5 472L-11.5 468.4L-10.3 472L-11.5 475.6Z" fill="#8E97A4"/>
+<path d="M-4.5 940L-11.5 936.4L-10.3 940L-11.5 943.6Z" fill="#8E97A4"/>
+<path d="M-4.5 1096L-11.5 1092.4L-10.3 1096L-11.5 1099.6Z" fill="#8E97A4"/>
+<path d="M-4.5 1418.4L-11.5 1414.8L-10.3 1418.4L-11.5 1422Z" fill="#8E97A4"/>
+<path d="M-4.5 1262.4L-11.5 1258.8L-10.3 1262.4L-11.5 1266Z" fill="#8E97A4"/>
+<path d="M-4.5 628L-11.5 624.4L-10.3 628L-11.5 631.6Z" fill="#8E97A4"/>
+<path d="M-4.5 784L-11.5 780.4L-10.3 784L-11.5 787.6Z" fill="#8E97A4"/>
+<g><title>Config (B2C compensations) · Edit Fields</title>
+<rect x="-4" y="128" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(14 146) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Sign in (B2C compensations) · HTTP Request</title>
+<rect x="124" y="128" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="156" y="164.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>View image (B2C compensations) · HTTP Request</title>
+<rect x="252" y="128" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="284" y="164.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Label (B2C compensations) · Code</title>
+<rect x="380" y="128" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 146) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (B2C compensations) · LiteLLM</title>
+<rect x="508" y="128" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="164.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (B2C compensations) · Code</title>
+<rect x="636" y="128" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 146) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (B2C compensations) · Code</title>
+<rect x="764" y="128" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 146) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (B2C compensations) · Google Sheets</title>
+<rect x="892" y="128" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 146) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Config (supply compensations) · Edit Fields</title>
+<rect x="-4" y="284" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(14 302) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Sign in (supply compensations) · HTTP Request</title>
+<rect x="124" y="284" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="156" y="320.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>View image (supply compensations) · HTTP Request</title>
+<rect x="252" y="284" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="284" y="320.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Label (supply compensations) · Code</title>
+<rect x="380" y="284" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 302) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (supply compensations) · LiteLLM</title>
+<rect x="508" y="284" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="320.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (supply compensations) · Code</title>
+<rect x="636" y="284" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 302) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (supply compensations) · Code</title>
+<rect x="764" y="284" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 302) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (supply compensations) · Google Sheets</title>
+<rect x="892" y="284" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 302) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Compute (B2B critical) · Code</title>
+<rect x="-4" y="440" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(14 458) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Get workbooks (B2B critical) · Tableau</title>
+<rect x="124" y="440" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(142 458) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Filter workbook (B2B critical) · Code</title>
+<rect x="252" y="440" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(270 458) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Get views (B2B critical) · Tableau</title>
+<rect x="380" y="440" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(398 458) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>View (B2B critical) · Filter</title>
+<rect x="508" y="440" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(526 458) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>View image (B2B critical) · Tableau</title>
+<rect x="636" y="440" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(654 458) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Label (B2B critical) · Code</title>
+<rect x="764" y="440" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 458) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (B2B critical) · LiteLLM</title>
+<rect x="892" y="440" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="924" y="476.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (B2B critical) · Code</title>
+<rect x="1020" y="440" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(1038 458) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (B2B critical) · Code</title>
+<rect x="1148" y="440" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(1166 458) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (B2B critical) · Google Sheets</title>
+<rect x="1276" y="440" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(1294 458) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Compute (driver critical) · Code</title>
+<rect x="-4" y="596" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(14 614) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Get workbooks (driver critical) · Tableau</title>
+<rect x="124" y="596" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(142 614) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Filter workbook (driver critical) · Code</title>
+<rect x="252" y="596" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(270 614) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Get views (driver critical) · Tableau</title>
+<rect x="380" y="596" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(398 614) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>View (driver critical) · Filter</title>
+<rect x="508" y="596" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(526 614) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>View image (driver critical) · Tableau</title>
+<rect x="636" y="596" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(654 614) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Label (driver critical) · Code</title>
+<rect x="764" y="596" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 614) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (driver critical) · LiteLLM</title>
+<rect x="892" y="596" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="924" y="632.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (driver critical) · Code</title>
+<rect x="1020" y="596" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(1038 614) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (driver critical) · Code</title>
+<rect x="1148" y="596" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(1166 614) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (driver critical) · Google Sheets</title>
+<rect x="1276" y="596" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(1294 614) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Config (B2B watch) · Edit Fields</title>
+<rect x="-4" y="752" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(14 770) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Sign in (B2B watch) · HTTP Request</title>
+<rect x="124" y="752" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="156" y="788.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>View image (B2B watch) · HTTP Request</title>
+<rect x="252" y="752" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="284" y="788.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Label (B2B watch) · Code</title>
+<rect x="380" y="752" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 770) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (B2B watch) · LiteLLM</title>
+<rect x="508" y="752" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="788.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (B2B watch) · Code</title>
+<rect x="636" y="752" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 770) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (B2B watch) · Code</title>
+<rect x="764" y="752" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 770) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (B2B watch) · Google Sheets</title>
+<rect x="892" y="752" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 770) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Config (B2C watch) · Edit Fields</title>
+<rect x="-4" y="908" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(14 926) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Sign in (B2C watch) · HTTP Request</title>
+<rect x="124" y="908" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="156" y="944.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>View image (B2C watch) · HTTP Request</title>
+<rect x="252" y="908" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="284" y="944.1" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Label (B2C watch) · Code</title>
+<rect x="380" y="908" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 926) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (B2C watch) · LiteLLM</title>
+<rect x="508" y="908" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="944.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (B2C watch) · Code</title>
+<rect x="636" y="908" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 926) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (B2C watch) · Code</title>
+<rect x="764" y="908" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 926) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (B2C watch) · Google Sheets</title>
+<rect x="892" y="908" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 926) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Compute (private critical) · Code</title>
+<rect x="-4" y="1064" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(14 1082) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Find view (private critical) · Tableau</title>
+<rect x="124" y="1064" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(142 1082) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Pick view (private critical) · Code</title>
+<rect x="252" y="1064" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(270 1082) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>View image (private critical) · Tableau</title>
+<rect x="380" y="1064" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(398 1082) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Label (private critical) · Code</title>
+<rect x="508" y="1064" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(526 1082) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (private critical) · LiteLLM</title>
+<rect x="636" y="1064" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="668" y="1100.4" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (private critical) · Code</title>
+<rect x="764" y="1064" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 1082) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (private critical) · Code</title>
+<rect x="892" y="1064" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(910 1082) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (private critical) · Google Sheets</title>
+<rect x="1020" y="1064" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(1038 1082) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Run · Manual Trigger</title>
+<path d="M-422 1089.6H-396A12 12 0 0 1 -384 1101.6V1141.6A12 12 0 0 1 -396 1153.6H-422A26 26 0 0 1 -448 1127.6V1115.6A26 26 0 0 1 -422 1089.6Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(-428 1107.6) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5 18.5 11l-5.6 1.4L10.5 18z"/><path d="m13 12.5 4.5 5"/></g>
+</g>
+<g><title>Read KPI catalogue · Google Sheets</title>
+<rect x="-320" y="1089.6" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(-302 1107.6) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Run once · Code</title>
+<rect x="-192" y="1089.6" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(-174 1107.6) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Config (supply watch) · Edit Fields</title>
+<rect x="-4" y="1230.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(14 1248.4) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Sign in (supply watch) · HTTP Request</title>
+<rect x="124" y="1230.4" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="156" y="1266.5" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>View image (supply watch) · HTTP Request</title>
+<rect x="252" y="1230.4" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="284" y="1266.5" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Label (supply watch) · Code</title>
+<rect x="380" y="1230.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 1248.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (supply watch) · LiteLLM</title>
+<rect x="508" y="1230.4" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="1266.8" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (supply watch) · Code</title>
+<rect x="636" y="1230.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 1248.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map (supply watch) · Code</title>
+<rect x="764" y="1230.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 1248.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (supply watch) · Google Sheets</title>
+<rect x="892" y="1230.4" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 1248.4) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Get workbooks (B2B board) · Tableau</title>
+<rect x="-4" y="1386.4" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(14 1404.4) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Filter workbook (B2B board) · Code</title>
+<rect x="124" y="1386.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(142 1404.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Get views (B2B board) · Tableau</title>
+<rect x="252" y="1386.4" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(270 1404.4) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Get view image (B2B board) · Tableau</title>
+<rect x="380" y="1386.4" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(398 1404.4) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5h15"/><path d="M7.5 16v-4.5M12 16V6.5M16.5 16V9.5"/></g>
+</g>
+<g><title>Label view (B2B board) · Code</title>
+<rect x="508" y="1386.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(526 1404.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Vision LLM (B2B board) · LiteLLM</title>
+<rect x="636" y="1386.4" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="668" y="1422.8" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (B2B board) · Code</title>
+<rect x="764" y="1386.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 1404.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map to weekly sheet (B2B board) · Code</title>
+<rect x="892" y="1386.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(910 1404.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (B2B board) · Google Sheets</title>
+<rect x="1020" y="1386.4" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(1038 1404.4) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Invoice email (IMAP) · Email (IMAP)</title>
+<path d="M22 1542.4H48A12 12 0 0 1 60 1554.4V1594.4A12 12 0 0 1 48 1606.4H22A26 26 0 0 1 -4 1580.4V1568.4A26 26 0 0 1 22 1542.4Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(16 1560.4) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.8" width="17" height="12.4" rx="2"/><path d="m4.2 7 7.8 6 7.8-6"/></g>
+</g>
+<g><title>Parse PDF report · PDF Parse</title>
+<rect x="124" y="1542.4" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(142 1560.4) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v11.3a1.7 1.7 0 0 1-1.7 1.7H7.7A1.7 1.7 0 0 1 6 18.8V5.2A1.7 1.7 0 0 1 7.7 3.5z"/><path d="M13.8 3.7v4h4M9 12h6M9 15.5h6"/></g>
+</g>
+<g><title>Edit Fields · Edit Fields</title>
+<rect x="252" y="1542.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(270 1560.4) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 5.6 15 15.8 4.8a2.1 2.1 0 0 1 3 3L8.6 18z"/><path d="m14 6.8 3 3"/></g>
+</g>
+<g><title>Prepare vinyl report · Code</title>
+<rect x="380" y="1542.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(398 1560.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>LLM (vinyl report) · LiteLLM</title>
+<rect x="508" y="1542.4" width="64" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<text x="540" y="1578.8" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Flatten (vinyl report) · Code</title>
+<rect x="636" y="1542.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(654 1560.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Map to weekly sheet (vinyl report) · Code</title>
+<rect x="764" y="1542.4" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(782 1560.4) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Write (vinyl report) · Google Sheets</title>
+<rect x="892" y="1542.4" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(910 1560.4) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<g><title>Read KPI catalogue · Google Sheets</title>
+<rect x="252" y="1644.8" width="64" height="64" rx="12" fill="#E9F4EB" stroke="#74B283" stroke-width="1.5"/>
+<g transform="translate(270 1662.8) scale(1.1667)" fill="none" stroke="#276334" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.6h16M9.8 9.3V20"/></g>
+</g>
+<circle cx="-384" cy="1121.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-256" cy="1121.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-128" cy="1121.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="160" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="316" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1084" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1212" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1340" cy="472" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1084" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1212" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1340" cy="628" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="784" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="940" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1084" cy="1096" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="1262.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="956" cy="1418.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="60" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="188" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="316" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="444" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="572" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="700" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="828" cy="1574.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-416" y="1170.1">Run</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-288" y="1170.1">Read KPI catalogue</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-160" y="1170.1">Run once</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="208.5">Config (B2C</tspan><tspan x="28" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="208.5">Sign in (B2C</tspan><tspan x="156" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="208.5">View image (B2C</tspan><tspan x="284" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="208.5">Label (B2C</tspan><tspan x="412" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="208.5">Vision LLM (B2C</tspan><tspan x="540" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="208.5">Flatten (B2C</tspan><tspan x="668" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="208.5">Map (B2C</tspan><tspan x="796" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="208.5">Write (B2C</tspan><tspan x="924" y="223.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="364.5">Config (supply</tspan><tspan x="28" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="364.5">Sign in (supply</tspan><tspan x="156" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="364.5">View image (supply</tspan><tspan x="284" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="364.5">Label (supply</tspan><tspan x="412" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="364.5">Vision LLM (supply</tspan><tspan x="540" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="364.5">Flatten (supply</tspan><tspan x="668" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="364.5">Map (supply</tspan><tspan x="796" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="364.5">Write (supply</tspan><tspan x="924" y="379.5">compensations)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="520.5">Compute</tspan><tspan x="28" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="520.5">Get workbooks</tspan><tspan x="156" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="520.5">Filter workbook</tspan><tspan x="284" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="520.5">Get views</tspan><tspan x="412" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="520.5">View (B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="520.5">View image</tspan><tspan x="668" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="520.5">Label (B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="520.5">Vision LLM</tspan><tspan x="924" y="535.5">(B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1052" y="520.5">Flatten (B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1180" y="520.5">Map (B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1308" y="520.5">Write (B2B critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="676.5">Compute</tspan><tspan x="28" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="676.5">Get workbooks</tspan><tspan x="156" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="676.5">Filter workbook</tspan><tspan x="284" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="676.5">Get views</tspan><tspan x="412" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="676.5">View (driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="676.5">View image</tspan><tspan x="668" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="676.5">Label (driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="676.5">Vision LLM</tspan><tspan x="924" y="691.5">(driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1052" y="676.5">Flatten (driver</tspan><tspan x="1052" y="691.5">critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1180" y="676.5">Map (driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1308" y="676.5">Write (driver critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="832.5">Config (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="832.5">Sign in (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="832.5">View image</tspan><tspan x="284" y="847.5">(B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="832.5">Label (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="832.5">Vision LLM</tspan><tspan x="540" y="847.5">(B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="832.5">Flatten (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="832.5">Map (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="832.5">Write (B2B watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="988.5">Config (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="988.5">Sign in (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="988.5">View image</tspan><tspan x="284" y="1003.5">(B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="988.5">Label (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="988.5">Vision LLM</tspan><tspan x="540" y="1003.5">(B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="988.5">Flatten (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="988.5">Map (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="988.5">Write (B2C watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="1144.5">Compute</tspan><tspan x="28" y="1159.5">(private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="1144.5">Find view</tspan><tspan x="156" y="1159.5">(private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="1144.5">Pick view</tspan><tspan x="284" y="1159.5">(private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="1144.5">View image</tspan><tspan x="412" y="1159.5">(private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="1144.5">Label (private</tspan><tspan x="540" y="1159.5">critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="1144.5">Vision LLM</tspan><tspan x="668" y="1159.5">(private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="1144.5">Flatten (private</tspan><tspan x="796" y="1159.5">critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="1144.5">Map (private critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1052" y="1144.5">Write (private</tspan><tspan x="1052" y="1159.5">critical)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="1310.9">Config (supply</tspan><tspan x="28" y="1325.9">watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="1310.9">Sign in</tspan><tspan x="156" y="1325.9">(supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="1310.9">View image</tspan><tspan x="284" y="1325.9">(supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="1310.9">Label (supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="1310.9">Vision LLM</tspan><tspan x="540" y="1325.9">(supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="1310.9">Flatten</tspan><tspan x="668" y="1325.9">(supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="1310.9">Map (supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="1310.9">Write (supply watch)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="1466.9">Get workbooks</tspan><tspan x="28" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="1466.9">Filter workbook</tspan><tspan x="156" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="1466.9">Get views</tspan><tspan x="284" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="1466.9">Get view image</tspan><tspan x="412" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="1466.9">Label view</tspan><tspan x="540" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="1466.9">Vision LLM</tspan><tspan x="668" y="1481.9">(B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="1466.9">Flatten (B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="1466.9">Map to weekly</tspan><tspan x="924" y="1481.9">sheet (B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1052" y="1466.9">Write (B2B board)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="28" y="1622.9">Invoice email (IMAP)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="156" y="1622.9">Parse PDF report</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="1622.9">Edit Fields</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="284" y="1725.3">Read KPI catalogue</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="412" y="1622.9">Prepare vinyl report</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="540" y="1622.9">LLM (vinyl report)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="668" y="1622.9">Flatten (vinyl report)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="796" y="1622.9">Map to weekly</tspan><tspan x="796" y="1637.9">sheet (vinyl report)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="924" y="1622.9">Write (vinyl report)</tspan></text>
+</g>
+<line x1="28" y1="1703.8" x2="1846" y2="1703.8" stroke="#EEF0F3" stroke-width="1"/>
+<rect x="28" y="1711.8" width="13" height="13" rx="3.5" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.3"/>
+<text x="48" y="1721.8" font-size="11" fill="#6B7480">Trigger</text>
+<rect x="102.9" y="1711.8" width="13" height="13" rx="3.5" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.3"/>
+<text x="122.9" y="1721.8" font-size="11" fill="#6B7480">AI / LLM</text>
+<rect x="184.3" y="1711.8" width="13" height="13" rx="3.5" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.3"/>
+<text x="204.3" y="1721.8" font-size="11" fill="#6B7480">Logic &amp; flow</text>
+<rect x="285.2" y="1711.8" width="13" height="13" rx="3.5" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.3"/>
+<text x="305.2" y="1721.8" font-size="11" fill="#6B7480">Data &amp; storage</text>
+<rect x="401" y="1711.8" width="13" height="13" rx="3.5" fill="#E9F4EB" stroke="#74B283" stroke-width="1.3"/>
+<text x="421" y="1721.8" font-size="11" fill="#6B7480">Google Workspace</text>
+<rect x="538.1" y="1711.8" width="13" height="13" rx="3.5" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.3"/>
+<text x="558.1" y="1721.8" font-size="11" fill="#6B7480">HTTP / APIs</text>
+<rect x="640.9" y="1711.8" width="13" height="13" rx="3.5" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.3"/>
+<text x="660.9" y="1721.8" font-size="11" fill="#6B7480">Code</text>
+<path d="M706.8 1718.3H724.8" stroke="#A2AAB6" stroke-width="1.5"/><path d="M730.8 1718.3L723.8 1714.7L725 1718.3L723.8 1721.9Z" fill="#8E97A4"/>
+<text x="736.8" y="1721.8" font-size="11" fill="#6B7480">Flow</text>
+<text x="1846" y="1721.8" text-anchor="end" font-size="11" fill="#8A929C">n8n workflow · 92 nodes</text>
+</svg>

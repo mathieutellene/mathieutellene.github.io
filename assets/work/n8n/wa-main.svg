@@ -1,0 +1,460 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3656.8" height="1320.9" viewBox="0 0 3656.8 1320.9" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="WhatsApp booking agent">
+<title>WhatsApp booking agent</title>
+<rect width="3656.8" height="1320.9" fill="#ffffff"/>
+<text x="28" y="44" font-size="18" font-weight="600" fill="#1F2733">WhatsApp booking agent</text>
+<g transform="translate(864.2 508.3)">
+<g fill="none" stroke-linecap="round">
+<path d="M1162.2 318 C1162.2 282.1 1341.4 274.1 1341.4 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Redis memory → Booking agent (Memory)</title></path>
+<path d="M1244.2 318 C1244.2 282.1 1381.9 274.1 1381.9 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Tool · cancel ride → Booking agent (Tool)</title></path>
+<path d="M1326.1 318 C1326.1 282.1 1381.9 274.1 1381.9 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Tool · resolve pickup → Booking agent (Tool)</title></path>
+<path d="M1408 318 C1408 282.1 1381.9 274.1 1381.9 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Tool · price quote → Booking agent (Tool)</title></path>
+<path d="M1489.9 318 C1489.9 282.1 1381.9 274.1 1381.9 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Tool · create ride → Booking agent (Tool)</title></path>
+<path d="M1080.3 318 C1080.3 282.1 1301 274.1 1301 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Claude (LiteLLM) → Booking agent (Chat model)</title></path>
+<path d="M1571.8 318 C1571.8 282.1 1381.9 274.1 1381.9 238.1" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"><title>Tool · emergency → Booking agent (Tool)</title></path>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M2316.8 -173.2 C2352.7 -173.2 2352.7 -162.6 2388.7 -162.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2316.8 21.8 C2352.7 21.8 2352.7 21.8 2388.7 21.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2316.8 -296.1 C2352.7 -296.1 2352.7 -285.4 2388.7 -285.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2316.8 697.6 C2352.7 697.6 2352.7 697.6 2388.7 697.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1743.4 206.1 C1779.3 206.1 1779.3 206.1 1815.2 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M401.9 -101.1 C437.9 -101.1 437.9 -101.1 473.8 -101.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-314.9 -39.7 C-278.9 -39.7 -278.9 -39.7 -243 -39.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-745 21.8 C-709 21.8 -709 21.8 -673.1 21.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M832 206.1 C867.9 206.1 867.9 206.1 903.9 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M258.6 21.8 C294.5 21.8 294.5 21.8 330.4 21.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-28.2 -39.7 C7.8 -39.7 7.8 -39.7 43.7 -39.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M688.6 206.1 C724.6 206.1 724.6 206.1 760.5 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M258.6 -101.1 C294.5 -101.1 294.5 -101.1 330.4 -101.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M688.6 -162.6 C724.6 -162.6 724.6 -162.6 760.5 -162.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-458.2 -39.7 C-422.3 -39.7 -422.3 -39.7 -386.4 -39.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-458.2 83.2 C-422.3 83.2 -422.3 83.2 -386.4 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-171.5 -50.3 C-135.6 -50.3 -135.6 -39.7 -99.7 -39.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2603.5 206.1 C2639.4 206.1 2639.4 206.1 2675.4 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 697.6 C2209.4 697.6 2209.4 697.6 2245.3 697.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1886.7 206.1 C1922.7 206.1 1922.7 184.6 1958.6 184.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 73 C2209.4 73 2209.4 21.8 2245.3 21.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 -111.4 C2209.4 -111.4 2209.4 -162.6 2245.3 -162.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M545.3 -111.8 C581.2 -111.8 581.2 -162.6 617.1 -162.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M115.2 -50.3 C151.1 -50.3 151.1 -101.1 187.1 -101.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M115.2 -29 C151.1 -29 151.1 21.8 187.1 21.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-601.6 11.1 C-565.7 11.1 -565.7 -39.7 -529.7 -39.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M-601.6 32.4 C-565.7 32.4 -565.7 83.2 -529.7 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 160.6 C2066 160.6 2066 73 2101.9 73" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 206.1 C2496.1 206.1 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 -111.4 C2209.4 -111.4 2209.4 -285.4 2245.3 -285.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 329 C2496.1 329 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 144.6 C2066 144.6 2066 -111.4 2101.9 -111.4" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M545.3 -90.5 C581.2 -90.5 581.2 206.1 617.1 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 329 C2496.1 329 2496.1 666.9 2532 666.9" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 451.8 C2496.1 451.8 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 21.8 C2496.1 21.8 2496.1 421.1 2532 421.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M1422.4 206.1 C1547.1 206.1 1547.1 206.1 1671.9 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 -408.3 C2496.1 -408.3 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 574.7 C2496.1 574.7 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 -285.4 C2496.1 -285.4 2496.1 206.1 2532 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M975.4 206.1 C1114.2 206.1 1114.2 206.1 1253 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 240.6 C2066 240.6 2066 697.6 2101.9 697.6" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 73 C2281 73 2424.4 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 176.6 C2200.1 176.6 2218.7 206.1 2388.7 206.1" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2460.2 697.6 C2496.1 697.6 2496.1 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 192.6 C2200.1 192.6 2218.7 329 2388.7 329" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2173.4 -111.4 C2219.6 -111.4 2219.6 -61.9 2265.8 -61.9 L2439.7 -61.9 C2485.8 -61.9 2485.8 83.2 2532 83.2" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 208.6 C2200.1 208.6 2218.7 451.8 2388.7 451.8" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 224.6 C2200.1 224.6 2218.7 574.7 2388.7 574.7" stroke="#A2AAB6" stroke-width="1.5"/>
+<path d="M2030.1 128.6 C2078.1 128.6 2078.1 -408.3 2126.1 -408.3 L2388.7 -408.3" stroke="#A2AAB6" stroke-width="1.5"/>
+</g>
+<path d="M2395.7 -162.6L2388.7 -166.2L2389.9 -162.6L2388.7 -159Z" fill="#8E97A4"/>
+<path d="M2395.7 21.8L2388.7 18.2L2389.9 21.8L2388.7 25.4Z" fill="#8E97A4"/>
+<path d="M2395.7 -285.4L2388.7 -289L2389.9 -285.4L2388.7 -281.8Z" fill="#8E97A4"/>
+<path d="M2395.7 697.6L2388.7 694L2389.9 697.6L2388.7 701.2Z" fill="#8E97A4"/>
+<path d="M1822.2 206.1L1815.2 202.5L1816.4 206.1L1815.2 209.7Z" fill="#8E97A4"/>
+<path d="M480.8 -101.1L473.8 -104.7L475 -101.1L473.8 -97.5Z" fill="#8E97A4"/>
+<path d="M-236 -39.7L-243 -43.3L-241.8 -39.7L-243 -36.1Z" fill="#8E97A4"/>
+<path d="M-666.1 21.8L-673.1 18.2L-671.9 21.8L-673.1 25.4Z" fill="#8E97A4"/>
+<path d="M910.9 206.1L903.9 202.5L905.1 206.1L903.9 209.7Z" fill="#8E97A4"/>
+<path d="M337.4 21.8L330.4 18.2L331.6 21.8L330.4 25.4Z" fill="#8E97A4"/>
+<path d="M50.7 -39.7L43.7 -43.3L44.9 -39.7L43.7 -36.1Z" fill="#8E97A4"/>
+<path d="M767.5 206.1L760.5 202.5L761.7 206.1L760.5 209.7Z" fill="#8E97A4"/>
+<path d="M337.4 -101.1L330.4 -104.7L331.6 -101.1L330.4 -97.5Z" fill="#8E97A4"/>
+<path d="M767.5 -162.6L760.5 -166.2L761.7 -162.6L760.5 -159Z" fill="#8E97A4"/>
+<path d="M-379.4 -39.7L-386.4 -43.3L-385.2 -39.7L-386.4 -36.1Z" fill="#8E97A4"/>
+<path d="M-379.4 83.2L-386.4 79.6L-385.2 83.2L-386.4 86.8Z" fill="#8E97A4"/>
+<path d="M-92.7 -39.7L-99.7 -43.3L-98.5 -39.7L-99.7 -36.1Z" fill="#8E97A4"/>
+<path d="M2682.4 206.1L2675.4 202.5L2676.6 206.1L2675.4 209.7Z" fill="#8E97A4"/>
+<path d="M2252.3 697.6L2245.3 694L2246.5 697.6L2245.3 701.2Z" fill="#8E97A4"/>
+<path d="M1965.6 184.6L1958.6 181L1959.8 184.6L1958.6 188.2Z" fill="#8E97A4"/>
+<path d="M2252.3 21.8L2245.3 18.2L2246.5 21.8L2245.3 25.4Z" fill="#8E97A4"/>
+<path d="M2252.3 -162.6L2245.3 -166.2L2246.5 -162.6L2245.3 -159Z" fill="#8E97A4"/>
+<path d="M624.1 -162.6L617.1 -166.2L618.3 -162.6L617.1 -159Z" fill="#8E97A4"/>
+<path d="M194.1 -101.1L187.1 -104.7L188.3 -101.1L187.1 -97.5Z" fill="#8E97A4"/>
+<path d="M194.1 21.8L187.1 18.2L188.3 21.8L187.1 25.4Z" fill="#8E97A4"/>
+<path d="M-522.7 -39.7L-529.7 -43.3L-528.5 -39.7L-529.7 -36.1Z" fill="#8E97A4"/>
+<path d="M-522.7 83.2L-529.7 79.6L-528.5 83.2L-529.7 86.8Z" fill="#8E97A4"/>
+<path d="M2108.9 73L2101.9 69.4L2103.1 73L2101.9 76.6Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2252.3 -285.4L2245.3 -289L2246.5 -285.4L2245.3 -281.8Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2108.9 -111.4L2101.9 -115L2103.1 -111.4L2101.9 -107.8Z" fill="#8E97A4"/>
+<path d="M624.1 206.1L617.1 202.5L618.3 206.1L617.1 209.7Z" fill="#8E97A4"/>
+<path d="M2539 666.9L2532 663.3L2533.2 666.9L2532 670.5Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2539 421.1L2532 417.5L2533.2 421.1L2532 424.7Z" fill="#8E97A4"/>
+<path d="M1678.9 206.1L1671.9 202.5L1673.1 206.1L1671.9 209.7Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2539 206.1L2532 202.5L2533.2 206.1L2532 209.7Z" fill="#8E97A4"/>
+<path d="M1260 206.1L1253 202.5L1254.2 206.1L1253 209.7Z" fill="#8E97A4"/>
+<path d="M2108.9 697.6L2101.9 694L2103.1 697.6L2101.9 701.2Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2395.7 206.1L2388.7 202.5L2389.9 206.1L2388.7 209.7Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2395.7 329L2388.7 325.4L2389.9 329L2388.7 332.6Z" fill="#8E97A4"/>
+<path d="M2539 83.2L2532 79.6L2533.2 83.2L2532 86.8Z" fill="#8E97A4"/>
+<path d="M2395.7 451.8L2388.7 448.2L2389.9 451.8L2388.7 455.4Z" fill="#8E97A4"/>
+<path d="M2395.7 574.7L2388.7 571.1L2389.9 574.7L2388.7 578.3Z" fill="#8E97A4"/>
+<path d="M2395.7 -408.3L2388.7 -411.9L2389.9 -408.3L2388.7 -404.7Z" fill="#8E97A4"/>
+<g><title>Redis memory · Redis</title>
+<circle cx="1162.2" cy="343" r="25" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.4"/>
+<g transform="translate(1151.2 332) scale(0.9167)" fill="none" stroke="#5B36A6" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M4.4 12.5A7.6 7.6 0 1 0 6.6 6.6L4.5 8.7"/><path d="M4.5 4.5v4.2h4.2"/><path d="M12 8.3v4l2.7 1.7"/></g>
+</g>
+<g><title>Tool · cancel ride · Workflow Tool</title>
+<circle cx="1244.2" cy="343" r="25" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.4"/>
+<g transform="translate(1233.2 332) scale(0.9167)" fill="none" stroke="#3A4658" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Tool · resolve pickup · Workflow Tool</title>
+<circle cx="1326.1" cy="343" r="25" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.4"/>
+<g transform="translate(1315.1 332) scale(0.9167)" fill="none" stroke="#3A4658" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Tool · price quote · Workflow Tool</title>
+<circle cx="1408" cy="343" r="25" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.4"/>
+<g transform="translate(1397 332) scale(0.9167)" fill="none" stroke="#3A4658" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Tool · create ride · Workflow Tool</title>
+<circle cx="1489.9" cy="343" r="25" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.4"/>
+<g transform="translate(1478.9 332) scale(0.9167)" fill="none" stroke="#3A4658" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Claude (LiteLLM) · LiteLLM</title>
+<circle cx="1080.3" cy="343" r="25" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.4"/>
+<text x="1080.3" y="346.5" text-anchor="middle" font-size="9.8" font-weight="700" letter-spacing="0.4" fill="#5B36A6">LLM</text>
+</g>
+<g><title>Tool · emergency · Workflow Tool</title>
+<circle cx="1571.8" cy="343" r="25" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.4"/>
+<g transform="translate(1560.8 332) scale(0.9167)" fill="none" stroke="#3A4658" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="2396.2" y="-440.3" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2414.2 -422.3) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>If · If</title>
+<rect x="2252.8" y="-317.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="2284.8" y="-279.9" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Wait · Wait</title>
+<rect x="2396.2" y="-317.4" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(2414.2 -299.4) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.7 3.5c0 4.8 4.3 5.3 4.3 8.5s-4.3 3.7-4.3 8.5"/><path d="M16.3 3.5c0 4.8-4.3 5.3-4.3 8.5s4.3 3.7 4.3 8.5"/></g>
+</g>
+<g><title>Track journey · Execute Workflow</title>
+<rect x="2396.2" y="-194.6" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(2414.2 -176.6) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="624.6" y="-194.6" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(642.6 -176.6) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Insert row · n8n Data Tables</title>
+<rect x="768" y="-194.6" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(786 -176.6) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>If · If</title>
+<rect x="2252.8" y="-194.6" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="2284.8" y="-157.1" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Send message · WhatsApp</title>
+<rect x="2109.4" y="-143.4" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2127.4 -125.4) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Check blacklist · n8n Data Tables</title>
+<rect x="194.6" y="-133.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(212.6 -115.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>If · If</title>
+<rect x="481.3" y="-133.1" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="513.3" y="-95.6" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Filter · Filter</title>
+<rect x="337.9" y="-133.1" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(355.9 -115.1) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Look up user · n8n Data Tables</title>
+<rect x="-92.2" y="-71.7" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(-74.2 -53.7) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>If · If</title>
+<rect x="51.2" y="-71.7" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="83.2" y="-34.2" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>Filter · Filter</title>
+<rect x="-522.2" y="-71.7" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-504.2 -53.7) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Look up user · n8n Data Tables</title>
+<rect x="-378.9" y="-71.7" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(-360.9 -53.7) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>If · If</title>
+<rect x="-235.5" y="-71.7" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<text x="-203.5" y="-34.2" text-anchor="middle" font-size="15.5" font-weight="700" letter-spacing="0.2" fill="#3A4658">IF</text>
+</g>
+<g><title>WhatsApp message · WhatsApp Trigger</title>
+<path d="M-783 -10.2H-757A12 12 0 0 1 -745 1.8V41.8A12 12 0 0 1 -757 53.8H-783A26 26 0 0 1 -809 27.8V15.8A26 26 0 0 1 -783 -10.2Z" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.5"/>
+<g transform="translate(-789 7.8) scale(1.1667)" fill="none" stroke="#80530A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="194.6" y="-10.2" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(212.6 7.8) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Insert row · n8n Data Tables</title>
+<rect x="337.9" y="-10.2" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(355.9 7.8) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Message type · Switch</title>
+<rect x="-665.6" y="-10.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-647.6 7.8) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.2" cy="12" r="1.9"/><path d="M7.1 12h2.2c2.4 0 2.9-5.5 5.7-5.5h3.2"/><path d="M9.3 12h8.9M9.3 12c2.4 0 2.9 5.5 5.7 5.5h3.2"/><path d="m16.8 4.8 1.7 1.7-1.7 1.7M16.8 10.3l1.7 1.7-1.7 1.7M16.8 15.8l1.7 1.7-1.7 1.7"/></g>
+</g>
+<g><title>Send confirm button · HTTP Request</title>
+<rect x="2396.2" y="-10.2" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="2428.2" y="25.8" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Wait · Wait</title>
+<rect x="2252.8" y="-10.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(2270.8 7.8) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.7 3.5c0 4.8 4.3 5.3 4.3 8.5s-4.3 3.7-4.3 8.5"/><path d="M16.3 3.5c0 4.8-4.3 5.3-4.3 8.5s4.3 3.7 4.3 8.5"/></g>
+</g>
+<g><title>Send map image · WhatsApp</title>
+<rect x="2109.4" y="41" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2127.4 59) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Conversation log · n8n Data Tables</title>
+<rect x="2539.5" y="51.2" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(2557.5 69.2) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Filter · Filter</title>
+<rect x="-522.2" y="51.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-504.2 69.2) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Call 'Corporate flow' · Execute Workflow</title>
+<rect x="-378.9" y="51.2" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(-360.9 69.2) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/><path d="M7.2 11v2.2a3.5 3.5 0 0 0 3.5 3.5H13"/></g>
+</g>
+<g><title>Route reply · Switch</title>
+<rect x="1966.1" y="112.6" width="64" height="144" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(1984.1 170.6) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.2" cy="12" r="1.9"/><path d="M7.1 12h2.2c2.4 0 2.9-5.5 5.7-5.5h3.2"/><path d="M9.3 12h8.9M9.3 12c2.4 0 2.9 5.5 5.7 5.5h3.2"/><path d="m16.8 4.8 1.7 1.7-1.7 1.7M16.8 10.3l1.7 1.7-1.7 1.7M16.8 15.8l1.7 1.7-1.7 1.7"/></g>
+</g>
+<g><title>Booking agent · AI Agent</title>
+<rect x="1260.5" y="174.1" width="161.8" height="64" rx="12" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.5"/>
+<rect x="1270.5" y="189.1" width="34" height="34" rx="8" fill="#ffffff" fill-opacity="0.75" stroke="#A88ADC" stroke-opacity="0.55" stroke-width="1"/>
+<text x="1287.5" y="211.1" text-anchor="middle" font-size="14.1" font-weight="700" letter-spacing="0.2" fill="#5B36A6">AI</text>
+<text text-anchor="start" font-size="12.5" font-weight="600" fill="#1F2733"><tspan x="1313.5" y="210.6">Booking agent</tspan></text>
+</g>
+<g><title>Filter · Filter</title>
+<rect x="768" y="174.1" width="64" height="64" rx="12" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.5"/>
+<g transform="translate(786 192.1) scale(1.1667)" fill="none" stroke="#3A4658" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5h15l-5.8 7.2v5.6l-3.4 1.7v-7.3z"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="2396.2" y="174.1" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2414.2 192.1) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Code · Code</title>
+<rect x="911.4" y="174.1" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(929.4 192.1) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Look up user · n8n Data Tables</title>
+<rect x="624.6" y="174.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(642.6 192.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Save conversation state · n8n Data Tables</title>
+<rect x="1822.7" y="174.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(1840.7 192.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Load conversation state · n8n Data Tables</title>
+<rect x="1679.4" y="174.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(1697.4 192.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Send confirm button · HTTP Request</title>
+<rect x="2539.5" y="174.1" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="2571.5" y="210.2" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Conversation log · n8n Data Tables</title>
+<rect x="2682.9" y="174.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(2700.9 192.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="2396.2" y="297" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2414.2 315) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>Conversation log · n8n Data Tables</title>
+<rect x="2539.5" y="389.1" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(2557.5 407.1) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Send template · WhatsApp</title>
+<rect x="2396.2" y="419.8" width="64" height="64" rx="12" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.5"/>
+<g transform="translate(2414.2 437.8) scale(1.1667)" fill="none" stroke="#145B80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.5h11.6a2.2 2.2 0 0 1 2.2 2.2v7.6a2.2 2.2 0 0 1-2.2 2.2H11l-4.5 3.5v-3.5h-.3A2.2 2.2 0 0 1 4 14.3V6.7a2.2 2.2 0 0 1 2.2-2.2z"/></g>
+</g>
+<g><title>HTTP Request · HTTP Request</title>
+<rect x="2396.2" y="542.7" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="2428.2" y="578.8" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<g><title>Conversation log · n8n Data Tables</title>
+<rect x="2539.5" y="634.9" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(2557.5 652.9) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Get pickup (Redis) · Redis</title>
+<rect x="2109.4" y="665.6" width="64" height="64" rx="12" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.5"/>
+<g transform="translate(2127.4 683.6) scale(1.1667)" fill="none" stroke="#1A635B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.7"/><path d="M5 6v12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7V6"/><path d="M5 12c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7"/></g>
+</g>
+<g><title>Build pickup list · Code</title>
+<rect x="2252.8" y="665.6" width="64" height="64" rx="12" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.5"/>
+<g transform="translate(2270.8 683.6) scale(1.1667)" fill="none" stroke="#443F37" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H8.2a2 2 0 0 0-2 2v3.1c0 1.3-.9 2.4-2.2 2.4 1.3 0 2.2 1.1 2.2 2.4v3.1a2 2 0 0 0 2 2H9"/><path d="M15 4.5h.8a2 2 0 0 1 2 2v3.1c0 1.3.9 2.4 2.2 2.4-1.3 0-2.2 1.1-2.2 2.4v3.1a2 2 0 0 1-2 2H15"/></g>
+</g>
+<g><title>Send pickup list · HTTP Request</title>
+<rect x="2396.2" y="665.6" width="64" height="64" rx="12" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.5"/>
+<text x="2428.2" y="701.7" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#2F3B8C">HTTP</text>
+</g>
+<circle cx="1422.4" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<g><title>Chat model</title><path d="M1301 233.9L1305.2 238.1L1301 242.3L1296.8 238.1Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<g><title>Memory</title><path d="M1341.4 233.9L1345.6 238.1L1341.4 242.3L1337.2 238.1Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<g><title>Tool</title><path d="M1381.9 233.9L1386.1 238.1L1381.9 242.3L1377.7 238.1Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/></g>
+<circle cx="-745" cy="21.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2173.4" cy="-111.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="128.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="144.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="160.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="176.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="192.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="208.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="224.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2030.1" cy="240.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2173.4" cy="73" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="832" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="258.6" cy="21.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="329" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="975.4" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-28.2" cy="-39.7" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="688.6" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="258.6" cy="-101.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="545.3" cy="-111.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="552.3" y="-108.5">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="552.3" y="-108.5">true</tspan></text>
+<circle cx="545.3" cy="-90.5" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="552.3" y="-87.2">false</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="552.3" y="-87.2">false</tspan></text>
+<circle cx="401.9" cy="-101.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="688.6" cy="-162.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2316.8" cy="-173.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="2323.8" y="-169.9">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="2323.8" y="-169.9">true</tspan></text>
+<circle cx="2316.8" cy="-151.9" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="115.2" cy="-50.3" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="122.2" y="-47">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="122.2" y="-47">true</tspan></text>
+<circle cx="115.2" cy="-29" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="122.2" y="-25.7">false</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="122.2" y="-25.7">false</tspan></text>
+<circle cx="-458.2" cy="-39.7" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="-408.3" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="451.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="574.7" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-458.2" cy="83.2" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-601.6" cy="11.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-601.6" cy="32.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-314.9" cy="-39.7" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="-171.5" cy="-50.3" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="-164.5" y="-47">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="-164.5" y="-47">true</tspan></text>
+<circle cx="-171.5" cy="-29" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1886.7" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="1743.4" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="21.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2316.8" cy="21.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2603.5" cy="206.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2316.8" cy="-296.1" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<text text-anchor="start" font-size="9.5" fill="#fff" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"><tspan x="2323.8" y="-292.8">true</tspan></text><text text-anchor="start" font-size="9.5" fill="#6B7480"><tspan x="2323.8" y="-292.8">true</tspan></text>
+<circle cx="2316.8" cy="-274.8" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="-285.4" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2173.4" cy="697.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2316.8" cy="697.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<circle cx="2460.2" cy="697.6" r="3.3" fill="#fff" stroke="#8E97A4" stroke-width="1.4"/>
+<path d="M1162.2 314.4L1165.8 318L1162.2 321.6L1158.6 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1244.2 314.4L1247.8 318L1244.2 321.6L1240.6 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1326.1 314.4L1329.7 318L1326.1 321.6L1322.5 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1408 314.4L1411.6 318L1408 321.6L1404.4 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1489.9 314.4L1493.5 318L1489.9 321.6L1486.3 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1080.3 314.4L1083.9 318L1080.3 321.6L1076.7 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<path d="M1571.8 314.4L1575.4 318L1571.8 321.6L1568.2 318Z" fill="#fff" stroke="#AE93DE" stroke-width="1.2"/>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1162.2" y="383.6">Redis memory</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1244.2" y="383.6">Tool ·</tspan><tspan x="1244.2" y="397.1">cancel ride</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1326.1" y="383.6">Tool · resolve</tspan><tspan x="1326.1" y="397.1">pickup</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1408" y="383.6">Tool ·</tspan><tspan x="1408" y="397.1">price quote</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1489.9" y="383.6">Tool ·</tspan><tspan x="1489.9" y="397.1">create ride</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-777" y="70.3">WhatsApp message</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2141.4" y="-62.9">Send message</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1998.1" y="273.1">Route reply</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2141.4" y="121.5">Send map image</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="800" y="254.6">Filter</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="226.6" y="70.3">Send template</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="254.6">Send template</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="377.5">Send template</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="943.4" y="254.6">Code</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-60.2" y="8.8">Look up user</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="656.6" y="254.6">Look up user</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="369.9" y="70.3">Insert row</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2571.5" y="131.7">Conversation log</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2571.5" y="715.4">Conversation log</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="-114.1">Track journey</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="226.6" y="-52.6">Check blacklist</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="513.3" y="-52.6">If</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="369.9" y="-52.6">Filter</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="656.6" y="-114.1">Send template</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="800" y="-114.1">Insert row</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2284.8" y="-114.1">If</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="83.2" y="8.8">If</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-490.2" y="8.8">Filter</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="-359.8">Send template</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="500.3">Send template</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1080.3" y="383.6">Claude</tspan><tspan x="1080.3" y="397.1">(LiteLLM)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="623.2">HTTP Request</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-490.2" y="131.7">Filter</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-633.6" y="70.3">Message type</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-346.9" y="131.7">Call 'Corporate flow'</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-346.9" y="8.8">Look up user</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="-203.5" y="8.8">If</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1854.7" y="254.6">Save</tspan><tspan x="1854.7" y="269.6">conversation state</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="1711.4" y="254.6">Load</tspan><tspan x="1711.4" y="269.6">conversation state</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#fff" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"><tspan x="2428.2" y="70.3">Send confirm button</tspan></text><text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="70.3">Send confirm button</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2284.8" y="70.3">Wait</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2571.5" y="469.6">Conversation log</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2571.5" y="254.6">Send confirm button</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2714.9" y="254.6">Conversation log</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2284.8" y="-236.9">If</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="-236.9">Wait</tspan></text>
+<text text-anchor="middle" font-size="11.5" fill="#394350"><tspan x="1571.8" y="383.6">Tool ·</tspan><tspan x="1571.8" y="397.1">emergency</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2141.4" y="746.1">Get pickup (Redis)</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2284.8" y="746.1">Build pickup list</tspan></text>
+<text text-anchor="middle" font-size="12.5" fill="#1F2733"><tspan x="2428.2" y="746.1">Send pickup list</tspan></text>
+</g>
+<line x1="28" y1="1292.9" x2="3628.8" y2="1292.9" stroke="#EEF0F3" stroke-width="1"/>
+<rect x="28" y="1300.9" width="13" height="13" rx="3.5" fill="#FDF4E3" stroke="#D6A04A" stroke-width="1.3"/>
+<text x="48" y="1310.9" font-size="11" fill="#6B7480">Trigger</text>
+<rect x="102.9" y="1300.9" width="13" height="13" rx="3.5" fill="#F4EEFC" stroke="#A88ADC" stroke-width="1.3"/>
+<text x="122.9" y="1310.9" font-size="11" fill="#6B7480">AI / LLM</text>
+<rect x="184.3" y="1300.9" width="13" height="13" rx="3.5" fill="#EEF1F5" stroke="#97A3B4" stroke-width="1.3"/>
+<text x="204.3" y="1310.9" font-size="11" fill="#6B7480">Logic &amp; flow</text>
+<rect x="285.2" y="1300.9" width="13" height="13" rx="3.5" fill="#E6F4F2" stroke="#62AFA6" stroke-width="1.3"/>
+<text x="305.2" y="1310.9" font-size="11" fill="#6B7480">Data &amp; storage</text>
+<rect x="401" y="1300.9" width="13" height="13" rx="3.5" fill="#E6F3FA" stroke="#5EAAD6" stroke-width="1.3"/>
+<text x="421" y="1310.9" font-size="11" fill="#6B7480">Messaging</text>
+<rect x="495.4" y="1300.9" width="13" height="13" rx="3.5" fill="#ECEFFB" stroke="#7F8CD5" stroke-width="1.3"/>
+<text x="515.4" y="1310.9" font-size="11" fill="#6B7480">HTTP / APIs</text>
+<rect x="598.2" y="1300.9" width="13" height="13" rx="3.5" fill="#F3F1EC" stroke="#AAA496" stroke-width="1.3"/>
+<text x="618.2" y="1310.9" font-size="11" fill="#6B7480">Code</text>
+<path d="M664 1307.4H682" stroke="#A2AAB6" stroke-width="1.5"/><path d="M688 1307.4L681 1303.8L682.2 1307.4L681 1311Z" fill="#8E97A4"/>
+<text x="694" y="1310.9" font-size="11" fill="#6B7480">Flow</text>
+<path d="M736.6 1307.4H760.6" stroke="#AE93DE" stroke-width="1.35" stroke-dasharray="5 4"/>
+<text x="766.6" y="1310.9" font-size="11" fill="#6B7480">AI connection</text>
+<text x="3628.8" y="1310.9" text-anchor="end" font-size="11" fill="#8A929C">n8n workflow · 51 nodes</text>
+</svg>
