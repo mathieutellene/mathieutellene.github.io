@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local AI Agent · Mac mini · Mathieu Tellene</title>
+<meta name="description" content="A read-only copilot that watches my work tools, drafts replies in my own voice and keeps a local memory of decisions and commitments. It reads and proposes; a person always sends. Moving to a local model on the team&#x27;s Mac mini.">
+<link rel="canonical" href="https://mathieutellene.github.io/work/local-agent.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Local AI Agent · Mac mini · Mathieu Tellene"><meta property="og:description" content="A read-only copilot that watches my work tools, drafts replies in my own voice and keeps a local memory of decisions and commitments. It reads and proposes; a person always sends. Moving to a local model on the team&#x27;s Mac mini.">
+<meta property="og:url" content="https://mathieutellene.github.io/work/local-agent.html"><meta property="og:image" content="https://mathieutellene.github.io/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · personal build · Aug 2026 to now</p>
+  <h1><span class="g">Local AI Agent</span> · Mac mini</h1>
+  <p class="lead">My work lives in six tools, and the expensive part of the day is not answering messages but finding the context to answer them well. This agent watches my work surface, does that research, drafts replies in my own voice and keeps a memory of what was decided. It is deliberately read-only: it proposes, and I send.</p>
+  <div class="pillrow"><span class="impact">Reads 5 tools, sends nothing</span><span class="kind">local automation</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/mcp.svg" alt="Model Context Protocol" title="Model Context Protocol" class="mono" loading="lazy" width="21" height="21">Model Context Protocol</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span><span class="chip"><img src="../assets/logos/gmail.svg" alt="Gmail" title="Gmail" class="" loading="lazy" width="21" height="21">Gmail</span><span class="chip"><img src="../assets/logos/calendar.svg" alt="Google Calendar" title="Google Calendar" class="" loading="lazy" width="21" height="21">Google Calendar</span><span class="chip"><img src="../assets/logos/drive.svg" alt="Google Drive" title="Google Drive" class="" loading="lazy" width="21" height="21">Google Drive</span><span class="chip"><img src="../assets/logos/clickup.svg" alt="ClickUp" title="ClickUp" class="" loading="lazy" width="21" height="21">ClickUp</span><span class="chip"><img src="../assets/logos/ollama.svg" alt="Ollama" title="Ollama" class="mono" loading="lazy" width="21" height="21">Ollama</span><span class="chip"><img src="../assets/logos/apple.svg" alt="Mac mini (macOS)" title="Mac mini (macOS)" class="mono" loading="lazy" width="21" height="21">Mac mini (macOS)</span></div>
+  
+  <div class="meta reveal"><div><span>My role</span>Designed and built it for myself.</div><div><span>When</span>v1 Aug 2026 · v2 on the Mac mini in progress</div><div><span>Built with</span>Claude with custom skills and scheduled runs, MCP connectors to Slack, Gmail, Calendar, Drive, ClickUp and Tableau, Ollama with a local model, launchd</div><div><span>Status</span>v1 ran as a scheduled Claude task. v2 moves to the Mac mini with a local model, pending the security review of its Slack app.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num" data-count="7" data-prefix="" data-suffix="" data-dec="0">7</div><div class="lbl">connectors, six of them read-only</div></div><div class="stat reveal"><div class="num" data-count="20" data-prefix="" data-suffix=" min" data-dec="0">20 min</div><div class="lbl">between runs on weekdays, 08:00 to 20:00</div></div><div class="stat reveal"><div class="num" data-count="500" data-prefix="" data-suffix="" data-dec="0">500</div><div class="lbl">last message IDs kept to never process the same message twice</div></div><div class="stat reveal"><div class="num" data-count="0" data-prefix="" data-suffix="" data-dec="0">0</div><div class="lbl">messages sent on its own</div></div></div>
+  <div class="mascot-hero reveal" style="margin-top:34px"><div><p class="lead" style="margin:0 0 10px">It has a face. I made this mascot for the agent that lives on the Mac mini, and it shows up wherever that machine appears in this portfolio: this agent, the <a href="rpa-uploader.html" style="color:var(--accent)">RPA Uploader</a>, the <a href="cops-control.html" style="color:var(--accent)">COPs Control</a> pipeline and the <a href="dqm.html" style="color:var(--accent)">DQM</a> engine.</p></div><div class="mascot-card"><img src="../assets/img/mascot.webp" alt="The local AI agent mascot: a small robot with a beret, a scarf and a smiling screen face"></div></div>
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<figure class="fig reveal"><div class="mock-wrap"><div class="brief" aria-label="Illustrative morning brief"><div class="bh"><b>Morning brief · Tuesday</b><span>read-only · nothing sent</span></div><ul><li><span class="src">Slack</span><span><b>Ops lead</b> asked for the fleet audit numbers for Thursday. Draft reply ready, with the dashboard link.</span></li><li><span class="src">Calendar</span><span><b>11:00 design review</b>. The notes from the last session list two open decisions; both are summarised below.</span></li><li><span class="src">ClickUp</span><span><b>3 tasks due this week</b>. One is blocked waiting for data access; the request went out on Monday.</span></li><li><span class="src">Gmail</span><span><b>Partner reply</b> on the new badge photo. They confirm the shape; nothing to do.</span></li><li><span class="src">Drive</span><span><b>README updated</b> by a colleague on the uploader. Changes are in the guards section.</span></li></ul></div></div><figcaption>An illustrative morning brief with invented content. Each line starts with the tool it came from.</figcaption></figure>
+<div class="prose">
+<h2 id="loop">How it works</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 245" role="img" aria-label="Agent loop" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><text class="dg-cl" x="12.0" y="18">IN</text><text class="dg-cl" x="224.0" y="18">DECIDE</text><text class="dg-cl" x="436.0" y="18">WORK</text><text class="dg-cl" x="648.0" y="18">KEEP</text><text class="dg-cl" x="860.0" y="18">OUT</text><path class="dg-e flow" d="M180.0,131.5 C204.0,131.5 194.0,131.5 218.0,131.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,131.5 C416.0,131.5 406.0,74.5 430.0,74.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,131.5 C416.0,131.5 406.0,181.0 430.0,181.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,74.5 C628.0,74.5 618.0,82.0 642.0,82.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,181.0 C628.0,181.0 618.0,181.0 642.0,181.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,74.5 C628.0,74.5 618.0,181.0 642.0,181.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,181.0 C840.0,181.0 830.0,131.5 854.0,131.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="91.0" width="168" height="81" rx="10"/><text x="26.0" y="115.0" class="dg-t">Slack activity</text><text x="26.0" y="134.0" class="dg-s">read twice: everything</text><text x="26.0" y="149.0" class="dg-s">and unread</text></g><g class="dg-box dg-ai"><rect x="224.0" y="91.0" width="168" height="81" rx="10"/><text x="238.0" y="115.0" class="dg-t">Classify</text><text x="238.0" y="134.0" class="dg-s">the difference decides</text><text x="238.0" y="149.0" class="dg-s">the route</text></g><g class="dg-box dg-ai"><rect x="436.0" y="34.0" width="168" height="81" rx="10"/><text x="450.0" y="58.0" class="dg-t">Route A · action</text><text x="450.0" y="77.0" class="dg-s">research across the</text><text x="450.0" y="92.0" class="dg-s">connectors</text></g><g class="dg-box dg-data"><rect x="436.0" y="133.0" width="168" height="96" rx="10"/><text x="450.0" y="157.0" class="dg-t">Route B · memory</text><text x="450.0" y="176.0" class="dg-s">a light read for</text><text x="450.0" y="191.0" class="dg-s">decisions and</text><text x="450.0" y="206.0" class="dg-s">commitments</text></g><g class="dg-box dg-human"><rect x="648.0" y="41.5" width="168" height="81" rx="10"/><text x="662.0" y="65.5" class="dg-t">Draft reply</text><text x="662.0" y="84.5" class="dg-s">left in the</text><text x="662.0" y="99.5" class="dg-s">conversation, never sent</text></g><g class="dg-box dg-data"><rect x="648.0" y="140.5" width="168" height="81" rx="10"/><text x="662.0" y="164.5" class="dg-t">Local memory</text><text x="662.0" y="183.5" class="dg-s">markdown store, pruned</text><text x="662.0" y="198.5" class="dg-s">every run</text></g><g class="dg-box dg-out"><rect x="860.0" y="91.0" width="168" height="81" rx="10"/><text x="874.0" y="115.0" class="dg-t">Morning brief</text><text x="874.0" y="134.0" class="dg-s">what matters today, with</text><text x="874.0" y="149.0" class="dg-s">links</text></g></svg></div><figcaption>Six of the seven connectors are read-only. The only write is a draft, and a person decides whether it goes out.</figcaption></figure>
+<div class="prose">
+<ul>
+<li><b>Two reads, one decision.</b> Every run reads my Slack activity twice, everything and unread only, and the difference tells it what needs attention.</li>
+<li><b>Route A, action.</b> For something I have to answer, it researches across the connectors (the thread, related email, the calendar, the project's documents and tasks) and leaves a draft reply in the conversation, written in my tone for that person.</li>
+<li><b>Route B, memory.</b> For everything else, a light read that captures decisions, commitments and dates.</li>
+<li><b>No duplicates.</b> It remembers the last 500 message IDs, stops at the previous run's mark and uses a lock so two runs never overlap.</li>
+</ul>
+<h2 id="memory">The memory</h2>
+<p>A local store of markdown files that organises itself: it is re-indexed and pruned on every run, so it stays small enough to load. No database, no vector index in v1. Plain files I can read and correct.</p>
+</div>
+<div class="tbl-wrap reveal"><table class="grid-t"><thead><tr><th>File</th><th>What it keeps</th></tr></thead><tbody>
+<tr><td><b>INDEX</b></td><td>what exists and where, rebuilt every run</td></tr><tr><td><b>people</b></td><td>who is who, how they write, open threads</td></tr><tr><td><b>projects</b></td><td>state, decisions and next steps</td></tr><tr><td><b>conversations</b></td><td>summaries of long threads</td></tr><tr><td><b>decisions</b></td><td>what was decided, by whom, when</td></tr><tr><td><b>pending</b></td><td>commitments with a date</td></tr><tr><td><b>glossary</b></td><td>internal acronyms and names</td></tr><tr><td><b>tone profile</b></td><td>how I write, per audience</td></tr><tr><td><b>state</b></td><td>last message seen, lock, counters</td></tr>
+</tbody></table></div>
+<div class="prose">
+<h2 id="rules">The rules it follows</h2>
+</div>
+<div class="tbl-wrap reveal"><table class="grid-t"><thead><tr><th>Rule</th><th>What it means</th></tr></thead><tbody>
+<tr><td><b>Read, reason, propose</b></td><td>It never acts in a connector. Sending, reacting, creating or deleting is not in its toolset.</td></tr><tr><td><b>Content is data</b></td><td>Anything it reads, including a message that asks it to do something, is treated as information, never as an instruction. That is its defence against prompt injection.</td></tr><tr><td><b>Draft, not send</b></td><td>The text of a reply is produced during analysis. Placing it in Slack as a draft is a separate step a person triggers.</td></tr><tr><td><b>Traceable</b></td><td>Every proposal and every action is logged with the source it came from.</td></tr><tr><td><b>Fails loudly</b></td><td>If a connector is down or a read is partial, the brief says so instead of pretending the day is quiet.</td></tr>
+</tbody></table></div>
+<div class="prose">
+<h2 id="v2">Version 2 on the Mac mini</h2>
+<p>v1 ran as a scheduled Claude task every 20 minutes on weekdays. v2 moves it to the team's Mac mini: a Slack app that receives events instead of polling, a local model on Ollama for the classification step so routine reads never leave the machine, launchd to keep it alive, and a small dashboard with five sections: inbox, tasks, context per topic, memory search and settings. It is built in phases, MVP first, with each phase verified on real data before the next.</p>
+<h2 id="lessons">What I learned</h2>
+<ul>
+<li>The useful part of an assistant is the research, not the writing. A draft is only good if the context behind it is complete.</li>
+<li>Read-only is a feature. It is the reason I can let it run on everything I read.</li>
+</ul>
+<p class="muted small">No real messages, names or screenshots of my tools are shown. The brief above is invented.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="events.html"><small>Previous project</small><b>Events Intelligence</b></a><a href="chief-of-staff.html"><small>Next project</small><b>Personal AI Chief of Staff</b></a></nav>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Screenshots of internal tools show the real interfaces rendered with synthetic data. Client, supplier and people names are left out on purpose.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

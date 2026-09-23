@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AQM · Asset Quality Management · Mathieu Tellene</title>
+<meta name="description" content="How I built AQM, the system that audits the vinyl wraps of the Spanish fleet from driver and supplier photos: web forms, n8n, a vision LLM, one fleet database, a live dashboard and the monthly bonus.">
+<link rel="canonical" href="https://mathieutellene.github.io/work/aqm.html">
+<meta property="og:type" content="website"><meta property="og:title" content="AQM · Asset Quality Management · Mathieu Tellene"><meta property="og:description" content="How I built AQM, the system that audits the vinyl wraps of the Spanish fleet from driver and supplier photos: web forms, n8n, a vision LLM, one fleet database, a live dashboard and the monthly bonus.">
+<meta property="og:url" content="https://mathieutellene.github.io/work/aqm.html"><meta property="og:image" content="https://mathieutellene.github.io/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · Cabify Spain · Jan to Sep 2026 · flagship project</p>
+  <h1><span class="g">AQM</span> · Asset Quality Management</h1>
+  <p class="lead">Partner fleets wrap their cars in brand or advertising vinyl, and drivers earn a monthly bonus for keeping it in good shape. Checking that used to mean a person looking at photos one by one in a ticketing tool. AQM does it now: capture forms, an AI audit in n8n, one fleet database and a dashboard that operations and ads teams use every day.</p>
+  <div class="pillrow"><span class="impact">23,621 photos audited</span><span class="kind">n8n automation</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/aws.svg" alt="AWS Bedrock" title="AWS Bedrock" class="mono" loading="lazy" width="21" height="21">AWS Bedrock</span><span class="chip"><img src="../assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21">Google Apps Script</span><span class="chip"><img src="../assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21">Google Sheets</span><span class="chip"><img src="../assets/logos/drive.svg" alt="Google Drive" title="Google Drive" class="" loading="lazy" width="21" height="21">Google Drive</span><span class="chip"><img src="../assets/logos/gitlab.svg" alt="GitLab" title="GitLab" class="" loading="lazy" width="21" height="21">GitLab</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
+  
+  <div class="meta reveal"><div><span>My role</span>Technical owner: forms, workflows, prompts, database, dashboard and documentation. A colleague owned the process.</div><div><span>When</span>Jan to Sep 2026 · business as usual since 3 Sep</div><div><span>Built with</span>n8n, Claude (vision) through LiteLLM and Bedrock, Apps Script, Sheets, Drive, GitLab CI, Slack</div><div><span>Status</span>In production. Handed to Product as the basis for a native version.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num" data-count="23621" data-prefix="" data-suffix="" data-dec="0">23,621</div><div class="lbl">vehicle photos audited by the AI pipeline</div></div><div class="stat reveal"><div class="num" data-count="97" data-prefix="" data-suffix="%" data-dec="0">97%</div><div class="lbl">accuracy against human review; most of the 3% are unusable photos</div></div><div class="stat reveal"><div class="num">30–60 min</div><div class="lbl">from a driver taking the photo to the verdict in the database</div></div><div class="stat reveal"><div class="num" data-count="12" data-prefix="" data-suffix="" data-dec="0">12</div><div class="lbl">n8n workflows, documented so the team runs it without me</div></div></div>
+  
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<div class="prose">
+<h2 id="problem">The problem</h2>
+<p>Photos arrived through a generic form and someone reviewed them by hand in the ticketing tool. There was no single record of which car carried which vinyl, in what state, or when it was last checked. The monthly bonus depended on those manual checks, and the ads team ran a separate process for campaign wraps.</p>
+<p>The fleet also changes every day: cars change drivers, go inactive or move between partners. Any solution had to follow the car itself, whoever uploaded the photo.</p>
+<h2 id="architecture">What I built</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 247" role="img" aria-label="AQM architecture" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><text class="dg-cl" x="12.0" y="18">CAPTURE</text><text class="dg-cl" x="224.0" y="18">INTAKE</text><text class="dg-cl" x="436.0" y="18">AUDIT</text><text class="dg-cl" x="648.0" y="18">STORE</text><text class="dg-cl" x="860.0" y="18">USE</text><path class="dg-e flow" d="M180.0,132.5 C204.0,132.5 194.0,83.0 218.0,83.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M180.0,132.5 C204.0,132.5 194.0,182.0 218.0,182.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,83.0 C416.0,83.0 406.0,83.0 430.0,83.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M520.0,123.5 L520.0,135.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,83.0 C628.0,83.0 618.0,74.5 642.0,74.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,182.0 C628.0,182.0 618.0,74.5 642.0,74.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M732.0,133.0 L732.0,121.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,74.5 C840.0,74.5 830.0,90.5 854.0,90.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,74.5 C840.0,74.5 830.0,174.5 854.0,174.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="92.0" width="168" height="81" rx="10"/><text x="26.0" y="116.0" class="dg-t">Four web forms</text><text x="26.0" y="135.0" class="dg-s">drivers and three</text><text x="26.0" y="150.0" class="dg-s">suppliers, one codebase</text></g><g class="dg-box dg-app"><rect x="224.0" y="42.5" width="168" height="81" rx="10"/><text x="238.0" y="66.5" class="dg-t">Intake webhook</text><text x="238.0" y="85.5" class="dg-s">photos to Drive, row to</text><text x="238.0" y="100.5" class="dg-s">a data table in seconds</text></g><g class="dg-box dg-ai"><rect x="224.0" y="141.5" width="168" height="81" rx="10"/><text x="238.0" y="165.5" class="dg-t">Live plate OCR</text><text x="238.0" y="184.5" class="dg-s">warns while the user is</text><text x="238.0" y="199.5" class="dg-s">on the form</text></g><g class="dg-box dg-ai"><rect x="436.0" y="42.5" width="168" height="81" rx="10"/><text x="450.0" y="66.5" class="dg-t">AI audit</text><text x="450.0" y="85.5" class="dg-s">every 10 min, one</text><text x="450.0" y="100.5" class="dg-s">vehicle at a time</text></g><g class="dg-box dg-human"><rect x="436.0" y="141.5" width="168" height="81" rx="10"/><text x="450.0" y="165.5" class="dg-t">Plate check</text><text x="450.0" y="184.5" class="dg-s">4 cases, Slack when</text><text x="450.0" y="199.5" class="dg-s">unclear</text></g><g class="dg-box dg-data"><rect x="648.0" y="34.0" width="168" height="81" rx="10"/><text x="662.0" y="58.0" class="dg-t">Fleet database</text><text x="662.0" y="77.0" class="dg-s">one row per plate, 53</text><text x="662.0" y="92.0" class="dg-s">columns</text></g><g class="dg-box dg-data"><rect x="648.0" y="133.0" width="168" height="98" rx="10"/><text x="662.0" y="157.0" class="dg-t">Fleet export +</text><text x="662.0" y="174.0" class="dg-t">partner ERP</text><text x="662.0" y="193.0" class="dg-s">daily export, ERP every</text><text x="662.0" y="208.0" class="dg-s">10 min</text></g><g class="dg-box dg-out"><rect x="860.0" y="57.5" width="168" height="66" rx="10"/><text x="874.0" y="81.5" class="dg-t">Live dashboard</text><text x="874.0" y="100.5" class="dg-s">Apps Script, 10 tabs</text></g><g class="dg-box dg-out"><rect x="860.0" y="141.5" width="168" height="66" rx="10"/><text x="874.0" y="165.5" class="dg-t">Monthly bonus</text><text x="874.0" y="184.5" class="dg-s">no photo, no payment</text></g></svg></div><figcaption>The whole circuit. Photos come in on the left; the dashboard and the bonus read from the same database on the right.</figcaption></figure>
+<div class="prose">
+<h3>1. Capture</h3>
+<p>Four web forms (drivers and three wrapping suppliers) share one HTML and JavaScript codebase, deployed with GitLab CI to the company's static hosting. The subdomain decides which supplier configuration loads. Each photo slot opens the camera with a silhouette of the car, and the browser checks size, brightness and sharpness before uploading: short side of at least 600 px, brightness between 45 and 236 and a Laplacian variance of at least 40. Uploads run in the background, so the user gets an answer straight away.</p>
+</div>
+<div class="fig-row three">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>capture form</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-top.webp" alt="Vinyl registration form, plate and first photo slots" loading="lazy" data-zoom="../assets/work/aqm/form-top.webp"></div><figcaption>Driver form: the plate and one slot per photo, nothing else. Every extra field lowered completion.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>camera guide</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-camera.webp" alt="Camera view with a car silhouette guide" loading="lazy" data-zoom="../assets/work/aqm/form-camera.webp"></div><figcaption>Camera guide with the car silhouette and a prompt to turn the phone.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>plate check</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-plate.webp" alt="Plate field with a live suggestion" loading="lazy" data-zoom="../assets/work/aqm/form-plate.webp"></div><figcaption>The plate is checked against the active fleet while typing.</figcaption></figure>
+</div>
+<div class="prose">
+<h3>2. Intake</h3>
+<p>A webhook stores each photo in its own Drive folder and writes the submission to an n8n data table at once. A second webhook reads the plate from the photo while the user is still on the form and warns if it does not match what was typed. It never blocks a submission: some damaged cars cannot be moved to show the plate.</p>
+<h3>3. AI audit</h3>
+<p>Every 10 minutes a 74-node workflow takes the pending vehicles one at a time. Each photo (both sides, front, rear, headrest and the regional badge) has its own branch: download, resize to 1024 px, and ask Claude for a fixed 9-field JSON: vinyl type, external brand, side, defect, rear label, regional VTC badge, damage, damage detail and whether the damage sits inside the vinyl area. Side photos also go through the collage audit below. Designs with no reference, such as media campaigns, get a stricter subjective audit. Eight branches merge into one record per vehicle, with tokens and cost logged.</p>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 109" role="img" aria-label="Collage audit" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M180.0,52.5 C204.0,52.5 194.0,52.5 218.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,52.5 C416.0,52.5 406.0,52.5 430.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,52.5 C628.0,52.5 618.0,52.5 642.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,52.5 C840.0,52.5 830.0,52.5 854.0,52.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="19.5" width="168" height="66" rx="10"/><text x="26.0" y="43.5" class="dg-t">Side photo</text><text x="26.0" y="62.5" class="dg-s">resized to 1024 px</text></g><g class="dg-box dg-data"><rect x="224.0" y="19.5" width="168" height="66" rx="10"/><text x="238.0" y="43.5" class="dg-t">Find the reference</text><text x="238.0" y="62.5" class="dg-s">12 designs × 2 sides</text></g><g class="dg-box dg-app"><rect x="436.0" y="12.0" width="168" height="81" rx="10"/><text x="450.0" y="36.0" class="dg-t">Build a collage</text><text x="450.0" y="55.0" class="dg-s">real car next to the</text><text x="450.0" y="70.0" class="dg-s">reference</text></g><g class="dg-box dg-ai"><rect x="648.0" y="19.5" width="168" height="66" rx="10"/><text x="662.0" y="43.5" class="dg-t">Vision LLM</text><text x="662.0" y="62.5" class="dg-s">fixed 9-field JSON</text></g><g class="dg-box dg-out"><rect x="860.0" y="12.0" width="168" height="81" rx="10"/><text x="874.0" y="36.0" class="dg-t">Merge 8 branches</text><text x="874.0" y="55.0" class="dg-s">one record per vehicle,</text><text x="874.0" y="70.0" class="dg-s">cost logged</text></g></svg></div><figcaption>The model never judges a side photo on its own. It gets the real car next to the reference design for that vinyl and side, and answers a fixed schema.</figcaption></figure>
+<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · vehicle photo analysis · 74 nodes</span></div><img src="../assets/work/n8n/aqm-analysis.svg" alt="n8n workflow diagram of the AQM photo analysis" loading="lazy" data-zoom="../assets/work/n8n/aqm-analysis.svg"></div><figcaption>The analysis workflow as it runs in n8n, relabelled in English. Open it full size: every photo type has its own branch, and side photos go through the reference collage.</figcaption></figure>
+<div class="prose">
+<h3>4. Plate check</h3>
+<p>The model reads the front and rear plates and a small rule set decides between four cases: confirmed; corrected, when front and rear agree against what was typed; conflict, which sends the image and the typed text to Slack with four options and waits up to two days; and unreadable, which keeps what the user typed.</p>
+<h3>5. One fleet database</h3>
+<p>Results sync into a single table with one row per plate and 53 columns, enriched with the daily fleet export and a partner's ERP every 10 minutes. The ads campaign is assigned automatically from the ads team's own sheet, so nobody types it twice. An audit expires after three months, and the bonus tab applies one rule: no photo, no payment.</p>
+<h3>6. The dashboard</h3>
+<p>An Apps Script web app reads three sources live on every load, with cross filters and CSV export. It replaced a Looker Studio report that needed manual upkeep. When the source moves to the warehouse, only the read function changes.</p>
+</div>
+<figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · summary</span><em>synthetic data</em></div><img src="../assets/work/aqm/resumen.webp" alt="AQM dashboard summary tab" loading="lazy" data-zoom="../assets/work/aqm/resumen.webp"></div><figcaption>Summary: coverage, vinyl state and audit freshness for the whole fleet.</figcaption></figure>
+<div class="fig-row">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · vinyl state</span><em>synthetic data</em></div><img src="../assets/work/aqm/aqm.webp" alt="AQM tab with vinyl state by region" loading="lazy" data-zoom="../assets/work/aqm/aqm.webp"></div><figcaption>Vinyl state by region and fleet, the view operations leads asked for.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · pipeline</span><em>synthetic data</em></div><img src="../assets/work/aqm/pipeline.webp" alt="Pipeline tab with cars pending audit or wrap" loading="lazy" data-zoom="../assets/work/aqm/pipeline.webp"></div><figcaption>Pipeline: which active cars still need an audit or a wrap.</figcaption></figure>
+</div>
+<div class="fig-row">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · ads</span><em>synthetic data</em></div><img src="../assets/work/aqm/ads.webp" alt="Ads campaigns tab" loading="lazy" data-zoom="../assets/work/aqm/ads.webp"></div><figcaption>Campaigns: cars wrapped for each advertising campaign, matched automatically.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · bonus</span><em>synthetic data</em></div><img src="../assets/work/aqm/bonus.webp" alt="Bonus payment tab" loading="lazy" data-zoom="../assets/work/aqm/bonus.webp"></div><figcaption>Bonus: who qualifies this month and why the rest do not.</figcaption></figure>
+</div>
+<div class="fig-row">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · appointments</span><em>synthetic data</em></div><img src="../assets/work/aqm/citas.webp" alt="Workshop appointments tab" loading="lazy" data-zoom="../assets/work/aqm/citas.webp"></div><figcaption>Appointments: cars booked at a wrapping workshop that still show no vinyl.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · data</span><em>synthetic data</em></div><img src="../assets/work/aqm/datos.webp" alt="Data dictionary tab" loading="lazy" data-zoom="../assets/work/aqm/datos.webp"></div><figcaption>Data tab: every filter, column and state explained in the tool itself.</figcaption></figure>
+</div>
+<div class="fig-row three">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · fleet</span><em>synthetic data</em></div><img src="../assets/work/aqm/flota.webp" alt="Fleet tab with coverage by audience, category and tariff" loading="lazy" data-zoom="../assets/work/aqm/flota.webp"></div><figcaption>Fleet: vinyl coverage by audience, category and tariff.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · regions</span><em>synthetic data</em></div><img src="../assets/work/aqm/region.webp" alt="By region tab with a coverage table per region" loading="lazy" data-zoom="../assets/work/aqm/region.webp"></div><figcaption>By region: coverage and vinyl state per region, with the best and worst covered.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>AQM dashboard · audits</span><em>synthetic data</em></div><img src="../assets/work/aqm/audit.webp" alt="Audits tab with form responses per week and AI cost" loading="lazy" data-zoom="../assets/work/aqm/audit.webp"></div><figcaption>Audits: form responses per week, vehicles audited and the AI cost of the analysis.</figcaption></figure>
+</div>
+<div class="prose">
+<h2 id="evolution">How it got here</h2>
+<p>This is the third version.</p>
+<ul>
+<li><b>Jan to Feb 2026, my own models.</b> A labelled dataset, a CNN trained from scratch, YOLOv8 and EasyOCR for plates and a SIFT homography to measure coverage. It ran in batch but confused similar designs. The story continues in the <a href="hybrid-vision.html">hybrid vision engine</a>.</li>
+<li><b>Apr 2026, n8n and a vision LLM.</b> Five parallel analyses per image on Claude through Bedrock. Much richer output, and the version I presented at the global Customer Operations all-hands.</li>
+<li><b>Jun 2026, the spreadsheet broke.</b> The main sheet started returning 503 errors under recalculation load. I put an n8n data table in front as a buffer, recovered about 140 skipped responses and moved the design toward one clean, read-only table.</li>
+<li><b>Aug to Sep 2026, one circuit.</b> Forms on company hosting, nine fields instead of six, the reference collage, the plate logic, the bonus and the dashboard. From 18 model calls per vehicle in the first n8n version down to about 10.</li>
+</ul>
+<p>On 16 September a partner asked in the morning to add the new Madrid VTC badge (the sign private-hire cars must display) to the audit. It was live the same afternoon: a conditional photo in the form, a round camera guide, two new values in the model's taxonomy and no database migration. Barcelona followed the next day with a different badge shape.</p>
+</div>
+<div class="prose">
+<h2 id="results">Results</h2>
+<ul>
+<li><b>23,621 photos</b> audited so far, each with a stored verdict per field.</li>
+<li><b>97% accuracy</b> against human review. Most of the remaining 3% are photos that are too dark, blurred or cropped for anyone to judge, which is why the form now checks quality before upload.</li>
+<li><b>30 to 60 minutes</b> from photo to database, against days of manual review before, and about 1.5 hours a week of supervision.</li>
+<li>Closed as a project on 3 September: the local teams run it as business as usual, and it went to Product as the basis for a native version.</li>
+</ul>
+<h2 id="lessons">What I would do differently</h2>
+<ul>
+<li>Build a labelled evaluation set on day one instead of tuning prompts against examples I knew.</li>
+<li>Get off spreadsheets as the database earlier. The June outage was predictable.</li>
+</ul>
+<p class="muted small">Client, supplier and people names, business figures and internal hosts are left out on purpose. Dashboard and form screenshots are the real tools rendered with synthetic data.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="smart-fleet-manager.html"><small>Previous project</small><b>Smart Fleet Manager · Hackathon</b></a><a href="dqm.html"><small>Next project</small><b>DQM · Driver Quality Management</b></a></nav>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Screenshots of internal tools show the real interfaces rendered with synthetic data. Client, supplier and people names are left out on purpose.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

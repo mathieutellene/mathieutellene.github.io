@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsApp Ride-Booking AI Agent · Mathieu Tellene</title>
+<meta name="description" content="A Claude agent in n8n that books a ride over WhatsApp without the app: terms, pickup, price, confirmation, live tracking, invoice and support ticket. It took the company&#x27;s first fully automated ride.">
+<link rel="canonical" href="https://mathieutellene.github.io/work/whatsapp.html">
+<meta property="og:type" content="website"><meta property="og:title" content="WhatsApp Ride-Booking AI Agent · Mathieu Tellene"><meta property="og:description" content="A Claude agent in n8n that books a ride over WhatsApp without the app: terms, pickup, price, confirmation, live tracking, invoice and support ticket. It took the company&#x27;s first fully automated ride.">
+<meta property="og:url" content="https://mathieutellene.github.io/work/whatsapp.html"><meta property="og:image" content="https://mathieutellene.github.io/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · Cabify Spain · Mar to Aug 2026</p>
+  <h1>WhatsApp Ride-Booking AI Agent</h1>
+  <p class="lead">People at a stadium, a concert or a station who do not have the app can still get a car: scan a QR code, chat on WhatsApp, get a price and confirm. Behind it is a Claude agent in n8n that runs the conversation, and a set of deterministic workflows that book, track, invoice and escalate.</p>
+  <div class="pillrow"><span class="impact">First fully automated ride</span><span class="kind">n8n automation</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/whatsapp.svg" alt="WhatsApp Cloud API" title="WhatsApp Cloud API" class="" loading="lazy" width="21" height="21">WhatsApp Cloud API</span><span class="chip"><img src="../assets/logos/meta.svg" alt="Meta" title="Meta" class="" loading="lazy" width="21" height="21">Meta</span><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/redis.svg" alt="Redis" title="Redis" class="" loading="lazy" width="21" height="21">Redis</span><span class="chip"><img src="../assets/logos/gmaps.svg" alt="Google Maps Platform" title="Google Maps Platform" class="" loading="lazy" width="21" height="21">Google Maps Platform</span><span class="chip"><img src="../assets/logos/zendesk.svg" alt="Zendesk" title="Zendesk" class="mono" loading="lazy" width="21" height="21">Zendesk</span></div>
+  
+  <div class="meta reveal"><div><span>My role</span>Built the n8n workflows, the prompt and the tools, with a colleague on the operations side.</div><div><span>When</span>Mar to Aug 2026 · first automated ride on 14 May</div><div><span>Built with</span>n8n, WhatsApp Cloud API, Claude through the company LLM gateway, Redis, Google Places and Static Maps, the public ride API, Zendesk</div><div><span>Status</span>Live since May. Volume is limited by acquisition, with a weekly funnel dashboard.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num" data-count="14" data-prefix="" data-suffix=" May" data-dec="0">14 May</div><div class="lbl">2026: first ride booked, tracked and invoiced with nobody in the loop</div></div><div class="stat reveal"><div class="num" data-count="11" data-prefix="" data-suffix="" data-dec="0">11</div><div class="lbl">workflows, about 190 nodes</div></div><div class="stat reveal"><div class="num" data-count="7" data-prefix="" data-suffix="" data-dec="0">7</div><div class="lbl">reply templates picked by markers, not written by the model</div></div><div class="stat reveal"><div class="num" data-count="22" data-prefix="" data-suffix="k" data-dec="0">22k</div><div class="lbl">characters of prompt, six gated phases</div></div></div>
+  
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<div class="prose">
+<h2 id="flow">The rider's side</h2>
+<p>Scan a QR code, accept the terms, send an origin and a destination by text or live location, walk to a fixed pickup point, see the price and confirm. The agent creates the ride, sends driver updates as the trip progresses, delivers the invoice PDF on WhatsApp and opens a support ticket if something goes wrong.</p>
+</div>
+<figure class="fig reveal"><div class="mock-wrap"><div class="phonebox" aria-label="Illustrative WhatsApp conversation with the booking agent"><div class="scr">
+<div class="wa-head"><div class="av">MT</div><div>Ride booking<small>automated assistant</small></div></div>
+<div class="wa-body">
+  <div class="sys">Illustrative conversation · invented data</div>
+  <div class="m me">Hi! I need a car to the airport<time>21:02</time></div>
+  <div class="m">Hi! Before we start, please accept the terms of use.<div class="btns"><span>Accept</span><span>Read the terms</span></div><time>21:02</time></div>
+  <div class="m me">Accept<time>21:02</time></div>
+  <div class="m">Where are you now? You can share your live location or type an address.<time>21:03</time></div>
+  <div class="m me"><div class="map"></div>Live location<time>21:03</time></div>
+  <div class="m">Your pickup point is Gate B, a 2 minute walk. Price to the airport: <b>€38.40</b>.<div class="btns"><span>Confirm ride</span><span>Change destination</span></div><time>21:03</time></div>
+  <div class="m me">Confirm ride<time>21:04</time></div>
+  <div class="m">Done. Your driver arrives in 6 minutes in a white hybrid, plate ending 42. You can cancel for free for the next 2 minutes.<time>21:04</time></div>
+</div></div></div></div><figcaption>Illustrative conversation. The real flow uses WhatsApp buttons, lists, a map image and the native location request.</figcaption></figure>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 124" role="img" aria-label="Six gated phases" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M180.0,60.0 C204.0,60.0 151.6,60.0 175.6,60.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M349.6,60.0 C373.6,60.0 321.2,60.0 345.2,60.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M519.2,60.0 C543.2,60.0 490.8,60.0 514.8,60.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M688.8,60.0 C712.8,60.0 660.4,60.0 684.4,60.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M858.4,60.0 C882.4,60.0 830.0,60.0 854.0,60.0" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="12.0" width="168" height="96" rx="10"/><text x="26.0" y="36.0" class="dg-t">1 · Consent</text><text x="26.0" y="55.0" class="dg-s">welcome and terms,</text><text x="26.0" y="70.0" class="dg-s">nothing else until</text><text x="26.0" y="85.0" class="dg-s">accepted</text></g><g class="dg-box dg-ai"><rect x="181.6" y="19.5" width="168" height="81" rx="10"/><text x="195.6" y="43.5" class="dg-t">2 · Collect</text><text x="195.6" y="62.5" class="dg-s">origin and destination,</text><text x="195.6" y="77.5" class="dg-s">text or live location</text></g><g class="dg-box dg-app"><rect x="351.2" y="19.5" width="168" height="81" rx="10"/><text x="365.2" y="43.5" class="dg-t">3 · Validate</text><text x="365.2" y="62.5" class="dg-s">resolve and snap to the</text><text x="365.2" y="77.5" class="dg-s">nearest pickup hub</text></g><g class="dg-box dg-app"><rect x="520.8" y="19.5" width="168" height="81" rx="10"/><text x="534.8" y="43.5" class="dg-t">4 · Quote</text><text x="534.8" y="62.5" class="dg-s">price estimate, choice</text><text x="534.8" y="77.5" class="dg-s">kept in session</text></g><g class="dg-box dg-out"><rect x="690.4" y="19.5" width="168" height="81" rx="10"/><text x="704.4" y="43.5" class="dg-t">5 · Book</text><text x="704.4" y="62.5" class="dg-s">create the ride, share</text><text x="704.4" y="77.5" class="dg-s">link</text></g><g class="dg-box dg-human"><rect x="860.0" y="19.5" width="168" height="81" rx="10"/><text x="874.0" y="43.5" class="dg-t">6 · Cancel</text><text x="874.0" y="62.5" class="dg-s">free window computed in</text><text x="874.0" y="77.5" class="dg-s">code</text></g></svg></div><figcaption>The prompt is written as six phases with explicit gates. The agent can only move to the next phase when the previous one is complete, plus one emergency interrupt that can fire at any time.</figcaption></figure>
+<div class="prose">
+<h2 id="architecture">How it is built</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 245" role="img" aria-label="Agent architecture" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><text class="dg-cl" x="12.0" y="18">IN</text><text class="dg-cl" x="181.6" y="18">GUARD</text><text class="dg-cl" x="351.2" y="18">THINK</text><text class="dg-cl" x="520.8" y="18">ACT</text><text class="dg-cl" x="690.4" y="18">ANSWER</text><text class="dg-cl" x="860.0" y="18">FOLLOW UP</text><path class="dg-e flow" d="M180.0,131.5 C204.0,131.5 151.6,131.5 175.6,131.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M349.6,131.5 C373.6,131.5 321.2,82.0 345.2,82.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M435.2,130.0 L435.2,142.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M519.2,82.0 C543.2,82.0 490.8,131.5 514.8,131.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M688.8,131.5 C712.8,131.5 660.4,131.5 684.4,131.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M858.4,131.5 C882.4,131.5 830.0,131.5 854.0,131.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="91.0" width="168" height="81" rx="10"/><text x="26.0" y="115.0" class="dg-t">WhatsApp Cloud API</text><text x="26.0" y="134.0" class="dg-s">QR at a venue or a</text><text x="26.0" y="149.0" class="dg-s">returning rider</text></g><g class="dg-box dg-app"><rect x="181.6" y="91.0" width="168" height="81" rx="10"/><text x="195.6" y="115.0" class="dg-t">Guards</text><text x="195.6" y="134.0" class="dg-s">blacklist, flood cap,</text><text x="195.6" y="149.0" class="dg-s">trip limit</text></g><g class="dg-box dg-ai"><rect x="351.2" y="34.0" width="168" height="96" rx="10"/><text x="365.2" y="58.0" class="dg-t">Booking agent</text><text x="365.2" y="77.0" class="dg-s">Claude via the company</text><text x="365.2" y="92.0" class="dg-s">LLM gateway, temperature</text><text x="365.2" y="107.0" class="dg-s">0</text></g><g class="dg-box dg-data"><rect x="351.2" y="148.0" width="168" height="81" rx="10"/><text x="365.2" y="172.0" class="dg-t">Memory</text><text x="365.2" y="191.0" class="dg-s">Redis session: 15 min,</text><text x="365.2" y="206.0" class="dg-s">last 25 messages</text></g><g class="dg-box dg-app"><rect x="520.8" y="91.0" width="168" height="81" rx="10"/><text x="534.8" y="115.0" class="dg-t">Tools</text><text x="534.8" y="134.0" class="dg-s">pickup · quote · create</text><text x="534.8" y="149.0" class="dg-s">· cancel · emergency</text></g><g class="dg-box dg-out"><rect x="690.4" y="91.0" width="168" height="81" rx="10"/><text x="704.4" y="115.0" class="dg-t">Reply router</text><text x="704.4" y="134.0" class="dg-s">a marker picks 1 of 7</text><text x="704.4" y="149.0" class="dg-s">templates</text></g><g class="dg-box dg-out"><rect x="860.0" y="83.5" width="168" height="96" rx="10"/><text x="874.0" y="107.5" class="dg-t">Journey tracker</text><text x="874.0" y="126.5" class="dg-s">polls every 10 s,</text><text x="874.0" y="141.5" class="dg-s">milestones, invoice,</text><text x="874.0" y="156.5" class="dg-s">ticket</text></g></svg></div><figcaption>The model decides what to do next. Code decides what the message looks like and remembers where the conversation is.</figcaption></figure>
+<div class="prose">
+<ul>
+<li><b>Deterministic replies.</b> The model does not write the WhatsApp message. It emits a marker, and a switch picks one of seven templates. That removed a whole class of formatting errors, and it means buttons always work.</li>
+<li><b>State outside the model.</b> A 15-minute Redis session keeps the last 25 messages, and a data table logs every conversation.</li>
+<li><b>Addresses.</b> One tool decides between a places search and reverse geocoding depending on what the rider sent, ranks the candidates and snaps to the nearest allowed pickup hub, then stores it in the session.</li>
+<li><b>Rules in code, not in the prompt.</b> The free cancellation window, the trip limit per user, the blacklist and the daily message cap per number are enforced before or after the model, never by asking it nicely.</li>
+<li><b>After the booking.</b> A tracker polls the ride every 10 seconds, sends a message at each milestone and asks the rider when something looks wrong. The invoice is read from the mailbox and sent as a PDF.</li>
+</ul>
+</div>
+<div class="tbl-wrap reveal"><table class="grid-t"><thead><tr><th>Marker</th><th>What the rider gets</th></tr></thead><tbody>
+<tr><td><b>Welcome</b></td><td>Terms with accept and read buttons</td></tr><tr><td><b>Free text</b></td><td>A normal chat reply</td></tr><tr><td><b>Price</b></td><td>Quote with confirm and change buttons</td></tr><tr><td><b>Free cancellation</b></td><td>Inside the 120-second window</td></tr><tr><td><b>Exceptional cancellation</b></td><td>Outside the window, explains the conditions</td></tr><tr><td><b>Help</b></td><td>Hands over to support with the conversation</td></tr><tr><td><b>Ask for location</b></td><td>WhatsApp's native location request</td></tr>
+</tbody></table></div>
+<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · WhatsApp booking agent · 51 nodes</span></div><img src="../assets/work/n8n/wa-main.svg" alt="n8n diagram of the WhatsApp agent workflow" loading="lazy" data-zoom="../assets/work/n8n/wa-main.svg"></div><figcaption>Main workflow: message type switch and guards on the left, the agent with its memory and tools in the middle, the reply router on the right.</figcaption></figure>
+<div class="fig-row">
+  <figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · resolve pickup</span></div><img src="../assets/work/n8n/wa-coords.svg" alt="n8n diagram of the pickup resolution tool" loading="lazy" data-zoom="../assets/work/n8n/wa-coords.svg"></div><figcaption>Tool: resolve the pickup and snap it to a hub.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · journey tracker</span></div><img src="../assets/work/n8n/wa-journey.svg" alt="n8n diagram of the journey tracker" loading="lazy" data-zoom="../assets/work/n8n/wa-journey.svg"></div><figcaption>Journey tracker: status polling, milestones, invoice and ticket.</figcaption></figure>
+</div>
+<div class="prose">
+<h2 id="results">Results, and what limits them</h2>
+<p>The system worked end to end from May: on 14 May it took the company's first ride booked, tracked and invoiced with nobody in the loop. A first stadium pilot turned 25 conversations into 5 completed rides over four days. A B2B variant lets corporate accounts ask for immediate rides the same way.</p>
+<p>Volume stayed small afterwards because the QR codes were handed out manually. The bottleneck is getting the code in front of people, not the agent, so that is where the next iteration starts. A weekly dashboard, rebuilt by a Claude skill, tracks the funnel from scan to ride.</p>
+<h2 id="lessons">What I learned</h2>
+<ul>
+<li>Letting the model choose the next step and code choose the message was the single change that made it reliable.</li>
+<li>Guards are cheap, and they belong in the first release rather than after the first abuse.</li>
+</ul>
+<p class="muted small">Numbers, venue names and account details are left out on purpose. The conversation above is illustrative.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="dqm.html"><small>Previous project</small><b>DQM · Driver Quality Management</b></a><a href="b2b.html"><small>Next project</small><b>Email-to-Reservation Pipeline (B2B)</b></a></nav>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Screenshots of internal tools show the real interfaces rendered with synthetic data. Client, supplier and people names are left out on purpose.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

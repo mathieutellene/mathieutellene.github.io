@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email-to-Reservation Pipeline (B2B) · Mathieu Tellene</title>
+<meta name="description" content="Two Claude agents read a corporate client&#x27;s trip requests and the fleet partner&#x27;s signed work orders, a sheet cross-checks them, and each ride is created with its driver pre-assigned in one API call.">
+<link rel="canonical" href="https://mathieutellene.github.io/work/b2b.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Email-to-Reservation Pipeline (B2B) · Mathieu Tellene"><meta property="og:description" content="Two Claude agents read a corporate client&#x27;s trip requests and the fleet partner&#x27;s signed work orders, a sheet cross-checks them, and each ride is created with its driver pre-assigned in one API call.">
+<meta property="og:url" content="https://mathieutellene.github.io/work/b2b.html"><meta property="og:image" content="https://mathieutellene.github.io/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#voices">Testimonials</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · Cabify Spain · Apr to Sep 2026</p>
+  <h1>Email-to-Reservation Pipeline (B2B)</h1>
+  <p class="lead">A corporate client with a dedicated fleet sends its service requests as spreadsheets by email, and the fleet partner sends back signed work orders as PDFs. A support team used to type every trip into the platform and pre-assign the driver by hand, every day. Now two agents read both documents, a sheet compares them line by line, and the ride goes out through the public API with the driver already attached.</p>
+  <div class="pillrow"><span class="impact">Email in, ride out</span><span class="kind">n8n automation</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/gmail.svg" alt="Gmail" title="Gmail" class="" loading="lazy" width="21" height="21">Gmail</span><span class="chip"><img src="../assets/logos/drive.svg" alt="Google Drive" title="Google Drive" class="" loading="lazy" width="21" height="21">Google Drive</span><span class="chip"><img src="../assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21">Google Sheets</span><span class="chip"><img src="../assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21">Google Apps Script</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
+  
+  <div class="meta reveal"><div><span>My role</span>Designed and built the workflows, prompts, sheet logic and API integration.</div><div><span>When</span>Apr to Sep 2026 · multi-client engine from 15 Sep</div><div><span>Built with</span>n8n, Claude through the company LLM gateway, Gmail, Drive, Google Sheets and Apps Script, the public ride API, Slack</div><div><span>Status</span>In production for one client; the multi-client version is being rolled out.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">documents from two senders, reconciled line by line</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix=" call" data-dec="0">1 call</div><div class="lbl">to create the ride and pre-assign its driver</div></div><div class="stat reveal"><div class="num" data-count="35" data-prefix="" data-suffix=" min" data-dec="0">35 min</div><div class="lbl">minimum lead time, checked again on the server</div></div><div class="stat reveal"><div class="num" data-count="63" data-prefix="" data-suffix="×" data-dec="0">63×</div><div class="lbl">cheaper per agent run after the cost fix</div></div></div>
+  
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<div class="prose">
+<h2 id="how">How it works</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 230" role="img" aria-label="B2B pipeline" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><text class="dg-cl" x="12.0" y="18">INBOUND</text><text class="dg-cl" x="181.6" y="18">READ</text><text class="dg-cl" x="351.2" y="18">COMPARE</text><text class="dg-cl" x="520.8" y="18">APPROVE</text><text class="dg-cl" x="690.4" y="18">ACT</text><text class="dg-cl" x="860.0" y="18">PLATFORM</text><path class="dg-e flow" d="M180.0,74.5 C204.0,74.5 151.6,124.0 175.6,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M180.0,173.5 C204.0,173.5 151.6,124.0 175.6,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M349.6,124.0 C373.6,124.0 321.2,124.0 345.2,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M519.2,124.0 C543.2,124.0 490.8,124.0 514.8,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M688.8,124.0 C712.8,124.0 660.4,124.0 684.4,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M858.4,124.0 C882.4,124.0 830.0,124.0 854.0,124.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M774.4,172.0 C774.4,198.0 435.2,198.0 435.2,170.5" marker-end="url(#dg-arrow)"/><text class="dg-el" x="604.8" y="194.0" text-anchor="middle">writes back</text><g class="dg-box dg-in"><rect x="12.0" y="34.0" width="168" height="81" rx="10"/><text x="26.0" y="58.0" class="dg-t">Request emails</text><text x="26.0" y="77.0" class="dg-s">client Excel files,</text><text x="26.0" y="92.0" class="dg-s">mailbox to Drive</text></g><g class="dg-box dg-in"><rect x="12.0" y="133.0" width="168" height="81" rx="10"/><text x="26.0" y="157.0" class="dg-t">Work orders</text><text x="26.0" y="176.0" class="dg-s">partner PDFs, mailbox to</text><text x="26.0" y="191.0" class="dg-s">Drive</text></g><g class="dg-box dg-ai"><rect x="181.6" y="83.5" width="168" height="81" rx="10"/><text x="195.6" y="107.5" class="dg-t">Two Claude agents</text><text x="195.6" y="126.5" class="dg-s">extract fields, write</text><text x="195.6" y="141.5" class="dg-s">through narrow tools</text></g><g class="dg-box dg-data"><rect x="351.2" y="83.5" width="168" height="81" rx="10"/><text x="365.2" y="107.5" class="dg-t">Operations sheet</text><text x="365.2" y="126.5" class="dg-s">one row per service-day,</text><text x="365.2" y="141.5" class="dg-s">live CHECK column</text></g><g class="dg-box dg-human"><rect x="520.8" y="83.5" width="168" height="81" rx="10"/><text x="534.8" y="107.5" class="dg-t">Operator</text><text x="534.8" y="126.5" class="dg-s">reads the status, clicks</text><text x="534.8" y="141.5" class="dg-s">create or cancel</text></g><g class="dg-box dg-app"><rect x="690.4" y="76.0" width="168" height="96" rx="10"/><text x="704.4" y="100.0" class="dg-t">Action webhook</text><text x="704.4" y="119.0" class="dg-s">re-validates, geocodes,</text><text x="704.4" y="134.0" class="dg-s">estimates, picks the</text><text x="704.4" y="149.0" class="dg-s">product</text></g><g class="dg-box dg-out"><rect x="860.0" y="83.5" width="168" height="81" rx="10"/><text x="874.0" y="107.5" class="dg-t">Public ride API</text><text x="874.0" y="126.5" class="dg-s">ride + preferred driver</text><text x="874.0" y="141.5" class="dg-s">in one call</text></g></svg></div><figcaption>The agents only read and compare. A ride is created by a deterministic webhook, and only after a person clicks its link.</figcaption></figure>
+<div class="prose">
+<ol>
+<li><b>Intake.</b> Two mailbox watchers save the client's request files and the partner's work orders to Drive.</li>
+<li><b>Reading.</b> A requests agent and a work-order agent extract every field. Their tools are deliberately narrow: find a row, upsert a request, update a work order, create a row when a work order has no request, and notify Slack. They can only write value columns; formula columns and anything that identifies a ride are out of their reach.</li>
+<li><b>Cross-check.</b> The sheet is the operator's interface: one row per service-day and a CHECK column that compares request and work order live (OK, warning, mismatch, no request), with the differing cells highlighted. The formulas use VSTACK arrays, because curly-brace array literals break in a Spanish locale.</li>
+<li><b>Action.</b> Each row has create and cancel links. They call a webhook that checks everything again on the server: the row must be OK, it must not already have a ride, and there must be at least 35 minutes of lead time. Then it geocodes both addresses, gets a price estimate, picks the product by duration and creates the ride. The ride ID and price are written back to the row.</li>
+<li><b>Edge cases.</b> Request versions, services spanning up to 31 days, overnight trips, cancellations and work orders with no matching request all have explicit handling. Anything unclear posts a "human review required" message.</li>
+</ol>
+</div>
+<figure class="fig reveal"><div class="mock-wrap"><div class="sheetbox" aria-label="Illustrative operations sheet"><div class="sb"><i></i>Operations sheet · client A · invented data</div>
+<div style="overflow-x:auto"><table><thead><tr><th>Day</th><th>Time</th><th>Route</th><th>CHECK</th><th>Action</th><th></th><th>Journey</th></tr></thead><tbody><tr><td>Mon 14</td><td>07:30</td><td>Office A → Studio 2</td><td class="okc"><b>OK</b></td><td><a>Create</a></td><td><a>Cancel</a></td><td>J-8F21</td></tr><tr><td>Mon 14</td><td>09:15</td><td>Studio 2 → Airport T4</td><td class="okc"><b>OK</b></td><td><a>Create</a></td><td><a>Cancel</a></td><td></td></tr><tr><td>Mon 14</td><td>13:00</td><td>Studio 1 → Hotel</td><td class="bad"><b>MISMATCH</b></td><td><span style=color:#9aa0a6>blocked</span></td><td></td><td></td></tr><tr><td>Tue 15</td><td>06:45</td><td>Home → Studio 2</td><td class="warn"><b>WARNING</b></td><td><a>Create</a></td><td><a>Cancel</a></td><td></td></tr><tr><td>Tue 15</td><td>18:30</td><td>Studio 2 → Station</td><td class="bad"><b>NO REQUEST</b></td><td><span style=color:#9aa0a6>blocked</span></td><td></td><td></td></tr></tbody></table></div></div></div><figcaption>The operator's view, with invented data. A mismatch or a missing request blocks the create link until someone fixes the row.</figcaption></figure>
+<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · request and work-order agents · 23 nodes</span></div><img src="../assets/work/n8n/b2b-agents.svg" alt="n8n diagram of the two reading agents with their tools" loading="lazy" data-zoom="../assets/work/n8n/b2b-agents.svg"></div><figcaption>The two reading agents. Dashed lines are the model and the tools each agent is allowed to use.</figcaption></figure>
+<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · create / cancel ride · 29 nodes</span></div><img src="../assets/work/n8n/b2b-actions.svg" alt="n8n diagram of the create or cancel webhook" loading="lazy" data-zoom="../assets/work/n8n/b2b-actions.svg"></div><figcaption>The action webhook: validate, authenticate, geocode, estimate, pick the product, create or cancel, verify, write back and notify.</figcaption></figure>
+<div class="prose">
+<h2 id="driver">Driver pre-assignment</h2>
+<p>Every trip for this client needs a named driver. For a while that meant a manual step, because the internal service that reserves drivers was not reachable from n8n. I documented the volume that depended on it and opened a request with the product team. In September we moved to the public API's preferred-driver field, so creating the ride and assigning the driver is one call, behind a feature flag for the accounts that need it. Next: an automatic check after each call that the driver really is attached.</p>
+<h2 id="multi">One engine for many clients</h2>
+<p>The same design is now generalised: one webhook per client, per-client configuration and product rules in n8n data tables, product selection that prefers an exact match over a wildcard and then priority, and a single error collector that writes to the sheet, posts to Slack and returns a clear 422. Payloads are built with JSON.stringify, so quotes and accents in addresses never break a request.</p>
+</div>
+<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · multi-client engine · 38 nodes</span></div><img src="../assets/work/n8n/b2b-multiclient.svg" alt="n8n diagram of the multi-client ride engine" loading="lazy" data-zoom="../assets/work/n8n/b2b-multiclient.svg"></div><figcaption>The multi-client engine: several client webhooks share one path.</figcaption></figure>
+<div class="prose">
+<h2 id="lessons">What I learned</h2>
+<ul>
+<li>The agents read and compare; a person approves and a deterministic webhook acts. That split is what made the operations team comfortable using it.</li>
+<li>The first version was expensive for a reason that had nothing to do with the model: one tool returned a whole sheet on every call. The fix is in <a href="llm-cost.html">LLM cost control</a>.</li>
+</ul>
+<p class="muted small">The client, the fleet partner and all volumes are left out on purpose. The sheet above is an illustration with invented rows.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="whatsapp.html"><small>Previous project</small><b>WhatsApp Ride-Booking AI Agent</b></a><a href="cabibot.html"><small>Next project</small><b>CabiBot · Help Center AI Agent</b></a></nav>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Screenshots of internal tools show the real interfaces rendered with synthetic data. Client, supplier and people names are left out on purpose.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
