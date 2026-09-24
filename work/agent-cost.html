@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why agent workflows get expensive, and how to fix them · Mathieu Tellene</title>
+<meta name="description" content="A short technical note on why LLM agents get costly in production (oversized tool outputs, long prompts resent on every call, nobody watching cost per run) and the fixes that work.">
+<link rel="canonical" href="https://mathieutellene.github.io/portfolio/work/agent-cost.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Why agent workflows get expensive, and how to fix them · Mathieu Tellene"><meta property="og:description" content="A short technical note on why LLM agents get costly in production (oversized tool outputs, long prompts resent on every call, nobody watching cost per run) and the fixes that work.">
+<meta property="og:url" content="https://mathieutellene.github.io/portfolio/work/agent-cost.html"><meta property="og:image" content="https://mathieutellene.github.io/portfolio/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#writing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Back to writing</a>
+  <p class="eyebrow">Note · AI operations · 2026</p>
+  <h1><span class="g">Why agent workflows</span> get expensive, and how to fix them</h1>
+  <p class="lead">Agents rarely get expensive because the model is expensive. They get expensive because of what we send it: tool results nobody filtered, the same long instructions on every call, and loops that nobody measures per run. These are the patterns I have seen, and the fixes that work.</p>
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<div class="prose">
+<h2 id="tools">1. Tool outputs are most of the bill</h2>
+<p>In an agent, every tool result goes back into the context and stays there for the rest of the run. A tool that returns a whole record when the model needs three fields, or every row when it needs the top five, multiplies the tokens of every later step. It is the single most common reason a workflow that looked cheap in testing gets expensive with real data.</p>
+<p><b>Fix:</b> make tools return only what the model will use. Select fields, cap the number of rows, summarise long text before it enters the context, and prefer a precise tool over a generic one.</p>
+<h2 id="prefix">2. The same long prompt, on every call</h2>
+<p>System prompts, tool definitions and reference material are often thousands of tokens and do not change between calls. Without caching, you pay for them in full every time.</p>
+<p><b>Fix:</b> put everything stable at the start of the prompt and the variable part at the end, then turn on prompt caching. A long, stable prefix is exactly the case it was designed for.</p>
+</div>
+<figure class="fig fig-diagram reveal"><svg class="chart" viewBox="0 0 720 162" role="img" aria-label="Cost of one agent run, indexed (illustrative)" xmlns="http://www.w3.org/2000/svg"><text class="ch-lab" x="196" y="35" text-anchor="end">Naive agent run</text><rect class="ch-shade" x="210" y="20" width="440" height="22" rx="4"/><rect class="ch-bar dim" x="210" y="20" width="440.0" height="22" rx="4"><title>Naive agent run: 100</title></rect><text class="ch-lab" x="660.0" y="36">100</text><text class="ch-lab" x="196" y="81" text-anchor="end">Trimmed tool outputs</text><rect class="ch-shade" x="210" y="66" width="440" height="22" rx="4"/><rect class="ch-bar dim" x="210" y="66" width="154.0" height="22" rx="4"><title>Trimmed tool outputs: 35</title></rect><text class="ch-lab" x="374.0" y="82">35</text><text class="ch-lab" x="196" y="127" text-anchor="end">Plus prompt caching</text><rect class="ch-shade" x="210" y="112" width="440" height="22" rx="4"/><rect class="ch-bar" x="210" y="112" width="88.0" height="22" rx="4"><title>Plus prompt caching: 20</title></rect><text class="ch-lab" x="308.0" y="128">20</text></svg><figcaption>Illustrative orders of magnitude for one agent run, not measurements from any real system.</figcaption></figure>
+<div class="prose">
+<h2 id="loops">3. Loops nobody counts</h2>
+<p>An agent that retries, re-plans or calls the same tool again is doing its job, until it does it twenty times. Monthly totals hide this completely.</p>
+<p><b>Fix:</b> log tokens and cost per run and per step, put a hard limit on iterations, and alert on the distribution rather than the total: one run that costs a hundred times the median is a bug, not a busy day.</p>
+<h2 id="model">4. One model for every step</h2>
+<p>Routing, extraction and formatting rarely need the largest model. Neither do classification tasks a small local model can learn.</p>
+<p><b>Fix:</b> choose the model per step, and move repetitive, well-defined decisions to small models or plain code. The <a href="hybrid-vision.html">hybrid vision engine</a> is one example of that split.</p>
+<h2 id="checklist">A short checklist</h2>
+<ul>
+<li>Every tool returns the minimum the model needs.</li>
+<li>Stable content first, variable content last, caching on.</li>
+<li>Cost per run is logged, with a budget and an alert on outliers.</li>
+<li>Iterations have a hard limit.</li>
+<li>Each step uses the smallest model that does it well.</li>
+</ul>
+<p class="muted small">A general note based on my own experience building agents. It describes common patterns, not any company's systems or figures.</p>
+</div>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

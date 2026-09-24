@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automated KPI Monitoring · Mathieu Tellene</title>
+<meta name="description" content="How I turned a weekly operations review from copy and paste into a daily pipeline: KPIs extract themselves, keep their history, are judged against a realistic range and a forecast, and alerts go to each owner.">
+<link rel="canonical" href="https://mathieutellene.github.io/portfolio/work/kpi-monitoring.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Automated KPI Monitoring · Mathieu Tellene"><meta property="og:description" content="How I turned a weekly operations review from copy and paste into a daily pipeline: KPIs extract themselves, keep their history, are judged against a realistic range and a forecast, and alerts go to each owner.">
+<meta property="og:url" content="https://mathieutellene.github.io/portfolio/work/kpi-monitoring.html"><meta property="og:image" content="https://mathieutellene.github.io/portfolio/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · Cabify Spain · Apr to Sep 2026</p>
+  <h1>Automated KPI Monitoring</h1>
+  <p class="lead">A weekly operations review used to start with each process owner opening their own source, copying the numbers and pasting them into a shared document the day before. The data arrived late, degraded on the way and had no history. I inverted the flow: the numbers extract themselves every morning, keep their history, get judged against a realistic range and go to find their owner.</p>
+  <div class="pillrow"><span class="impact">Daily, hands-off</span><span class="kind">Python pipeline</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21">Python</span><span class="chip"><img src="../assets/logos/postgresql.svg" alt="PostgreSQL" title="PostgreSQL" class="" loading="lazy" width="21" height="21">PostgreSQL</span><span class="chip"><img src="../assets/logos/tableau.svg" alt="Tableau" title="Tableau" class="" loading="lazy" width="21" height="21">Tableau</span><span class="chip"><img src="../assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21">Google Apps Script</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
+  
+  <div class="meta reveal"><div><span>My role</span>Designed and built both versions: data model, pipeline, method, board and alerts.</div><div><span>When</span>v1 Apr to Jul 2026 · v2 Sep 2026</div><div><span>Built with</span>Python, PostgreSQL, Tableau, Google Apps Script, Slack</div><div><span>Status</span>Built and running; the next step is reading straight from the data warehouse.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num">Daily</div><div class="lbl">extraction with nobody involved</div></div><div class="stat reveal"><div class="num">Hundreds</div><div class="lbl">of KPIs, each with its own history</div></div><div class="stat reveal"><div class="num" data-count="3" data-prefix="" data-suffix="" data-dec="0">3</div><div class="lbl">states per KPI: on track, watch, act</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">weekly message per owner, worst first</div></div></div>
+  
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+
+<div class="prose">
+<h2 id="how">How it works</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 208" role="img" aria-label="How it works" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M180.0,102.0 C204.0,102.0 194.0,102.0 218.0,102.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,102.0 C416.0,102.0 406.0,102.0 430.0,102.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,102.0 C628.0,102.0 618.0,102.0 642.0,102.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,102.0 C840.0,102.0 830.0,52.5 854.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,102.0 C840.0,102.0 830.0,151.5 854.0,151.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="61.5" width="168" height="81" rx="10"/><text x="26.0" y="85.5" class="dg-t">Sources</text><text x="26.0" y="104.5" class="dg-s">BI dashboards and team</text><text x="26.0" y="119.5" class="dg-s">sheets</text></g><g class="dg-box dg-app"><rect x="224.0" y="69.0" width="168" height="66" rx="10"/><text x="238.0" y="93.0" class="dg-t">Daily extraction</text><text x="238.0" y="112.0" class="dg-s">no person involved</text></g><g class="dg-box dg-data"><rect x="436.0" y="61.5" width="168" height="81" rx="10"/><text x="450.0" y="85.5" class="dg-t">History</text><text x="450.0" y="104.5" class="dg-s">every reading stored</text><text x="450.0" y="119.5" class="dg-s">with its date</text></g><g class="dg-box dg-ai"><rect x="648.0" y="61.5" width="168" height="81" rx="10"/><text x="662.0" y="85.5" class="dg-t">Judgement</text><text x="662.0" y="104.5" class="dg-s">realistic range, target,</text><text x="662.0" y="119.5" class="dg-s">forecast</text></g><g class="dg-box dg-out"><rect x="860.0" y="12.0" width="168" height="81" rx="10"/><text x="874.0" y="36.0" class="dg-t">Board</text><text x="874.0" y="55.0" class="dg-s">one link per owner,</text><text x="874.0" y="70.0" class="dg-s">works on a phone</text></g><g class="dg-box dg-out"><rect x="860.0" y="111.0" width="168" height="81" rx="10"/><text x="874.0" y="135.0" class="dg-t">Weekly alert</text><text x="874.0" y="154.0" class="dg-s">only what needs</text><text x="874.0" y="169.0" class="dg-s">discussing</text></g></svg></div><figcaption>Illustrative overview. If one source fails, only its KPIs are marked and the rest of the run continues.</figcaption></figure>
+<div class="prose">
+<p>Every morning a Python job reads the KPIs from their sources, stores every reading in PostgreSQL with its extraction date, computes a range, a state and a forecast, and rebuilds the data behind a small web board. Each owner has a link that opens only their processes, and once a week they get one message with the KPIs that need discussing and nothing else.</p>
+<h2 id="judging">How each KPI is judged</h2>
+<p>First the realistic range: what is normal for that KPI according to its recent weeks, a rolling median plus or minus a multiple of its typical spread, with holiday periods left out. A KPI needs a few clean weeks before it is judged at all. Then the week's value is compared with that range and with the owner's target, if there is one.</p>
+<p>The bad side depends on the KPI: for a completion rate it is going down, for a cancellation rate it is going up, so changes are coloured by what they mean, not by their direction.</p>
+</div>
+<figure class="fig fig-diagram reveal"><svg class="chart" viewBox="0 0 720 280" role="img" aria-label="Illustrative KPI with realistic range, forecast and target" xmlns="http://www.w3.org/2000/svg"><line class="ch-grid" x1="50" x2="610" y1="240.0" y2="240.0"/><text class="ch-tick" x="42" y="244.0" text-anchor="end">88%</text><line class="ch-grid" x1="50" x2="610" y1="208.6" y2="208.6"/><text class="ch-tick" x="42" y="212.6" text-anchor="end">89%</text><line class="ch-grid" x1="50" x2="610" y1="177.1" y2="177.1"/><text class="ch-tick" x="42" y="181.1" text-anchor="end">90%</text><line class="ch-grid" x1="50" x2="610" y1="145.7" y2="145.7"/><text class="ch-tick" x="42" y="149.7" text-anchor="end">91%</text><line class="ch-grid" x1="50" x2="610" y1="114.3" y2="114.3"/><text class="ch-tick" x="42" y="118.3" text-anchor="end">92%</text><line class="ch-grid" x1="50" x2="610" y1="82.9" y2="82.9"/><text class="ch-tick" x="42" y="86.9" text-anchor="end">93%</text><line class="ch-grid" x1="50" x2="610" y1="51.4" y2="51.4"/><text class="ch-tick" x="42" y="55.4" text-anchor="end">94%</text><line class="ch-grid" x1="50" x2="610" y1="20.0" y2="20.0"/><text class="ch-tick" x="42" y="24.0" text-anchor="end">95%</text><path class="ch-band" d="M253.6,68.7 L304.5,78.3 L355.5,77.3 L406.4,71.7 L457.3,76.4 L508.2,79.5 L559.1,72.5 L610.0,48.9 L610.0,223.7 L559.1,121.5 L508.2,114.5 L457.3,111.3 L406.4,106.6 L355.5,126.2 L304.5,106.3 L253.6,131.6 Z"/><line class="ch-thr" style="stroke:var(--accent)" x1="50" x2="610" y1="82.9" y2="82.9"/><text class="ch-note" x="618" y="86.9">target 93%</text><path class="ch-line" d="M50.0,111.1 L100.9,89.1 L151.8,117.4 L202.7,82.9 L253.6,95.4 L304.5,108.0 L355.5,79.7 L406.4,92.3 L457.3,101.7 L508.2,170.9 L559.1,189.7"/><path class="ch-line dash" d="M559.1,189.7 L610.0,136.3"/><circle class="ch-dot" cx="610.0" cy="136.3" r="5" style="fill:var(--card);stroke:var(--series-1);stroke-width:2.5"><title>forecast next week: 91.3%</title></circle><circle class="ch-dot" cx="50.0" cy="111.1" r="4.5"><title>W28: 92.1%</title></circle><circle class="ch-dot" cx="100.9" cy="89.1" r="4.5"><title>W29: 92.8%</title></circle><circle class="ch-dot" cx="151.8" cy="117.4" r="4.5"><title>W30: 91.9%</title></circle><circle class="ch-dot" cx="202.7" cy="82.9" r="4.5"><title>W31: 93.0%</title></circle><circle class="ch-dot" cx="253.6" cy="95.4" r="4.5"><title>W32: 92.6%</title></circle><circle class="ch-dot bad" cx="304.5" cy="108.0" r="4.5"><title>W33: 92.2% · off track</title></circle><circle class="ch-dot" cx="355.5" cy="79.7" r="4.5"><title>W34: 93.1%</title></circle><circle class="ch-dot" cx="406.4" cy="92.3" r="4.5"><title>W35: 92.7%</title></circle><circle class="ch-dot" cx="457.3" cy="101.7" r="4.5"><title>W36: 92.4%</title></circle><circle class="ch-dot bad" cx="508.2" cy="170.9" r="4.5"><title>W37: 90.2% · off track</title></circle><circle class="ch-dot bad" cx="559.1" cy="189.7" r="4.5"><title>W38: 89.6% · off track</title></circle><text class="ch-note" x="618" y="48.9">realistic range</text><text class="ch-note" x="620.0" y="154.3">forecast</text><text class="ch-tick" x="50.0" y="260" text-anchor="middle">W28</text><text class="ch-tick" x="151.8" y="260" text-anchor="middle">W30</text><text class="ch-tick" x="253.6" y="260" text-anchor="middle">W32</text><text class="ch-tick" x="355.5" y="260" text-anchor="middle">W34</text><text class="ch-tick" x="457.3" y="260" text-anchor="middle">W36</text><text class="ch-tick" x="559.1" y="260" text-anchor="middle">W38</text></svg><figcaption>Illustrative KPI with invented values. The band is what is normal for the KPI according to its recent weeks; the dotted line is the owner's target. The last two weeks fall below the band, so the KPI is flagged, and the hollow point is next week's forecast.</figcaption></figure>
+<div class="prose">
+<p>The range is computed by the system ("if nothing changes, this is normal"); the target is set by a person ("this is where we want to be"). Owners set their own targets on the board, and a target lets a new KPI be judged before it has enough history.</p>
+</div>
+<figure class="fig reveal"><div class="mock-wrap"><div class="slackbox" aria-label="Illustrative weekly KPI alert"><div class="ch"># kpi-alerts · illustrative, invented data</div>
+<div class="smsg"><div class="av" style="display:grid;place-items:center;font:700 .7rem var(--display);color:#6a58f5">KM</div><div><div class="h">KPI monitor<span class="app">APP</span><small>Mon 12:00</small></div>
+<div class="t"><b>Your KPIs to discuss this week</b><br>
+<span class="bad">●</span> <b>Average wait at pickup</b> · off track, above its usual range for 2 weeks<br>
+<span class="wait">●</span> <b>Completion rate</b> · inside its range but below your target<br>
+<span class="ok">●</span> Everything else: nothing to look at<br>
+Open your board to see the history and the forecast.</div></div></div>
+</div></div><figcaption>Illustrative weekly alert with invented KPIs. It links straight to the board, so the board has to work on a phone too.</figcaption></figure>
+<div class="prose">
+<h2 id="v1">Version 1: reading screenshots</h2>
+<p>With no API access at first, I built an n8n workflow that opened each dashboard, captured it as an image, asked a vision model for the numbers as strict JSON and wrote them to a weekly sheet. It worked, but image extraction occasionally invented a digit, and there was no cheap way to catch it before the meeting. That was the reason for version 2: read the data, never the picture of the data.</p>
+<h2 id="lessons">What I learned</h2>
+<ul>
+<li>A range computed from the KPI's own history is more useful than a fixed threshold: it knows that some KPIs are noisy and others never move.</li>
+<li>Send people less. One message with the three things that matter gets read; a report with everything does not.</li>
+<li>A vision model is a fine stopgap for extraction, and a poor source of truth.</li>
+</ul>
+<p class="muted small">Described at a high level on purpose: no screenshots, KPI names or figures from the company. Charts and messages are illustrative.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="hybrid-vision.html"><small>Previous project</small><b>Hybrid ML + LLM Vision Engine</b></a><a href="change-rules.html"><small>Next project</small><b>Change Requests as Rules · Unattended Uploader</b></a></nav>
+
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
+  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
