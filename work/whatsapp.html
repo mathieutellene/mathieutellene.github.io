@@ -94,13 +94,17 @@
 <div class="prose">
 <h2 id="results">Results, and what limits them</h2>
 <p>The system worked end to end from May: on 14 May it took the company's first ride booked, tracked and invoiced with nobody in the loop. A first pilot at a stadium confirmed that it works with real riders. A B2B variant lets corporate accounts ask for immediate rides the same way.</p>
-<p>Volume stayed small afterwards because the QR codes were handed out manually. The bottleneck is getting the code in front of people, not the agent, so that is where the next iteration starts. A weekly dashboard, rebuilt by a Claude skill, tracks the funnel from scan to ride.</p>
+<p>Volume stayed small afterwards because the QR codes were handed out manually. The bottleneck is getting the code in front of people, not the agent, so that is where the next iteration starts. A weekly tracker, rebuilt by a Claude skill from the conversation log and the ride records, follows every conversation from the scan to the drop-off.</p>
+</div>
+<figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>WhatsApp tracker · funnel</span><em>synthetic data</em></div><img src="../assets/work/whatsapp/tracker-funnel.webp" alt="WhatsApp tracker with cumulative totals, date filters and the eleven-step funnel from QR scan to drop-off" loading="lazy" data-zoom="../assets/work/whatsapp/tracker-funnel.webp"></div><figcaption>The weekly tracker, with synthetic numbers. Each column is a step of the conversation, from the QR scan to the drop-off, with the share of contacts that reached it and the drop from the step before. It shows where people leave: most of the loss happens before the pickup address, not at the price.</figcaption></figure>
+<figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>WhatsApp tracker · outcomes</span><em>synthetic data</em></div><img src="../assets/work/whatsapp/tracker-breakdown.webp" alt="Outcome of each conversation and country of the phone number" loading="lazy" data-zoom="../assets/work/whatsapp/tracker-breakdown.webp"></div><figcaption>Why conversations end, and where the numbers come from, also synthetic. Many contacts come from phone numbers abroad that the service cannot cover yet, which is why the prefix is tracked.</figcaption></figure>
+<div class="prose">
 <h2 id="lessons">What I learned</h2>
 <ul>
 <li>Letting the model choose the next step and code choose the message was the single change that made it reliable.</li>
 <li>Guards are cheap, and they belong in the first release rather than after the first abuse.</li>
 </ul>
-<p class="muted small">Numbers, venue names and account details are left out on purpose. The conversation above is illustrative.</p>
+<p class="muted small">Numbers, venue names and account details are left out on purpose. The conversation above is illustrative, and the tracker screenshots show the real dashboard filled with synthetic data.</p>
 </div>
 <nav class="next" aria-label="More projects"><a href="dqm.html"><small>Previous project</small><b>DQM · Driver Quality Management</b></a><a href="b2b.html"><small>Next project</small><b>Email-to-Reservation Pipeline (B2B)</b></a></nav>
 
