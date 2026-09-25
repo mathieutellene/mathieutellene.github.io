@@ -501,3 +501,8 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
 .smsg .av.ini{display:grid;place-items:center;font:700 .62rem/1 var(--mono);color:#fff;background:linear-gradient(135deg,#7c6bff,#2dd4ee)}
 .fig.solo-phone{max-width:300px;margin:0 auto}
 .fig-row.three .frame .bar i{display:none}.fig-row.three .frame .bar em{font-size:.58rem;padding:1px 5px;letter-spacing:.04em}.fig-row.three .frame .bar span{font-size:.68rem}
+
+.spotlight.teach{margin-top:28px;padding:26px 28px}
+.spotlight.teach>p{max-width:860px}
+.spotlight.teach .kb{margin:12px 0 4px}
+@media (max-width:760px){.spotlight.teach div[style*="grid-template-columns"]{grid-template-columns:1fr!important}}
