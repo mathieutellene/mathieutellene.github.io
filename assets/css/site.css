@@ -506,3 +506,7 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
 .spotlight.teach>p{max-width:860px}
 .spotlight.teach .kb{margin:12px 0 4px}
 @media (max-width:760px){.spotlight.teach div[style*="grid-template-columns"]{grid-template-columns:1fr!important}}
+
+/* text fills its container */
+.lead,.sec-sub,.prose,.fig figcaption,.contact p,.spotlight.teach>p{max-width:none}
+.macbadge{display:flex}
