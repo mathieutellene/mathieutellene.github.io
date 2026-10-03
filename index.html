@@ -65,11 +65,14 @@
   <div class="sec-tag">About</div>
   <h2 class="sec-title">Engineer first, builder by default</h2>
   <div class="about-grid">
+    <div class="stage-col">
     <figure class="stage reveal"><img src="assets/img/stage.webp" alt="Mathieu presenting AQM on stage at a company all-hands" loading="lazy"><figcaption>Presenting AQM at the global Customer Operations all-hands, April 2026.</figcaption></figure>
+    <figure class="stage reveal"><img class="c" src="assets/img/workshop.webp" alt="Mathieu teaching the Level 2 n8n workshop at the company academy, with the slides blurred" loading="lazy" data-zoom="assets/img/workshop.webp"><figcaption>Teaching the Level 2 n8n workshop at the company academy, 30 September 2026. Slides blurred on purpose.</figcaption></figure>
+    </div>
     <div class="about reveal">
       <p>I studied <b>industrial organization engineering</b> and ended up where operations meet software. I joined <b>Cabify</b> in Madrid in November 2025 as a Customer Operations trainee, moved to Operational Excellence in March and became the team's <b>automation analyst</b> in May.</p>
       <p>The job is easy to describe: find a process people repeat by hand, build the system that does it, and keep it running. The tool depends on the job: <b>n8n</b> to connect systems fast, <b>Claude or a local model</b> when a step needs judgement, <b>Python and SQL</b> when it has to be real software, and <b>small models I train myself</b> when an LLM would be overkill. Everything on this page runs, or ran, in production with real users, and each case study says what broke as well as what worked.</p>
-      <p>I also teach. I was selected as one of the company academy's <b>n8n trainers</b>, and on 30 September 2026 I co-teach the <b>Level 2 n8n workshop</b> with a colleague from Global Logistics.</p>
+      <p>I also teach. I was selected as one of the company academy's <b>n8n trainers</b>, and on 30 September 2026 I co-taught the <b>Level 2 n8n workshop</b> with a colleague from Global Logistics.</p>
       <div class="facts">
         <div class="fact"><b>Current role</b>OEx Automation Analyst at Cabify</div>
         <div class="fact"><b>Education</b>B.Eng. Industrial Organization Engineering, URJC · thesis pending, May 2027</div>
@@ -98,8 +101,8 @@
 <section id="projects" class="wrap">
   <div class="sec-tag">Projects</div>
   <h2 class="sec-title">Built, shipped, measured</h2>
-  <p class="sec-sub">Fifteen systems, most of them in production at Cabify Spain. Every card opens a full case study with the architecture, screenshots and what I would change. <b>Screenshots show the real tools rendered with synthetic data</b>; client, supplier and people names are left out on purpose.</p>
-  <div class="filters" role="group" aria-label="Filter projects"><button class="fbtn active" data-tag="All" aria-pressed="true">All<small>15</small></button><button class="fbtn" data-tag="AI Agents" aria-pressed="false">AI Agents<small>10</small></button><button class="fbtn" data-tag="Automation" aria-pressed="false">Automation<small>5</small></button><button class="fbtn" data-tag="Computer Vision" aria-pressed="false">Computer Vision<small>2</small></button><button class="fbtn" data-tag="Machine Learning" aria-pressed="false">Machine Learning<small>3</small></button><button class="fbtn" data-tag="Forecasting" aria-pressed="false">Forecasting<small>4</small></button><button class="fbtn" data-tag="Data &amp; BI" aria-pressed="false">Data &amp; BI<small>4</small></button><button class="fbtn" data-tag="Web App" aria-pressed="false">Web App<small>2</small></button><button class="fbtn" data-tag="Hackathon" aria-pressed="false">Hackathon<small>1</small></button></div>
+  <p class="sec-sub">Sixteen systems, most of them in production at Cabify Spain. Every card opens a full case study with the architecture, screenshots and what I would change. <b>Screenshots show the real tools rendered with synthetic data</b>; client, supplier and people names are left out on purpose.</p>
+  <div class="filters" role="group" aria-label="Filter projects"><button class="fbtn active" data-tag="All" aria-pressed="true">All<small>16</small></button><button class="fbtn" data-tag="AI Agents" aria-pressed="false">AI Agents<small>10</small></button><button class="fbtn" data-tag="Automation" aria-pressed="false">Automation<small>5</small></button><button class="fbtn" data-tag="Computer Vision" aria-pressed="false">Computer Vision<small>2</small></button><button class="fbtn" data-tag="Machine Learning" aria-pressed="false">Machine Learning<small>3</small></button><button class="fbtn" data-tag="Forecasting" aria-pressed="false">Forecasting<small>5</small></button><button class="fbtn" data-tag="Data &amp; BI" aria-pressed="false">Data &amp; BI<small>5</small></button><button class="fbtn" data-tag="Web App" aria-pressed="false">Web App<small>2</small></button><button class="fbtn" data-tag="Hackathon" aria-pressed="false">Hackathon<small>1</small></button></div>
   <div class="grid" id="projectGrid"><article class="pcard reveal star" data-tags="Computer Vision|AI Agents|Automation">
   <div class="pshot"><img src="assets/thumbs/aqm.webp" alt="" loading="lazy"></div>
   <div class="pbody">
@@ -128,7 +131,7 @@
   <div class="pshot"><img src="assets/thumbs/b2b.webp" alt="" loading="lazy"></div>
   <div class="pbody">
     <div class="top"><h3><a href="work/b2b.html">Email-to-Reservation Pipeline (B2B)</a></h3><div class="pills"><span class="impact">Email in, ride out</span><span class="kind">n8n automation</span></div></div>
-    <p class="desc">Two documents arrive by email from two different senders. Two Claude agents read them, a sheet cross-checks them, and the ride is created with its driver pre-assigned in a single API call.</p>
+    <p class="desc">Two corporate clients book by email. Claude agents read spreadsheets, work orders and loose emails, the sheets check every trip, and the rides are created, changed and cancelled on their own, with the driver attached in a single API call.</p>
     <div class="toolrow"><img src="assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21"><img src="assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21"><img src="assets/logos/gmail.svg" alt="Gmail" title="Gmail" class="" loading="lazy" width="21" height="21"><img src="assets/logos/drive.svg" alt="Google Drive" title="Google Drive" class="" loading="lazy" width="21" height="21"><img src="assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21"><img src="assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21"><img src="assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21"></div>
     <div class="pfoot"><div class="chips"><span class="chip">AI Agents</span><span class="chip">Automation</span></div><span class="go">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
   </div>
@@ -176,7 +179,7 @@
   <div class="pshot"><img src="assets/thumbs/hybrid-vision.webp" alt="" loading="lazy"></div>
   <div class="pbody">
     <div class="top"><h3><a href="work/hybrid-vision.html">Hybrid ML + LLM Vision Engine</a></h3><div class="pills"><span class="impact">~80% AI cost cut</span><span class="kind">local ML</span></div></div>
-    <p class="desc">The engine under the fleet audit. CNN and OCR models I trained on 16,000+ labelled photos handle the repetitive checks, and the LLM is kept for judgement calls. Inference cost dropped by about 80%.</p>
+    <p class="desc">The engine under the fleet audit. Neural networks I trained on 16,000+ labelled photos handle the repetitive checks and the LLM keeps the judgement calls. See inside the first network and replay its training, epoch by epoch. Inference cost dropped by about 80%.</p>
     <div class="toolrow"><img src="assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21"><img src="assets/logos/pytorch.svg" alt="PyTorch" title="PyTorch" class="" loading="lazy" width="21" height="21"><img src="assets/logos/keras.svg" alt="Keras" title="Keras" class="" loading="lazy" width="21" height="21"><img src="assets/logos/colab.svg" alt="Google Colab" title="Google Colab" class="" loading="lazy" width="21" height="21"><img src="assets/logos/opencv.svg" alt="OpenCV" title="OpenCV" class="" loading="lazy" width="21" height="21"><img src="assets/logos/ultralytics.svg" alt="YOLOv8 · Ultralytics" title="YOLOv8 · Ultralytics" class="mono" loading="lazy" width="21" height="21"><img src="assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21"><img src="assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21"></div>
     <div class="pfoot"><div class="chips"><span class="chip">Computer Vision</span><span class="chip">Machine Learning</span></div><span class="go">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
   </div>
@@ -184,9 +187,17 @@
   <div class="pshot"><img src="assets/thumbs/forecasting.webp" alt="" loading="lazy"></div>
   <div class="pbody">
     <div class="top"><h3><a href="work/forecasting.html">Demand &amp; KPI Forecasting Engine</a></h3><div class="pills"><span class="impact">−58% forecast error</span><span class="kind">Python · Colab</span></div></div>
-    <p class="desc">Forecasts of support volume, ride requests by city and quarterly KPI targets, plus an Erlang C and CP-SAT shift planner. The volume model cut the error of the official forecast by 58%.</p>
+    <p class="desc">Forecasts of support volume, ride requests by city and quarterly KPI targets: 2,160 Prophet models trained per series and the best one kept, with a replay of the search. The volume model cut the error of the official forecast by 58%.</p>
     <div class="toolrow"><img src="assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21"><img src="assets/logos/colab.svg" alt="Google Colab" title="Google Colab" class="" loading="lazy" width="21" height="21"><img src="assets/logos/pandas.svg" alt="pandas" title="pandas" class="mono" loading="lazy" width="21" height="21"><img src="assets/logos/sklearn.svg" alt="scikit-learn" title="scikit-learn" class="" loading="lazy" width="21" height="21"><img src="assets/logos/google.svg" alt="Google OR-Tools" title="Google OR-Tools" class="" loading="lazy" width="21" height="21"><img src="assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21"><img src="assets/logos/tableau.svg" alt="Tableau" title="Tableau" class="" loading="lazy" width="21" height="21"></div>
     <div class="pfoot"><div class="chips"><span class="chip">Forecasting</span><span class="chip">Machine Learning</span></div><span class="go">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+  </div>
+</article><article class="pcard reveal" data-tags="Forecasting|Data &amp; BI">
+  <div class="pshot"><img src="assets/thumbs/bpo-staffing.webp" alt="" loading="lazy"></div>
+  <div class="pbody">
+    <div class="top"><h3><a href="work/bpo-staffing.html">BPO Weekly Staffing Matrix</a></h3><div class="pills"><span class="impact">400 agents · 15-min slots</span><span class="kind">operations research</span></div></div>
+    <p class="desc">The weekly plan for the outsourced contact centre: Erlang C turns the forecast of calls, chats and tickets into agents per hour, and a CP-SAT solver writes a legal shift for every agent. Scaled to 400 agents in 15-minute slots.</p>
+    <div class="toolrow"><img src="assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21"><img src="assets/logos/google.svg" alt="Google OR-Tools" title="Google OR-Tools" class="" loading="lazy" width="21" height="21"><img src="assets/logos/colab.svg" alt="Google Colab" title="Google Colab" class="" loading="lazy" width="21" height="21"><img src="assets/logos/pandas.svg" alt="pandas" title="pandas" class="mono" loading="lazy" width="21" height="21"><img src="assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21"></div>
+    <div class="pfoot"><div class="chips"><span class="chip">Forecasting</span><span class="chip">Data &amp; BI</span></div><span class="go">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
   </div>
 </article><article class="pcard reveal" data-tags="AI Agents|Forecasting">
   <div class="pshot"><img src="assets/thumbs/events.webp" alt="" loading="lazy"></div>
@@ -245,7 +256,7 @@
         <li>Own automation and AI for Spanish operations: fleet quality (<b>AQM</b>, <b>DQM</b>), conversational agents, B2B integrations, KPI monitoring (<b>COPs Control</b>) and forecasting.</li>
         <li><b>26 n8n workflows</b> in production (537 nodes), plus Python services on the team's Mac mini: the <b>RPA Uploader</b>, the COPs Control pipeline and the DQM engine.</li>
         <li>AQM closed as business as usual on 3 September 2026 and was handed to Product as the basis for a native version.</li>
-        <li>Selected as an n8n trainer for the company academy: co-teaching the Level 2 workshop on 30 September 2026, built on two of my production workflows, with a 43-node guide to the company's n8n environment.</li>
+        <li>Selected as an n8n trainer for the company academy: co-taught the Level 2 workshop on 30 September 2026, built on two of my production workflows, with a 43-node guide to the company's n8n environment.</li>
       </ul>
     </div>
     <div class="tl-item reveal">
