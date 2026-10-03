@@ -71,7 +71,7 @@
 <li><b>Memory per session</b> in Redis, and a log of every conversation for review.</li>
 </ul>
 </div>
-<figure class="fig reveal "><div class="frame svg"><div class="bar"><i></i><i></i><i></i><span>n8n · CabiBot · 12 nodes</span></div><img src="../assets/work/n8n/hc-agent.svg" alt="n8n diagram of the CabiBot workflow" loading="lazy" data-zoom="../assets/work/n8n/hc-agent.svg"></div><figcaption>The whole workflow: chat trigger, the agent with its model, memory and two tools, then the reply is shaped and the session logged.</figcaption></figure>
+<figure class="fig reveal "><div class="frame svg dark"><div class="bar"><i></i><i></i><i></i><span>n8n · CabiBot · 12 nodes</span><a class="open" href="../assets/work/n8n/hc-agent.svg" target="_blank" rel="noopener">Open full size</a></div><img src="../assets/work/n8n/hc-agent.svg" alt="n8n diagram of the CabiBot workflow" loading="lazy" data-zoom="../assets/work/n8n/hc-agent.svg"></div><figcaption>The whole workflow: chat trigger, the agent with its model, memory and two tools, then the reply is shaped and the session logged.</figcaption></figure>
 <div class="prose">
 <h2 id="cost">Cost and caching</h2>
 <p>After the fix described in <a href="llm-cost.html">LLM cost control</a>, CabiBot became the largest LLM cost on our team key, for a simple reason: a long, stable system prompt resent on every message. That is exactly the case prompt caching is for, and CabiBot was the first agent to get it once the company's n8n model node exposed it.</p>
