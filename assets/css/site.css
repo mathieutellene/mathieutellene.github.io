@@ -634,3 +634,9 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
   .stage-col .stage{flex:1 1 0;min-height:250px}
   .stage-col .stage img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
 }
+/* Organisation logos: experience, academy block and certificates */
+.org-logo{width:30px;height:30px;flex:0 0 30px;border-radius:8px;background:#fff;border:1px solid var(--border);object-fit:contain;display:inline-block}
+.org-logo.pad{padding:3px}
+.spotlight h3:has(.org-logo){display:flex;align-items:center;gap:10px}
+.cert .ic.logo{background:#fff;overflow:hidden;padding:0}
+.cert .ic.logo img{width:100%;height:100%;object-fit:contain;display:block}
