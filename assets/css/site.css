@@ -647,3 +647,7 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
 
 .wa-shots img.shot{width:100%;border-radius:16px;border:1px solid var(--border);box-shadow:0 8px 24px rgba(0,0,0,.12);cursor:zoom-in;display:block}
 .wa-shots figcaption{font-size:.8rem}
+.cert .partners{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 2px}
+.cert .partners em{font-style:normal;font-size:.76rem;color:var(--dim)}
+.cert .partners img.sq{height:34px;padding:1px}
+.cert .partners img{height:26px;width:auto;background:#fff;border:1px solid var(--border);border-radius:6px;padding:3px 7px;box-sizing:border-box}
