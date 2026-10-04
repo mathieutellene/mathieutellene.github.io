@@ -59,19 +59,62 @@
 <h3>1. Capture</h3>
 <p>Four web forms (drivers and three wrapping suppliers) share one HTML and JavaScript codebase, deployed with GitLab CI to the company's static hosting. The subdomain decides which supplier configuration loads. Each photo slot opens the camera with a silhouette of the car, and the browser checks size, brightness and sharpness before uploading: short side of at least 600 px, brightness between 45 and 236 and a Laplacian variance of at least 40. Uploads run in the background, so the user gets an answer straight away.</p>
 </div>
-<div class="fig-row three">
-  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>capture form</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-top.webp" alt="Vinyl registration form, plate and first photo slots" loading="lazy" data-zoom="../assets/work/aqm/form-top.webp"></div><figcaption>Driver form: the plate and one slot per photo, nothing else. Every extra field lowered completion.</figcaption></figure>
-  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>camera guide</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-camera.webp" alt="Camera view with a car silhouette guide" loading="lazy" data-zoom="../assets/work/aqm/form-camera.webp"></div><figcaption>Camera guide with the car silhouette and a prompt to turn the phone.</figcaption></figure>
-  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>plate check</span><em>synthetic data</em></div><img src="../assets/work/aqm/form-plate.webp" alt="Plate field with a live suggestion" loading="lazy" data-zoom="../assets/work/aqm/form-plate.webp"></div><figcaption>The plate is checked against the active fleet while typing.</figcaption></figure>
+<div class="fig-row">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>capture form</span><em>redrawn in English</em></div><img src="../assets/work/aqm/form-top.webp" alt="Vinyl registration form with the plate field and one slot per photo" loading="lazy" data-zoom="../assets/work/aqm/form-top.webp"></div><figcaption>Driver form: the plate and one slot per photo, nothing else. Every extra field lowered completion.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>plate check</span><em>real car · plate partly hidden</em></div><img src="../assets/work/aqm/form-plate.webp" alt="Plate field with a live fleet suggestion and the plate read from the front and rear photos" loading="lazy" data-zoom="../assets/work/aqm/form-plate.webp"></div><figcaption>While typing, the plate is matched against the active fleet. Once the front and rear photos are up, the plate read from each one is compared with what was typed.</figcaption></figure>
 </div>
+<figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>camera guide · landscape</span><em>real photo</em></div><img src="../assets/work/aqm/form-camera.webp" alt="Landscape camera view of a real car with a dashed silhouette guide and quality checks" loading="lazy" data-zoom="../assets/work/aqm/form-camera.webp"></div><figcaption>The camera opens in landscape with a silhouette of the side being shot. Brightness, sharpness and size are checked before the photo is accepted. The feed here is a real right-side photo from the fleet.</figcaption></figure>
 <div class="prose">
 <h3>2. Intake</h3>
 <p>A webhook stores each photo in its own Drive folder and writes the submission to an n8n data table at once. A second webhook reads the plate from the photo while the user is still on the form and warns if it does not match what was typed. It never blocks a submission: some damaged cars cannot be moved to show the plate.</p>
+</div>
+<figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>live plate OCR · front and rear</span><em>real car · plate partly hidden</em></div><img src="../assets/work/aqm/plate-read.webp" alt="Front and rear photos of the same car with the plate detected and read" loading="lazy" data-zoom="../assets/work/aqm/plate-read.webp"></div><figcaption>The plate is read from both the front and the rear photo and checked against the typed plate. Two middle digits are hidden here on purpose; the system reads the full plate.</figcaption></figure>
+<div class="prose">
 <h3>3. AI audit</h3>
 <p>Every 10 minutes a 74-node workflow takes the pending vehicles one at a time. Each photo (both sides, front, rear, headrest and the regional badge) has its own branch: download, resize to 1024 px, and ask Claude for a fixed 9-field JSON: vinyl type, external brand, side, defect, rear label, regional VTC badge, damage, damage detail and whether the damage sits inside the vinyl area. Side photos also go through the collage audit below. Designs with no reference, such as media campaigns, get a stricter subjective audit. Eight branches merge into one record per vehicle, with tokens and cost logged.</p>
 </div>
 <figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 109" role="img" aria-label="Collage audit" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M180.0,52.5 C204.0,52.5 194.0,52.5 218.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,52.5 C416.0,52.5 406.0,52.5 430.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,52.5 C628.0,52.5 618.0,52.5 642.0,52.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,52.5 C840.0,52.5 830.0,52.5 854.0,52.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="19.5" width="168" height="66" rx="10"/><text x="26.0" y="43.5" class="dg-t">Side photo</text><text x="26.0" y="62.5" class="dg-s">resized to 1024 px</text></g><g class="dg-box dg-data"><rect x="224.0" y="19.5" width="168" height="66" rx="10"/><text x="238.0" y="43.5" class="dg-t">Find the reference</text><text x="238.0" y="62.5" class="dg-s">12 designs × 2 sides</text></g><g class="dg-box dg-app"><rect x="436.0" y="12.0" width="168" height="81" rx="10"/><text x="450.0" y="36.0" class="dg-t">Build a collage</text><text x="450.0" y="55.0" class="dg-s">real car next to the</text><text x="450.0" y="70.0" class="dg-s">reference</text></g><g class="dg-box dg-ai"><rect x="648.0" y="19.5" width="168" height="66" rx="10"/><text x="662.0" y="43.5" class="dg-t">Vision LLM</text><text x="662.0" y="62.5" class="dg-s">fixed 9-field JSON</text></g><g class="dg-box dg-out"><rect x="860.0" y="12.0" width="168" height="81" rx="10"/><text x="874.0" y="36.0" class="dg-t">Merge 8 branches</text><text x="874.0" y="55.0" class="dg-s">one record per vehicle,</text><text x="874.0" y="70.0" class="dg-s">cost logged</text></g></svg></div><figcaption>The model never judges a side photo on its own. It gets the real car next to the reference design for that vinyl and side, and answers a fixed schema.</figcaption></figure>
 <figure class="fig reveal "><div class="frame svg dark"><div class="bar"><i></i><i></i><i></i><span>n8n · vehicle photo analysis · 74 nodes</span><a class="open" href="../assets/work/n8n/aqm-analysis.svg" target="_blank" rel="noopener">Open full size</a></div><img src="../assets/work/n8n/aqm-analysis.svg" alt="n8n workflow diagram of the AQM photo analysis" loading="lazy" data-zoom="../assets/work/n8n/aqm-analysis.svg"></div><figcaption>The analysis workflow as it runs in n8n, relabelled in English. Open it full size: every photo type has its own branch, and side photos go through the reference collage.</figcaption></figure>
+<div class="prose">
+<h3>One car, end to end</h3>
+<p>These are the four photos a driver uploaded for one real car, and the record the audit wrote for it. The JSON is the raw output, field names and values as they are stored (in Spanish); the table below says what each one means.</p>
+</div>
+<div class="fig-row four">
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>front</span><em>real</em></div><img src="../assets/work/aqm/car-front.webp" alt="Front photo of an audited car" loading="lazy" data-zoom="../assets/work/aqm/car-front.webp"></div><figcaption>Front: the plate is read here.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>right side</span><em>real</em></div><img src="../assets/work/aqm/car-right.webp" alt="Right side photo of an audited car" loading="lazy" data-zoom="../assets/work/aqm/car-right.webp"></div><figcaption>Right side: vinyl compared with its reference.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>left side</span><em>real</em></div><img src="../assets/work/aqm/car-left.webp" alt="Left side photo of an audited car" loading="lazy" data-zoom="../assets/work/aqm/car-left.webp"></div><figcaption>Left side: the regional Moves label is visible.</figcaption></figure>
+  <figure class="fig reveal "><div class="frame"><div class="bar"><i></i><i></i><i></i><span>rear</span><em>real</em></div><img src="../assets/work/aqm/car-rear.webp" alt="Rear photo of an audited car" loading="lazy" data-zoom="../assets/work/aqm/car-rear.webp"></div><figcaption>Rear: second plate read.</figcaption></figure>
+</div>
+<pre class="code"><span class="c">// AI audit result for this vehicle, as stored</span>
+{
+  "type_vinilo": <span class="s">"meidin_madrid"</span>,
+  "media_externa_marca": <span class="s">""</span>,
+  "vinilo_estado": <span class="s">"completo"</span>,
+  "defecto_estado": <span class="s">"correcto"</span>,
+  "label_moves": <span class="s">"label a reemplazar"</span>,
+  "label_vtc_front": <span class="s">"sin foto"</span>,
+  "detalle_vtc_front": <span class="s">""</span>,
+  "reposacabezas_brand": <span class="s">""</span>,
+  "vehiculo_estado": <span class="s">"buen estado"</span>,
+  "damage_detalle": <span class="s">""</span>,
+  "damage_zona_vinilo": <span class="s">"sin daño"</span>,
+  "vinilable": <span class="s">"si"</span>,
+  "_tokens": <span class="n">13084</span>,
+  "_cost": <span class="n">0.048312</span>
+}</pre>
+<div class="tbl-wrap reveal"><table class="grid-t"><thead><tr><th>Field</th><th>Value</th><th>What it means</th></tr></thead><tbody>
+<tr><td><code>type_vinilo</code></td><td>meidin_madrid</td><td>The design matches the Madrid city vinyl reference.</td></tr>
+<tr><td><code>media_externa_marca</code></td><td>empty</td><td>No third-party advertising on the car.</td></tr>
+<tr><td><code>vinilo_estado</code></td><td>completo</td><td>The vinyl is complete on both sides.</td></tr>
+<tr><td><code>defecto_estado</code></td><td>correcto</td><td>No peeling, tears or fading.</td></tr>
+<tr><td><code>label_moves</code></td><td>label a reemplazar</td><td>The regional Moves label on the rear door is present but must be replaced.</td></tr>
+<tr><td><code>label_vtc_front</code></td><td>sin foto</td><td>No photo of the front VTC badge was sent, so it was not judged.</td></tr>
+<tr><td><code>reposacabezas_brand</code></td><td>empty</td><td>No headrest branding photo in this submission.</td></tr>
+<tr><td><code>vehiculo_estado</code></td><td>buen estado</td><td>The car itself is in good condition.</td></tr>
+<tr><td><code>damage_zona_vinilo</code></td><td>sin daño</td><td>No damage inside the vinyl area.</td></tr>
+<tr><td><code>vinilable</code></td><td>si</td><td>The car can carry vinyl: it counts towards coverage and the bonus.</td></tr>
+<tr><td><code>_tokens · _cost</code></td><td>13,084 · $0.048</td><td>Tokens and cost of auditing this whole vehicle, logged with the record.</td></tr>
+</tbody></table></div>
 <div class="prose">
 <h3>4. Plate check</h3>
 <p>The model reads the front and rear plates and a small rule set decides between four cases: confirmed; corrected, when front and rear agree against what was typed; conflict, which sends the image and the typed text to Slack with four options and waits up to two days; and unreadable, which keeps what the user typed.</p>
