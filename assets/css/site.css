@@ -15,7 +15,7 @@
   --pink:#f9a8d4; --pinkbg:rgba(244,114,182,.12); --pinkbd:rgba(244,114,182,.32);
   --teal:#5eead4; --tealbg:rgba(45,212,238,.10); --tealbd:rgba(45,212,238,.30);
   --ok:#34d399; --warn:#fbbf24; --bad:#f87171;
-  --n8n:#ea4b71; --li:#0a66c2;
+  --n8n:#FF91AC; --li:#0a66c2;
   --frame:#1a2336; --frame-bar:#141c2c;
   --dg-step:#161f33; --dg-in:#2a2415; --dg-in-l:#b38d34; --dg-ai:#221d3d; --dg-ai-l:#8b7cff;
   --dg-data:#12292b; --dg-data-l:#39b39a; --dg-app:#14243d; --dg-app-l:#4f93dd; --dg-out:#1d2230; --dg-out-l:#6a7690;
@@ -510,3 +510,8 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
 /* text fills its container */
 .lead,.sec-sub,.prose,.fig figcaption,.contact p,.spotlight.teach>p{max-width:none}
 .macbadge{display:flex}
+
+/* n8n symbol (2026 brand) is wider than tall */
+.toolrow img[src$="/n8n.svg"],.toolrow img[src="assets/logos/n8n.svg"]{width:34px}
+.chip img[src$="/n8n.svg"]{width:26px}
+.case-hero .toolchips .chip img[src$="/n8n.svg"]{width:30px}
