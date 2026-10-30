@@ -35,13 +35,13 @@
 <main id="main">
 <header class="case-hero wrap">
   <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
-  <p class="eyebrow">Case study · Cabify Spain · Jul to Sep 2026</p>
+  <p class="eyebrow">Case study · Cabify Spain · Jul to Oct 2026</p>
   <h1><span class="g">Change Requests as Rules</span> · Unattended Uploader</h1>
-  <p class="lead">Every vehicle carries a list of commercial products that a daily process sets from a rule matrix. Changes requested outside the matrix were applied by hand and quietly undone the next morning, and every bulk change meant uploading files to an internal tool by hand and checking the result. I turned each request into a rule the daily process respects, and built a small service that uploads the resulting files on its own and reports what really happened.</p>
-  <div class="pillrow"><span class="impact">~25 h/month removed</span><span class="kind">Apps Script + Python</span></div>
-  <div class="toolchips"><span class="chip"><img src="../assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21">Google Apps Script</span><span class="chip"><img src="../assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21">Google Sheets</span><span class="chip"><img src="../assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21">Python</span><span class="chip"><img src="../assets/logos/playwright.svg" alt="Playwright" title="Playwright" class="" loading="lazy" width="21" height="21">Playwright</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
+  <p class="lead">Every vehicle carries a list of commercial products that a daily process sets from a rule matrix. Changes requested outside the matrix were applied by hand and quietly undone the next morning, and every bulk change meant uploading files to an internal tool by hand and checking the result. I turned each request into a rule the daily process respects, and built a small service that uploads the resulting files on its own and reports what really happened. In October the uploader moved from a browser session to an internal API, as a set of n8n workflows.</p>
+  <div class="pillrow"><span class="impact">~25 h/month removed</span><span class="kind">Apps Script + n8n</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/appsscript.svg" alt="Google Apps Script" title="Google Apps Script" class="" loading="lazy" width="21" height="21">Google Apps Script</span><span class="chip"><img src="../assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21">Google Sheets</span><span class="chip"><img src="../assets/logos/python.svg" alt="Python" title="Python" class="" loading="lazy" width="21" height="21">Python</span><span class="chip"><img src="../assets/logos/playwright.svg" alt="Playwright" title="Playwright" class="" loading="lazy" width="21" height="21">Playwright</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
   
-  <div class="meta reveal"><div><span>My role</span>Designed and built both parts: the request portal, the rules and the uploader.</div><div><span>When</span>Jul to Sep 2026</div><div><span>Built with</span>Google Apps Script, Google Sheets, Python, Playwright, Slack</div><div><span>Status</span>In production.</div></div>
+  <div class="meta reveal"><div><span>My role</span>Designed and built both parts: the request portal, the rules and the uploader, then its move to an API.</div><div><span>When</span>Jul to Sep 2026 · on an internal API since October 2026</div><div><span>Built with</span>Google Apps Script, Google Sheets, n8n, an internal API, Slack. First uploader: Python and Playwright</div><div><span>Status</span>In production for six kinds of bulk change.</div></div>
   <div class="stats"><div class="stat reveal"><div class="num" data-count="25" data-prefix="~" data-suffix=" h" data-dec="0">~25 h</div><div class="lbl">of manual work removed every month</div></div><div class="stat reveal"><div class="num" data-count="0" data-prefix="" data-suffix="" data-dec="0">0</div><div class="lbl">files edited or uploaded by hand</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">rule per exception, with author, reason and expiry</div></div><div class="stat reveal"><div class="num">Minutes</div><div class="lbl">from approval to upload</div></div></div>
   
 </header>
@@ -64,6 +64,15 @@
 <li><b>Heavy files are split</b> into parts that run in parallel, and the service waits for the tool's real result before reporting, rather than reporting that it clicked a button.</li>
 <li><b>The outcome goes to Slack</b> with the links, so the person who asked for the change sees that it happened.</li>
 </ul>
+<h2 id="api">October: from a browser to an API</h2>
+<p>The first uploader drove the internal tool through a browser session that a person renewed every morning. When the tool closed the door to automated access, I asked the platform team for an API route instead of working around it. Two weeks later the first actions were open to automations, and the uploader became a set of n8n workflows.</p>
+<ul>
+<li><b>One workflow per kind of change,</b> each with its own service account and only the permissions it needs.</li>
+<li><b>Safe to run twice.</b> A row that is already applied comes back as "no change", so reprocessing a file only applies what was missing.</li>
+<li><b>Retries done right.</b> When the API is busy it says how long to wait, and only those rows are repeated.</li>
+<li><b>A results file in plain words</b> next to each upload, one line per row, and one Slack message with the counts.</li>
+<li><b>A watchdog</b> uploads a file again, once, if it has no result after half an hour, and alerts the owners if that fails too.</li>
+</ul>
 <h2 id="results">Results</h2>
 <ul>
 <li><b>About 25 hours a month</b> of manual work removed between the repeated fixes and the manual uploads.</li>
@@ -74,10 +83,11 @@
 <li>If a process keeps undoing people's work, the fix is usually to give the exception a proper home, not to ask people to be faster.</li>
 <li>Automating a browser is fragile; checking the real result after every step is what makes it trustworthy.</li>
 <li>Expiry dates are the cheapest governance there is.</li>
+<li>When a system closes the door to automation, ask for a proper door instead of picking the lock.</li>
 </ul>
 <p class="muted small">Described at a high level on purpose: no screenshots, rule counts or internal tool names. The diagram is illustrative.</p>
 </div>
-<nav class="next" aria-label="More projects"><a href="kpi-monitoring.html"><small>Previous project</small><b>Automated KPI Monitoring</b></a><a href="forecasting.html"><small>Next project</small><b>Demand &amp; KPI Forecasting</b></a></nav>
+<nav class="next" aria-label="More projects"><a href="kpi-monitoring.html"><small>Previous project</small><b>Automated KPI Monitoring</b></a><a href="emergency-vans.html"><small>Next project</small><b>Emergency Shared Vans</b></a></nav>
 
   </div>
   <aside class="toc" aria-label="On this page"></aside>
@@ -86,7 +96,7 @@
 <footer>
   <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
   <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
-  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+  <p>© <span id="year">2026</span> · Berlin</p>
 </footer>
 <div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
 <script src="../assets/js/site.js" defer></script>

@@ -35,14 +35,14 @@
 <main id="main">
 <header class="case-hero wrap">
   <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
-  <p class="eyebrow">Case study · Cabify Spain · 2026</p>
+  <p class="eyebrow">Case study · Cabify Spain · May to Oct 2026</p>
   <h1>Events Intelligence</h1>
-  <p class="lead">Forecasts learn from history, and history does not know that a stadium concert is on Saturday or that taxis strike on Thursday. Events Intelligence is a scheduled Claude skill that scans public sources for the week or month ahead across a dozen Spanish cities and hands operations a workbook they can plan from, hour by hour.</p>
-  <div class="pillrow"><span class="impact">A dozen cities, weekly</span><span class="kind">Claude automation</span></div>
+  <p class="lead">Forecasts learn from history, and history does not know that a stadium concert is on Saturday or that taxis strike on Thursday. Events Intelligence started as a scheduled Claude skill that sent weekly and monthly workbooks for a dozen Spanish regions. In October it became a live forecast that always covers the next 30 days: daily feeds refresh weather, fixtures and bank-holiday eves on their own, and every few days AI agents searching in parallel sweep concerts, fairs, strikes and closures over a census of more than 200 venues.</p>
+  <div class="pillrow"><span class="impact">Live 30 days ahead</span><span class="kind">Claude automation</span></div>
   <div class="toolchips"><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/sheets.svg" alt="Google Sheets" title="Google Sheets" class="" loading="lazy" width="21" height="21">Google Sheets</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
   
-  <div class="meta reveal"><div><span>My role</span>Designed the skill, the source list, the deduplication and the workbook format.</div><div><span>When</span>2026 · weekly and monthly editions</div><div><span>Built with</span>Claude with a custom skill and web research, Google Sheets, Slack</div><div><span>Status</span>Running on a schedule.</div></div>
-  <div class="stats"><div class="stat reveal"><div class="num" data-count="12" data-prefix="~" data-suffix="" data-dec="0">~12</div><div class="lbl">cities, each with its own tab</div></div><div class="stat reveal"><div class="num">Dozens</div><div class="lbl">of curated public sources</div></div><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">editions: next week and next month</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">stable ID per event, however many sites list it</div></div></div>
+  <div class="meta reveal"><div><span>My role</span>Designed and built it: sources, venue census, the agents' search method, deduplication, thresholds, the web page and the workbook.</div><div><span>When</span>May to Sep 2026 weekly and monthly editions · live 30-day forecast since October 2026</div><div><span>Built with</span>Python and scheduled jobs, Claude with sub-agents, public APIs (weather, fixtures, ticketing, bank holidays), Google Drive, Slack</div><div><span>Status</span>Running. The expected-demand figure stays provisional until it is calibrated, the next phase.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num">~12</div><div class="lbl">regions, with attendance thresholds by city size</div></div><div class="stat reveal"><div class="num">200+</div><div class="lbl">venues in the census, each checked against its own agenda</div></div><div class="stat reveal"><div class="num">4</div><div class="lbl">AI agents searching in parallel, one per area</div></div><div class="stat reveal"><div class="num">30</div><div class="lbl">days ahead, always</div></div></div>
   
 </header>
 <div class="wrap case-body">
@@ -51,7 +51,16 @@
 <div class="prose">
 <h2 id="why">Why it exists</h2>
 <p>Forecasting models do well on a normal Tuesday and badly on the day of a derby, a trade fair or a strike, which are exactly the days that matter for staffing and supply. A scheduled skill now collects those days for every city, the same way every time.</p>
-<h2 id="how">How it works</h2>
+<h2 id="live">October: a live forecast, 30 days ahead</h2>
+<p>A monthly workbook arrived with a few weeks' notice and was out of date by the second week. The live version always covers the next 30 days, and it is built so that no mass event is missed, with four nets that each catch what the others miss.</p>
+<ul>
+<li><b>Structured feeds, daily and without an LLM:</b> weather and weather alerts, league fixtures with official kick-off times, cruise calls, bank-holiday eves, city agendas and planned closures.</li>
+<li><b>A census of venues</b> above the threshold of their city, each checked against its own agenda on every search; venues the agents discover are added.</li>
+<li><b>An open search by AI agents in parallel,</b> one per area of the country, sweeping dates, nightlife, strikes, fiestas, fairs and congresses.</li>
+<li><b>A data loop:</b> demand peaks that no event or rain explains are investigated, and the biggest become a new source or category.</li>
+</ul>
+<p>The deterministic part runs as scheduled jobs at no cost; the model only does what needs it. Everything lives in one folder and is overwritten in place, so links never change.</p>
+<h2 id="how">How the first editions worked</h2>
 </div>
 <figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 141" role="img" aria-label="How it works" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M180.0,68.5 C204.0,68.5 194.0,68.5 218.0,68.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M392.0,68.5 C416.0,68.5 406.0,68.5 430.0,68.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M604.0,68.5 C628.0,68.5 618.0,68.5 642.0,68.5" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M816.0,68.5 C840.0,68.5 830.0,68.5 854.0,68.5" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12.0" y="28.0" width="168" height="81" rx="10"/><text x="26.0" y="52.0" class="dg-t">Schedule</text><text x="26.0" y="71.0" class="dg-s">weekly and monthly</text><text x="26.0" y="86.0" class="dg-s">editions</text></g><g class="dg-box dg-data"><rect x="224.0" y="12.0" width="168" height="113" rx="10"/><text x="238.0" y="36.0" class="dg-t">Curated public</text><text x="238.0" y="53.0" class="dg-t">sources</text><text x="238.0" y="72.0" class="dg-s">league calendars,</text><text x="238.0" y="87.0" class="dg-s">venues, fairs, transport</text><text x="238.0" y="102.0" class="dg-s">notices</text></g><g class="dg-box dg-app"><rect x="436.0" y="35.5" width="168" height="66" rx="10"/><text x="450.0" y="59.5" class="dg-t">Deduplicate</text><text x="450.0" y="78.5" class="dg-s">one stable ID per event</text></g><g class="dg-box dg-ai"><rect x="648.0" y="35.5" width="168" height="66" rx="10"/><text x="662.0" y="59.5" class="dg-t">Impact window</text><text x="662.0" y="78.5" class="dg-s">build-up, peak and exit</text></g><g class="dg-box dg-out"><rect x="860.0" y="28.0" width="168" height="81" rx="10"/><text x="874.0" y="52.0" class="dg-t">Workbook</text><text x="874.0" y="71.0" class="dg-s">master list, day-by-hour</text><text x="874.0" y="86.0" class="dg-s">grid, one tab per city</text></g></svg></div><figcaption>Illustrative overview. The source list is part of the skill, so the output does not depend on what a search engine returns that day.</figcaption></figure>
 <div class="prose">
@@ -65,6 +74,7 @@
 <h2 id="lessons">What I learned</h2>
 <ul>
 <li>A curated source list beats open search. It is boring to maintain and it is the reason the output is stable from one week to the next.</li>
+<li>Several cheap nets beat one clever one. Feeds catch fixtures, the census catches venues, the agents catch the unexpected, and the data loop catches what all three missed.</li>
 <li>The exit matters as much as the start. Demand peaks when a stadium empties, not when the match begins, so every event carries its time window.</li>
 </ul>
 <p class="muted small">Built only on public information. The diagram is illustrative.</p>
@@ -78,7 +88,7 @@
 <footer>
   <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
   <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
-  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+  <p>© <span id="year">2026</span> · Berlin</p>
 </footer>
 <div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
 <script src="../assets/js/site.js" defer></script>

@@ -35,13 +35,12 @@
 <main id="main">
 <header class="case-hero wrap">
   <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
-  <p class="eyebrow">Case study · Cabify Spain · Mar to Sep 2026</p>
+  <p class="eyebrow">Case study · Cabify Spain · Mar to Oct 2026</p>
   <h1>Help Center AI Agent</h1>
-  <p class="lead">Riders who cannot log in cannot use the app to ask for help, so they end up in the public Help Center. The agent there is limited on purpose to sign-in and registration problems: it searches the help articles, asks only for the minimum it needs, solves what it can and hands the rest to a person with everything already collected.</p>
+  <p class="lead">Riders who cannot log in cannot use the app to ask for help, so they end up in the public Help Center. The agent there was limited on purpose to sign-in and registration problems: it searched the help articles, asked only for the minimum it needed, solved what it could and handed the rest to a person with everything already collected. It ran from May to October 2026.</p>
   <div class="pillrow"><span class="impact">Most chats solved alone</span><span class="kind">n8n automation</span></div>
   <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/langchain.svg" alt="LangChain" title="LangChain" class="" loading="lazy" width="21" height="21">LangChain</span></div>
-  <div class="cta-row"><a class="btn brand live" href="https://help.cabify.com/hc/es" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>See the public Help Center</a></div>
-  <div class="meta reveal"><div><span>My role</span>Built the agent, the tools and the guards. A customer support colleague owned the content and the rollout.</div><div><span>When</span>Mar to Jun 2026 · live since May 2026</div><div><span>Built with</span>n8n, LangChain agent, Claude</div><div><span>Status</span>In production.</div></div>
+  <div class="meta reveal"><div><span>My role</span>Built the agent, the tools and the guards. A customer support colleague owned the content and the rollout.</div><div><span>When</span>Mar to Jun 2026 · live from May to October 2026</div><div><span>Built with</span>n8n, LangChain agent, Claude</div><div><span>Status</span>Retired in October 2026, under a stricter policy for public entry points.</div></div>
   <div class="stats"><div class="stat reveal"><div class="num">Thousands</div><div class="lbl">of conversations handled</div></div><div class="stat reveal"><div class="num">Most</div><div class="lbl">chats solved without a person</div></div><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">tools: search and ticket</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">structured ticket when a person is needed</div></div></div>
   
 </header>
@@ -70,10 +69,11 @@
 <li><b>A long, stable prompt is the perfect case for prompt caching.</b> Once it was available, it was the first agent to use it.</li>
 </ul>
 <h2 id="results">Results</h2>
-<p>Thousands of conversations since launch, and most of them solved without handing over to a person. The next step is the same agent where the problem actually starts: the login screen of the app.</p>
+<p>Thousands of conversations between May and October, and most of them solved without handing over to a person.</p>
 <h2 id="lessons">What I learned</h2>
 <ul>
 <li>A small agent with a narrow scope and two tools is easier to trust than a big one that can do everything.</li>
+<li>A public entry point needs the same care as a public API: authentication, limits and a clear owner from the first day.</li>
 <li>The ticket is part of the product. A handover with the data already collected makes the conversations that need a person faster too.</li>
 </ul>
 <p class="muted small">Described at a high level on purpose: no workflow exports, prompts or internal figures. The conversation and the diagram are illustrative.</p>
@@ -87,7 +87,7 @@
 <footer>
   <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
   <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
-  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+  <p>© <span id="year">2026</span> · Berlin</p>
 </footer>
 <div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
 <script src="../assets/js/site.js" defer></script>

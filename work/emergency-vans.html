@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emergency Shared Vans · built in 48 hours · Mathieu Tellene</title>
+<meta name="description" content="How I built a shared-van service in about 48 hours during a rail closure: a booking web for call-centre agents, a panel for operations and the fleet partner, n8n workflows over data tables, emails, and trips created with the driver assigned.">
+<link rel="canonical" href="https://mathieutellene.github.io/portfolio/work/emergency-vans.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Emergency Shared Vans · built in 48 hours · Mathieu Tellene"><meta property="og:description" content="How I built a shared-van service in about 48 hours during a rail closure: a booking web for call-centre agents, a panel for operations and the fleet partner, n8n workflows over data tables, emails, and trips created with the driver assigned.">
+<meta property="og:url" content="https://mathieutellene.github.io/portfolio/work/emergency-vans.html"><meta property="og:image" content="https://mathieutellene.github.io/portfolio/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-fx" aria-hidden="true"></div>
+<nav class="top solid" aria-label="Main">
+  <div class="nav-in">
+    <div class="progress"><i></i></div>
+    <a class="logo" href="../index.html" aria-label="Mathieu Tellene, home">MT<span>.</span></a>
+    <div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+    <div class="nav-act">
+      <a class="btn sm cv" href="../Mathieu_Tellene_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>CV</a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="mnav"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#writing">Writing</a><a href="../index.html#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main">
+<header class="case-hero wrap">
+  <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
+  <p class="eyebrow">Case study · Cabify Spain · Oct 2026</p>
+  <h1><span class="g">Emergency Shared Vans</span> · built in 48 hours</h1>
+  <p class="lead">A rail accident closed a high-speed line for days, and the company decided to run shared vans to two airports, driven by a fleet partner. I was asked to build the product. About two days later it worked end to end: a booking web for call-centre agents, a panel for operations and the partner, a set of n8n workflows over data tables, the emails, and trips created on the ride platform with the driver already assigned. It was tested with real trips and then stopped before launch by a business decision; everything was switched off cleanly, ready to reuse.</p>
+  <div class="pillrow"><span class="impact">Working product in ~48 h</span><span class="kind">n8n automation</span></div>
+  <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/javascript.svg" alt="JavaScript" title="JavaScript" class="" loading="lazy" width="21" height="21">JavaScript</span><span class="chip"><img src="../assets/logos/redis.svg" alt="Redis" title="Redis" class="" loading="lazy" width="21" height="21">Redis</span><span class="chip"><img src="../assets/logos/gitlab.svg" alt="GitLab" title="GitLab" class="" loading="lazy" width="21" height="21">GitLab</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/slack.svg" alt="Slack" title="Slack" class="" loading="lazy" width="21" height="21">Slack</span></div>
+  <div class="meta reveal"><div><span>My role</span>Product owner and builder: the rules with operations, the web, the panel, the workflows, the emails, the onboarding material and the switch-off.</div><div><span>When</span>October 2026, about 60 hours from the first meeting to the decision</div><div><span>Built with</span>A static web and panel on the company's internal hosting, n8n webhooks and data tables, Redis locks, the ride and driver-assignment APIs, Slack</div><div><span>Status</span>Stopped before launch. Workflows unpublished, sending in simulation, nothing deleted.</div></div>
+  <div class="stats"><div class="stat reveal"><div class="num" data-count="48" data-prefix="~" data-suffix=" h" data-dec="0">~48 h</div><div class="lbl">from the first meeting to a product that worked end to end</div></div><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">front ends: one for agents, one panel with two roles</div></div><div class="stat reveal"><div class="num" data-count="0" data-prefix="" data-suffix="" data-dec="0">0</div><div class="lbl">seats sold twice: occupancy is computed under a lock</div></div><div class="stat reveal"><div class="num" data-count="3" data-prefix="" data-suffix="" data-dec="0">3</div><div class="lbl">rule changes in two days, none needing a new release</div></div></div>
+</header>
+<div class="wrap case-body">
+  <div class="case-main">
+<div class="prose">
+<h2 id="what">What it had to do</h2>
+<p>Fixed departures to two airports and back, a few vans per shift, a flat fare per seat and free travel for anyone holding a ticket for the cancelled trains. The rules changed three times in two days, and each change had to reach the web, the panel and the emails within the hour.</p>
+<ul>
+<li><b>Shifts and a nightly cut-off.</b> Departures are created ahead from templates. The evening before, a departure with too few passengers moves them to the nearest one with room, or cancels with notice.</li>
+<li><b>Never sell the same seat twice.</b> Occupancy is always computed from the active bookings, never kept as a counter, and every booking takes a lock on its departure. Seats are held for a few minutes until the passenger confirms from the email.</li>
+<li><b>Groups stay together</b> in one van, with one accessible space per van.</li>
+<li><b>Trips only with a driver.</b> A trip can be created only once the partner has set the vehicle and the driver, and it is created on the ride platform with that driver pre-assigned.</li>
+</ul>
+<h2 id="how">How it is built</h2>
+</div>
+<figure class="fig fig-diagram reveal"><div class="scroll-x"><svg class="diagram" viewBox="0 0 1040 260" role="img" aria-label="Two front ends, one set of workflows and tables, and the ride platform" xmlns="http://www.w3.org/2000/svg"><defs><marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs><path class="dg-e flow" d="M184,64.0 C205.0,64.0 205.0,64.0 220,64.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M184,196.0 C205.0,196.0 205.0,196.0 220,196.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M398,64.0 C419.0,64.0 419.0,110 434,110" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M398,196.0 C419.0,196.0 419.0,150 434,150" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M612,130 C633.0,130 633.0,130 648,130" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M826,130 C841.0,130 841.0,64.0 850,64.0" marker-end="url(#dg-arrow)"/><path class="dg-e flow" d="M826,130 C841.0,130 841.0,196.0 850,196.0" marker-end="url(#dg-arrow)"/><g class="dg-box dg-in"><rect x="12" y="22" width="172" height="84" rx="10"/><text x="26" y="46" class="dg-t">Booking web</text><text x="26" y="65" class="dg-s">call-centre agents,</text><text x="26" y="80" class="dg-s">seats by shift</text></g><g class="dg-box dg-human"><rect x="12" y="154" width="172" height="84" rx="10"/><text x="26" y="178" class="dg-t">Panel</text><text x="26" y="197" class="dg-s">operations and the</text><text x="26" y="212" class="dg-s">fleet partner</text></g><g class="dg-box dg-app"><rect x="226" y="22" width="172" height="84" rx="10"/><text x="240" y="46" class="dg-t">Booking flow</text><text x="240" y="65" class="dg-s">validate, lock the</text><text x="240" y="80" class="dg-s">departure, place group</text></g><g class="dg-box dg-app"><rect x="226" y="154" width="172" height="84" rx="10"/><text x="240" y="178" class="dg-t">Panel API</text><text x="240" y="197" class="dg-s">short-lived token,</text><text x="240" y="212" class="dg-s">one rules engine</text></g><g class="dg-box dg-data"><rect x="440" y="84" width="172" height="92" rx="10"/><text x="454" y="108" class="dg-t">Data tables</text><text x="454" y="127" class="dg-s">departures, bookings,</text><text x="454" y="142" class="dg-s">fares, rules, texts</text></g><g class="dg-box dg-ai"><rect x="654" y="84" width="172" height="92" rx="10"/><text x="668" y="108" class="dg-t">Scheduler</text><text x="668" y="127" class="dg-s">every 5 minutes:</text><text x="668" y="142" class="dg-s">reminders, cut-off</text></g><g class="dg-box dg-out"><rect x="856" y="22" width="172" height="84" rx="10"/><text x="870" y="46" class="dg-t">Emails</text><text x="870" y="65" class="dg-s">confirm, remind,</text><text x="870" y="80" class="dg-s">driver details</text></g><g class="dg-box dg-out"><rect x="856" y="154" width="172" height="84" rx="10"/><text x="870" y="178" class="dg-t">Ride platform</text><text x="870" y="197" class="dg-s">trip created with</text><text x="870" y="212" class="dg-s">the driver assigned</text></g></svg></div><figcaption>Illustrative overview. Both front ends talk to the same workflows, and every rule lives in a table.</figcaption></figure>
+<div class="prose">
+<ul>
+<li><b>The booking web</b> started as a public landing page and became an internal tool for call-centre agents when the model changed to phone bookings on the third morning.</li>
+<li><b>One panel, two roles.</b> Operations and the fleet partner sign in with a link sent to their work email, and each side sees a to-do list first: vans without a driver, trips not yet created, departures below the minimum and the waiting list.</li>
+<li><b>Emails that do the work.</b> The passenger confirms or releases the seats from the first email, gets a reminder the day before and the vehicle and driver details before departure. Every text lives in a table.</li>
+<li><b>Safe by default.</b> Webhooks authenticate in the node, the panel uses a short-lived token per person, requests are limited per address and every write that can collide takes a lock.</li>
+</ul>
+<h2 id="stop">Stopping well</h2>
+<p>On the third day, with the product tested on real trips, the company decided not to launch. Switching off was designed as carefully as switching on: workflows unpublished but intact, sending set to simulation so nothing could go out by accident, the web replaced by a "not available" page, and a short guide on how to bring it back. The front end and the back end are now a base for other services.</p>
+<h2 id="lessons">What I learned</h2>
+<ul>
+<li>Rules in tables, not in code. Fares, shifts, texts and cut-off times changed three times in two days without republishing a workflow.</li>
+<li>Compute occupancy, never count it. A counter drifts the first time two agents click at once; a sum over active bookings under a lock does not.</li>
+<li>Speed comes from reuse. The sign-in, the locks, the email layout and the ride APIs came from earlier projects, which is why two days were enough.</li>
+</ul>
+<p class="muted small">Described at a high level on purpose: no screenshots, workflow exports or internal figures. The diagram is illustrative.</p>
+</div>
+<nav class="next" aria-label="More projects"><a href="change-rules.html"><small>Previous project</small><b>Change Requests as Rules · Unattended Uploader</b></a><a href="forecasting.html"><small>Next project</small><b>Demand &amp; KPI Forecasting</b></a></nav>
+  </div>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+</main>
+<footer>
+  <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
+  <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
+  <p>© <span id="year">2026</span> · Berlin</p>
+</footer>
+<div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

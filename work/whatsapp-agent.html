@@ -35,13 +35,13 @@
 <main id="main">
 <header class="case-hero wrap">
   <a class="crumb" href="../index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All projects</a>
-  <p class="eyebrow">Case study · Cabify Spain · Mar to Aug 2026</p>
+  <p class="eyebrow">Case study · Cabify Spain · Mar to Oct 2026</p>
   <h1>WhatsApp Ride-Booking AI Agent</h1>
-  <p class="lead">People at a stadium, a concert or a station who do not have the app can still get a car: scan a QR code, chat on WhatsApp, get a price and confirm. Behind it is an AI agent that runs the conversation and a set of deterministic workflows that book, track and invoice.</p>
-  <div class="pillrow"><span class="impact">First ride with no human</span><span class="kind">n8n automation</span></div>
+  <p class="lead">People at a stadium, a concert or an airport who do not have the app can still get a car: scan a QR code, chat on WhatsApp, get a price and confirm. Behind it is an AI agent for free text and a set of deterministic workflows that book, track and invoice. In October I rebuilt it around a deterministic router, and version 2 is live in a controlled pilot with QR codes at an airport and two venues.</p>
+  <div class="pillrow"><span class="impact">v2 live in a pilot</span><span class="kind">n8n automation</span></div>
   <div class="toolchips"><span class="chip"><img src="../assets/logos/whatsapp.svg" alt="WhatsApp Cloud API" title="WhatsApp Cloud API" class="" loading="lazy" width="21" height="21">WhatsApp Cloud API</span><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/gmaps.svg" alt="Google Maps Platform" title="Google Maps Platform" class="" loading="lazy" width="21" height="21">Google Maps Platform</span></div>
   
-  <div class="meta reveal"><div><span>My role</span>Built the agent, the tools and the workflows, with a colleague on the operations side.</div><div><span>When</span>Mar to Aug 2026 · first automated ride in May 2026</div><div><span>Built with</span>n8n, Claude, WhatsApp Cloud API, Google Maps Platform</div><div><span>Status</span>Live. Growth depends on getting the QR code in front of people.</div></div>
+  <div class="meta reveal"><div><span>My role</span>Built the agent, the tools and the workflows, with a colleague on the operations side.</div><div><span>When</span>Mar to Aug 2026 version 1, first automated ride in May 2026 · version 2 rebuilt in Oct 2026</div><div><span>Built with</span>n8n, Claude, WhatsApp Cloud API, Google Maps Platform</div><div><span>Status</span>Version 2 live in a controlled pilot with QR codes. Growth depends on getting the QR code in front of people.</div></div>
   <div class="stats"><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="st" data-dec="0">1st</div><div class="lbl">ride booked, tracked and invoiced with no human in the loop</div></div><div class="stat reveal"><div class="num" data-count="0" data-prefix="" data-suffix="" data-dec="0">0</div><div class="lbl">apps to download</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">QR code to start</div></div><div class="stat reveal"><div class="num" data-count="100" data-prefix="" data-suffix="%" data-dec="0">100%</div><div class="lbl">of replies sent from fixed templates</div></div></div>
   
 </header>
@@ -77,13 +77,22 @@
 <li><b>Rules are enforced in code, not in the prompt.</b> Free cancellation windows, limits per user and protection against misuse are checked before or after the model, never by asking it nicely.</li>
 <li><b>After the booking,</b> a tracker follows the trip, sends a message at each milestone and asks the rider when something looks wrong.</li>
 </ul>
+<h2 id="v2">Version 2: a router first, the model second</h2>
+<p>The first version gave the model the whole conversation. In October I rebuilt it from scratch: a deterministic router handles every button, list and location, and the model only steps in when someone writes free text. Each capability, such as resolving an address, quoting, booking, cancelling, tracking, invoicing and sending, is its own small workflow that can be tested and changed alone.</p>
+<ul>
+<li><b>A test bench</b> plays dozens of scripted conversations against the AI step, without sending anything, before each change.</li>
+<li><b>Tracking has a safety net:</b> a reconciliation job compares open trips with the ride platform every minute, in case an event is lost on the way.</li>
+<li><b>A way out when things do not go to plan:</b> a priority option when no driver is found, a free cancellation window and the invoice in the same chat.</li>
+<li><b>Two languages, and payment by link</b> for riders without a card on file.</li>
+</ul>
 <h2 id="results">Results, and what limits them</h2>
-<p>It worked end to end from May 2026, when it took the first ride booked, tracked and invoiced with nobody in the loop, and it was shown at the company All Hands in September. The limit on volume turned out not to be the agent but distribution: the QR codes have to reach people at the right place and time, and that is where the next iteration starts.</p>
+<p>It worked end to end from May 2026, when it took the first ride booked, tracked and invoiced with nobody in the loop, and it was shown at the company All Hands in September. The limit on volume turned out not to be the agent but distribution: the QR codes have to reach people at the right place and time. That is what version 2 started with in October, as a controlled pilot at an airport and two venues.</p>
 <h2 id="lessons">What I learned</h2>
 <ul>
 <li>Letting the model choose the next step and code choose the message was the single change that made it reliable.</li>
 <li>Guards are cheap, and they belong in the first release rather than after the first misuse.</li>
 <li>The hardest part of a conversational product is often not the conversation.</li>
+<li>A router in front of the model makes most of the conversation deterministic, and therefore testable.</li>
 </ul>
 <p class="muted small">Described at a high level on purpose: no workflow exports, internal figures or company data. The conversation and the diagram are illustrative.</p>
 </div>
@@ -96,7 +105,7 @@
 <footer>
   <p>Designed and built by Mathieu Tellene with Claude Code. Plain HTML, CSS and JavaScript, no tracking.</p>
   <p>Case studies describe my own work at a high level. They contain no confidential information, screenshots or code from any employer: diagrams and charts are illustrative and drawn from scratch, and figures are rounded.</p>
-  <p>© <span id="year">2026</span> · Madrid → Berlin</p>
+  <p>© <span id="year">2026</span> · Berlin</p>
 </footer>
 <div id="lightbox" role="dialog" aria-label="Image preview"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
 <script src="../assets/js/site.js" defer></script>
