@@ -9,7 +9,7 @@ Live at https://mathieutellene.github.io/portfolio/
 | Path | Content |
 |---|---|
 | `index.html` | Home: projects, experience, skills, courses, writing, contact |
-| `work/*.html` | Nine case studies (vision AI fleet audit, WhatsApp and Help Center agents, hybrid ML + LLM vision, KPI monitoring, change requests as rules, forecasting, events intelligence, a hackathon build) and one technical note on LLM agent cost |
+| `work/*.html` | Ten case studies (vision AI fleet audit, WhatsApp and Help Center agents, hybrid ML + LLM vision, KPI monitoring, change requests as rules, an emergency shared-van service built in 48 hours, forecasting, events intelligence, a hackathon build) and one technical note on LLM agent cost |
 | `Mathieu_Tellene_CV.pdf` | One-page CV |
 | `assets/` | CSS, JavaScript, self-hosted fonts, tool logos, illustrations, certificates |
 
