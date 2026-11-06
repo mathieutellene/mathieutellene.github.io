@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Help Center AI Agent · Mathieu Tellene</title>
 <meta name="description" content="How I built a deliberately narrow support agent for a public Help Center: it solves sign-in and registration problems on its own and hands the rest to a person with everything already collected.">
-<link rel="canonical" href="https://mathieutellene.github.io/portfolio/work/help-center-agent.html">
+<link rel="canonical" href="https://mathieutellene.github.io/work/help-center-agent.html">
 <meta property="og:type" content="website"><meta property="og:title" content="Help Center AI Agent · Mathieu Tellene"><meta property="og:description" content="How I built a deliberately narrow support agent for a public Help Center: it solves sign-in and registration problems on its own and hands the rest to a person with everything already collected.">
-<meta property="og:url" content="https://mathieutellene.github.io/portfolio/work/help-center-agent.html"><meta property="og:image" content="https://mathieutellene.github.io/portfolio/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://mathieutellene.github.io/work/help-center-agent.html"><meta property="og:image" content="https://mathieutellene.github.io/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0e16">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -38,10 +38,10 @@
   <p class="eyebrow">Case study · Cabify Spain · Mar to Oct 2026</p>
   <h1>Help Center AI Agent</h1>
   <p class="lead">Riders who cannot log in cannot use the app to ask for help, so they end up in the public Help Center. The agent there was limited on purpose to sign-in and registration problems: it searched the help articles, asked only for the minimum it needed, solved what it could and handed the rest to a person with everything already collected. It ran from May to October 2026.</p>
-  <div class="pillrow"><span class="impact">Most chats solved alone</span><span class="kind">n8n automation</span></div>
+  <div class="pillrow"><span class="impact">~90% solved alone</span><span class="kind">n8n automation</span></div>
   <div class="toolchips"><span class="chip"><img src="../assets/logos/n8n.svg" alt="n8n" title="n8n" class="" loading="lazy" width="21" height="21">n8n</span><span class="chip"><img src="../assets/logos/claude.svg" alt="Claude" title="Claude" class="" loading="lazy" width="21" height="21">Claude</span><span class="chip"><img src="../assets/logos/langchain.svg" alt="LangChain" title="LangChain" class="" loading="lazy" width="21" height="21">LangChain</span></div>
   <div class="meta reveal"><div><span>My role</span>Built the agent, the tools and the guards. A customer support colleague owned the content and the rollout.</div><div><span>When</span>Mar to Jun 2026 · live from May to October 2026</div><div><span>Built with</span>n8n, LangChain agent, Claude</div><div><span>Status</span>Retired in October 2026, under a stricter policy for public entry points.</div></div>
-  <div class="stats"><div class="stat reveal"><div class="num">Thousands</div><div class="lbl">of conversations handled</div></div><div class="stat reveal"><div class="num">Most</div><div class="lbl">chats solved without a person</div></div><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">tools: search and ticket</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">structured ticket when a person is needed</div></div></div>
+  <div class="stats"><div class="stat reveal"><div class="num">~95</div><div class="lbl">conversations a day on average</div></div><div class="stat reveal"><div class="num">~90%</div><div class="lbl">of chats solved without a person</div></div><div class="stat reveal"><div class="num" data-count="2" data-prefix="" data-suffix="" data-dec="0">2</div><div class="lbl">tools: search and ticket</div></div><div class="stat reveal"><div class="num" data-count="1" data-prefix="" data-suffix="" data-dec="0">1</div><div class="lbl">structured ticket when a person is needed</div></div></div>
   
 </header>
 <div class="wrap case-body">
@@ -69,7 +69,7 @@
 <li><b>A long, stable prompt is the perfect case for prompt caching.</b> Once it was available, it was the first agent to use it.</li>
 </ul>
 <h2 id="results">Results</h2>
-<p>Thousands of conversations between May and October, and most of them solved without handing over to a person.</p>
+<p>About 95 conversations a day between May and October, and about 90% of them solved without handing over to a person.</p>
 <h2 id="lessons">What I learned</h2>
 <ul>
 <li>A small agent with a narrow scope and two tools is easier to trust than a big one that can do everything.</li>
