@@ -2,7 +2,7 @@
 
 Personal site of Mathieu Tellene: case studies of the automation, data and AI systems I build for operations teams.
 
-Live at https://mathieutellene.github.io/portfolio/
+Live at https://mathieutellene.github.io/
 
 ## What is here
 
