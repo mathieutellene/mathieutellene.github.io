@@ -515,3 +515,5 @@ pre.code .c{color:#6b7a96} pre.code .k{color:#c4a8ff} pre.code .s{color:#8fe3cf}
 .toolrow img[src$="/n8n.svg"],.toolrow img[src="assets/logos/n8n.svg"]{width:34px}
 .chip img[src$="/n8n.svg"]{width:26px}
 .case-hero .toolchips .chip img[src$="/n8n.svg"]{width:30px}
+
+.org-logo{width:30px;height:30px;flex:0 0 30px;border-radius:8px;background:#fff;border:1px solid var(--border);object-fit:contain;display:inline-block}
